@@ -34,7 +34,7 @@ export default function CallToActionWithIllustration() {
 <Box minH={{base:'320vh', md: '150vh'}}
 // bgGradient='linear(to-r, green.500, yellow.300)'
 // bgGradient='linear(to-r, purple.500, whiteAlpha.300)'
-background="rgba(192,192,192,0.2)"
+background="rgba(192,192,192,0.12)"
 
 
 // bgGradient='linear(to-r, green.400, yellow.200, purple.500)'
@@ -52,7 +52,7 @@ background="rgba(192,192,192,0.2)"
         <Box py={{base:6, md: 0}}>
           <Stack spacing={4} as={Container} maxW={'3xl'} textAlign={'center'}>
               <Heading fontSize={{base:'5xl',md:'8xl'}} bgClip="text"
-                  bgGradient="linear(to-br, green.900, #74449c)"
+                  bgGradient="linear(to-br, blackAlpha.900, #74449c)"
                   // textColor="white"
                   fontWeight="extrabold"
                   // fontFamily='serif'
@@ -61,7 +61,7 @@ background="rgba(192,192,192,0.2)"
                     Professional HR Training
               </Heading>
 
-            <Text color={useColorModeValue('gray.700', 'gray.200')}  fontWeight={100} fontSize={{base:'sm',md:'lg'}}>
+            <Text color={useColorModeValue('gray.700', 'gray.200')}  fontWeight={100} fontSize={{base:'sm',md:'md'}}>
             A modern company is defined by the quality of it&apos;s Human Resources.
             We focus on creating training systems that effectively convey your company&apos;s identity, then optimize for an enhanced learning experience.
             </Text>
