@@ -57,6 +57,7 @@ background="rgba(192,192,192,0.12)"
                   fontWeight="extrabold"
                   // fontFamily='serif'
                   //#74449c
+                  pt={{lg:24}}
                   >
                     Professional HR Training
               </Heading>
