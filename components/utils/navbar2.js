@@ -21,22 +21,27 @@ import { AiOutlineMenu } from "react-icons/ai";
 import NextLink from 'next/link'
 
 import NextImage from 'next/image'
-import taxEdgeLogo from '../../public/images/icon/logo-white-removebg-crop.png'
+import papecLogo from '../../public/images/icon/People__Potential-Logo_Full_Color-1.png'
 
 
 
 export default function WithSubnavigation(){
-  const bg = useColorModeValue("green.600", "gray.800");
+  const bg = useColorModeValue("purple.200", "gray.800");
   const mobileNav = useDisclosure();
 
   return (
     <React.Fragment>
       <chakra.header
-        bg={bg}
+        background="rgba(192,192,192,0.1)"
         w="full"
         px={{ base: 2, sm: 4 }}
         py={4}
         shadow="md"
+        border={'1px'}
+        borderColor="black"
+        // boxShadow={useColorModeValue('6px 6px 0 black', '6px 6px 0 cyan')}>
+
+
       >
         <Container maxW={'7xl'}>
 
@@ -45,63 +50,71 @@ export default function WithSubnavigation(){
         <Flex  display={{ base: "none", lg: "inline-flex" }}>
             <chakra.a
               href="/"
-              title="Choc Home Page"
+              title="Papec Home Page"
               display="flex"
               alignItems="center"
             >
               <Flex >
-                <NextImage src={ taxEdgeLogo } width={730/7} height={351/7}  />
+                <NextImage src={ papecLogo } width={1065/7} height={397/7}  />
               </Flex>
-              <VisuallyHidden>Choc</VisuallyHidden>
             </chakra.a>
           </Flex>
 
 
         <HStack display="flex" alignItems="center" spacing={1}>
             <HStack
-              spacing={1}
+              spacing={6}
               mr={1}
-              color="white"
+              color="#638d3d"
               display={{ base: "none", lg: "inline-flex" }}
             >
+
               <Button
-              variant="ghost"
+              variant="outline"
+              colorScheme='black'
+              borderRadius='3px'
+              boxShadow={useColorModeValue('1px 1px 0 black', '6px 6px 0 cyan')}
+
+
               _hover={{ bg:'green.50', textColor: 'green.400'}}
               >
-                <NextLink href='/tax/tax-calculator' passHref>
-                Tax Calculator
+                <NextLink href='/#' passHref>
+                About Us 
                 </NextLink>
               </Button>
 
               <Button
               variant="ghost"
+              variant="outline"
+              colorScheme='black'
+              borderRadius='3px'
+              boxShadow={useColorModeValue('1px 1px 0 black', '6px 6px 0 cyan')}
               _hover={{ bg:'green.50', textColor: 'green.400'}}
               >
-                <NextLink href='/research-and-dev/research-and-dev-landing-page' passHref>
-                Research & Development
+                <NextLink href='/#' passHref>
+                Services
                 </NextLink>
               </Button>
 
-              <Button
+              {/* <Button
               variant="ghost"
-              _hover={{ bg:'green.50', textColor: 'green.400'}}
-              >
-                <NextLink href='/capital-allowance/capital-allowance-info' passHref>
-                Capital Allowances
-                </NextLink>
-              </Button>
-
-              <Button
-              variant="ghost"
+              variant="outline"
+              colorScheme='black'
+              borderRadius='3px'
+              boxShadow={useColorModeValue('1px 1px 0 black', '6px 6px 0 cyan')}
               _hover={{ bg:'green.50', textColor: 'green.400'}}
               >
                 <NextLink href='/past-work/client-testimonials' passHref>
                 Client Testimonials
                 </NextLink>
-              </Button>
+              </Button> */}
 
               <Button
               variant="ghost"
+              variant="outline"
+              colorScheme='black'
+              borderRadius='3px'
+              boxShadow={useColorModeValue('1px 1px 0 black', '6px 6px 0 cyan')}
               _hover={{ bg:'green.50', textColor: 'green.400'}}
               >
                 <NextLink href='/info/contact-enquiry' passHref>
@@ -204,7 +217,7 @@ export default function WithSubnavigation(){
               alignItems="center"
             >
               <Flex  ml={{base: '-55vw', md: '-53vw'}}>
-                <NextImage src={ taxEdgeLogo } width={730/7} height={351/7}  />
+                <NextImage src={ papecLogo } width={1065/7} height={397/7}  />
               </Flex>
             </chakra.a>
           </Flex>

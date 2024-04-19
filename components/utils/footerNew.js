@@ -18,7 +18,7 @@ import { FaInstagram, FaLinkedin, FaTwitter, FaYoutube } from 'react-icons/fa'
 import { BiMailSend } from 'react-icons/bi'
 
 import NextLink from 'next/link'
-import taxEdgeLogoBlack from '../../public/images/icon/logo-black-cropped.webp'
+import papecLogo from '../../public/images/icon/People__Potential-Logo_Full_Color-1.png'
 import Image from 'next/image'
 
 
@@ -26,7 +26,7 @@ import Image from 'next/image'
 const Logo = (props) => {
   return (
     <NextLink href='/#'>
-        <Image src={taxEdgeLogoBlack} width={250/2} height={120/2}/>
+        <Image src={papecLogo} width={1065/7} height={397/7}/>
   </NextLink>
   )
 }
@@ -69,9 +69,16 @@ const ListHeader = ({ children }) => {
 export default function LargeWithNewsletter() {
   return (
     <Box
-      bg={useColorModeValue('white', 'gray.900')}
-      color={useColorModeValue('gray.700', 'gray.200')}>
-      <Container as={Stack} maxW={'7xl'} py={10}>
+      bg={useColorModeValue('yellow.300', 'gray.900')}
+      // bgGradient='linear(to-r, purple.500, whiteAlpha.300)'
+      position='absolute'
+      bottom='0'
+      // left='0'
+      width='100vw'
+      border={'1px'}
+      borderColor="black"
+      >
+      <Container as={Stack} maxW={'7xl'} py={12}>
         <SimpleGrid
           templateColumns={{ sm: '1fr 1fr', md: '2fr  2fr' }}
           spacing={8}>
@@ -80,17 +87,21 @@ export default function LargeWithNewsletter() {
               <Logo  />
             </Box>
 
-            <Stack direction={'row'} spacing={6}>
-              <SocialButton label={'LinkedIn'} href={'https://www.linkedin.com/company/tax-edge-advisory/'}>
+            <Stack direction={'row'} spacing={4}>
+              <SocialButton  label={'LinkedIn'} href={'https://www.linkedin.com/company/tax-edge-advisory/'}>
                 <FaLinkedin />
               </SocialButton>
-              <Button as='a' href='https://www.dralegawebops.com/' size='sm' colorScheme='green' fontSize={{base:'xs',md:'xs'}} pt={{md: 1}}>
+              <Button as='a' href='https://www.dralegawebops.com/' size='sm' colorScheme='purple' fontSize={{base:'xs',md:'xs'}}
+                variant="outline"
+                color='green'
+                borderRadius='3px'
+                boxShadow={useColorModeValue('1px 1px 0 black', '6px 6px 0 cyan')} >
               Built by DWO
              </Button>
 
             </Stack>
             <Box>
-            <Text fontSize={'sm'}>© 2024 People and Potential Consultancy. All rights reserved</Text>
+            <Text fontSize={'sm'} textColor='green'>© 2024 People and Potential Consultancy. All rights reserved</Text>
             </Box>
 
           </Stack>

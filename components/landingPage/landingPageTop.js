@@ -12,18 +12,16 @@ import {
   IconProps,
   useColorModeValue,
   ScaleFade,
+  SimpleGrid,
   useBreakpointValue
 } from '@chakra-ui/react'
 
 import Lottie from "lottie-react";
-import taxAnimation from "../utils/animation/animation_1.json"; //they like this one
 import React, { useRef } from "react";
 import { useInView } from "framer-motion";
-
-const TaxAnimation = () => {
-  return <Lottie animationData={taxAnimation} />;
-};
-
+import Card from '../utils/cards/card';
+import CardBorder from '../utils/cards/cardBorder'
+import img from '../../public/images/PP-Website-Banner-9.jpeg'
 
 
 export default function CallToActionWithIllustration() {
@@ -33,119 +31,57 @@ export default function CallToActionWithIllustration() {
   const isInView1 = useInView(ref1)
 
   return (
-<Box>
-  {/* <Blur
-    position={'absolute'}
-    top={'60vh'}
-    left={'40vw'}
-    style={{ filter: 'blur(80px)' }}
-    /> */}
+<Box minH={{base:'320vh', md: '150vh'}}
+// bgGradient='linear(to-r, green.500, yellow.300)'
+// bgGradient='linear(to-r, purple.500, whiteAlpha.300)'
+background="rgba(192,192,192,0.2)"
 
-    <Box py={{base: 8, md: 5}}  ref={ref1}>
-    <Container 
-      maxW={'85vw'} 
-      rounded='3xl' 
-      shadow='2xl'
-          
-      background="rgba(240,255,244,0.55)"
-    >
-      <Stack
-        textAlign={'center'}
-        align={'center'}
-        spacing={{ base: 8, md: 5 }}
-        py={{ base: 20, md: 16 }}
-        >
-        <Container maxW={{base: '2xl', md:'3xl',lg:'5xl'}}  >
-        <Heading
-          fontSize={{ base: '3xl', sm: '3xl', md: '4xl', lg:'7xl' }}
-          letterSpacing={'tight'}
-          lineHeight={'110%'}
-          
-          bgClip="text"
-          bgGradient="linear(to-r, blackAlpha.900, green.500)"
-          fontWeight="extrabold"
-          transition='all .65s ease'
-                   >
-          Tax affairs{' '}
-          <Text as={'span'} color={'green.400'}
-          bgClip="text"
-          bgGradient="linear(to-r, green.600, green.500)"
-          fontWeight="extrabold"
-          transition="all .65s ease" _hover={{ transform: 'scale(1.005)', filter: "brightness(110%)", }}
-          >
-            made easy
-          </Text>
-        </Heading>
-        </Container>
-        <Container maxW={{base: 'xl', md:'3xl',lg:'5xl'}}  >
-            <Text 
-            color={useColorModeValue('green.900', 'gray.50')} 
-            fontSize={{ base: 'lg', sm: '4xl', md: 'xl', lg:'xl' }} 
-            transition="all .65s ease" _hover={{ transform: 'scale(1.005)', filter: "brightness(140%)", }}
-            >
-            Tax Edge Advisory seeks to be a leading specialist tax consultancy firm with
-            a focus on providing expert advice on UK tax incentives to businesses,
-            accountants, and other professional advisers.
+
+// bgGradient='linear(to-r, green.400, yellow.200, purple.500)'
+>     
+    <Blur
+        position={'fixed'}
+        top={'30vh'}
+        left={'40vw'}
+        style={{ filter: 'blur(80px)' }}
+      />
+
+      <Box py={{base: 8, md: 8}}  ref={ref1}   w={{ base: "full", md: 11 / 12, xl: 9 / 12 }}
+      mx="auto">
+
+        <Box py={{base:6, md: 0}}>
+          <Stack spacing={4} as={Container} maxW={'3xl'} textAlign={'center'}>
+              <Heading fontSize={{base:'5xl',md:'8xl'}} bgClip="text"
+                  bgGradient="linear(to-br, green.900, #74449c)"
+                  // textColor="white"
+                  fontWeight="extrabold"
+                  // fontFamily='serif'
+                  //#74449c
+                  >
+                    Professional HR Training
+              </Heading>
+
+            <Text color={useColorModeValue('gray.700', 'gray.200')}  fontWeight={100} fontSize={{base:'lg',md:'xl'}}>
+            A modern company is defined by the quality of it's Human Resources.
+            We focus on creating training systems that effectively convey your company's identity, then optimize for an enhanced learning experience.
             </Text>
-        </Container>
+          </Stack>
+        </Box>
 
 
-        <Stack spacing={{base: 8, md: 12}} direction={{base:'column',md:'row'}} p={{md:6}}>
-          <Button
-            _hover={{ bg: 'green.300', textColor: 'green.700'  }}
-            as="a"
-            colorScheme="green"
-            textColor={useColorModeValue('green.50', 'green.200')}
-            alignItems="center"
-            justifyContent="center"
-            mb={{ base: 0, sm: 0 }}
-            shadow={'xl'}
-            size={'lg'}
-            href='/tax/tax-calculator'
-            >
-            Calculate Tax Savings
-            <Icon boxSize={4} ml={4} viewBox="0 0 20 20" fill="currentColor">
-                      <path
-                      fillRule="evenodd"
-                      d="M6.672 1.911a1 1 0 10-1.932.518l.259.966a1 1 0 001.932-.518l-.26-.966zM2.429 4.74a1 1 0 10-.517 1.932l.966.259a1 1 0 00.517-1.932l-.966-.26zm8.814-.569a1 1 0 00-1.415-1.414l-.707.707a1 1 0 101.415 1.415l.707-.708zm-7.071 7.072l.707-.707A1 1 0 003.465 9.12l-.708.707a1 1 0 001.415 1.415zm3.2-5.171a1 1 0 00-1.3 1.3l4 10a1 1 0 001.823.075l1.38-2.759 3.018 3.02a1 1 0 001.414-1.415l-3.019-3.02 2.76-1.379a1 1 0 00-.076-1.822l-10-4z"
-                      clipRule="evenodd"
-                      />
-                  </Icon>
-          </Button>
+        <SimpleGrid columns={{ base: 1, md: 2, lg: 3 }} spacing={{base: 10, md: 2}}>
+          
+          {/* <Card title='Education' subtitle='Teacher training and School development' />
+          <Card title='Corporate' subtitle='Ages 3-18' />
+          <Card title='Health' subtitle='Ages 3-18' /> */}
 
-          <Button
-            _hover={{ bg: 'whiteAlpha.500', textColor:'green.500'}}
-            as="a"
-            textColor={useColorModeValue('green.500', 'green.200')}
-            alignItems="center"
-            justifyContent="center"
-            mb={{ base: 2, sm: 0 }}
-            shadow={'xl'}
-            size={'lg'}
-            bg={'whiteAlpha.800'}
-            href='/info/contact-enquiry'
-          >
-            Get in Contact
-            <Icon boxSize={4} ml={1} viewBox="0 0 20 20" fill="currentColor">
-                    <path
-                    fillRule="evenodd"
-                    d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
-                    clipRule="evenodd"
-                    />
-                </Icon>
-          </Button>
-        </Stack>
-        {/* <Flex w={'full'}>
-          <Illustration height={{ sm: '24rem', lg: '40rem' }} mt={{ base: 12, sm: 16 }} />
-        </Flex> */}
+          <CardBorder title='Education' subtitle='Teacher training and School development' img={'https://res.cloudinary.com/medoptics-image-cloud/image/upload/v1713532448/PP-Website-Banner-9_tviyet.jpg'}/>
+          <CardBorder title='Corporate' subtitle='Workforce upskilling' img={'https://res.cloudinary.com/medoptics-image-cloud/image/upload/v1713532448/PP-Website-Banner-9_tviyet.jpg'}/>
+          <CardBorder title='Health' subtitle='Optical and Medical Training Platform' img={'https://res.cloudinary.com/medoptics-image-cloud/image/upload/v1713532448/PP-Website-Banner-9_tviyet.jpg'}/>
+    
+        </SimpleGrid>
 
-        <Flex maxH={'50vh'}>
-          <TaxAnimation />
-        </Flex>
-
-      </Stack>
-    </Container>
-    </Box>
+      </Box>
     </Box>
   )
 }
@@ -162,9 +98,9 @@ export const Blur = (props) => {
       xmlns="http://www.w3.org/2000/svg"
       {...props}>
 
-      <circle cx="11" cy="11" r="811" fill="#48BB78" />
-      {/* <circle cx="230.5" cy="58.5" r="101.5" fill="#48BB78" /> */}
-      {/* <circle cx="230.5" cy="58.5" r="101.5" fill="#48BB78" /> */}
+      <circle cx="811" cy="200" r="811" fill="#CF9FFF" />
+      {/* <circle cx="230.5" cy="58.5" r="401.5" fill="#FFC300" /> */}
+      <circle cx="230.5" cy="58.5" r="301.5" fill="#DAF7A6 " />
 
 
 
