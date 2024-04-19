@@ -84,7 +84,6 @@ export default function WithSubnavigation(){
               </Button>
 
               <Button
-              variant="ghost"
               variant="outline"
               colorScheme='black'
               borderRadius='3px'
@@ -110,7 +109,6 @@ export default function WithSubnavigation(){
               </Button> */}
 
               <Button
-              variant="ghost"
               variant="outline"
               colorScheme='black'
               borderRadius='3px'

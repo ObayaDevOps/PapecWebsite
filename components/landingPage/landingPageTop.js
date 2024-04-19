@@ -61,8 +61,8 @@ background="rgba(192,192,192,0.2)"
                     Professional HR Training
               </Heading>
 
-            <Text color={useColorModeValue('gray.700', 'gray.200')}  fontWeight={100} fontSize={{base:'lg',md:'xl'}}>
-            A modern company is defined by the quality of it's Human Resources.
+            <Text color={useColorModeValue('gray.700', 'gray.200')}  fontWeight={100} fontSize={{base:'lg',md:'lg'}}>
+            A modern company is defined by the quality of it&apos;s Human Resources.
             We focus on creating training systems that effectively convey your company's identity, then optimize for an enhanced learning experience.
             </Text>
           </Stack>
