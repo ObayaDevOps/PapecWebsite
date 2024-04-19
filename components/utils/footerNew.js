@@ -88,7 +88,7 @@ export default function LargeWithNewsletter() {
             </Box>
 
             <Stack direction={'row'} spacing={4}>
-              <SocialButton  label={'LinkedIn'} href={'https://www.linkedin.com/company/tax-edge-advisory/'}>
+              <SocialButton  label={'LinkedIn'} href={'/#'}>
                 <FaLinkedin />
               </SocialButton>
               <Button as='a' href='https://www.dralegawebops.com/' size='sm' colorScheme='purple' fontSize={{base:'xs',md:'xs'}}
