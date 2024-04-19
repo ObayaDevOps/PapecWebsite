@@ -90,7 +90,7 @@ export default function LargeWithNewsletter() {
 
             </Stack>
             <Box>
-            <Text fontSize={'sm'}>© 2023 Tax Edge Advisory. All rights reserved</Text>
+            <Text fontSize={'sm'}>© 2024 People and Potential Consultancy. All rights reserved</Text>
             </Box>
 
           </Stack>
@@ -103,8 +103,9 @@ export default function LargeWithNewsletter() {
               Testimonials
             </Box>
           </Stack> */}
-          <Stack align={{base:'flex-start', md:'flex-end'}} pt={{md:4}}>
-            {/* <ListHeader>Support</ListHeader> */}
+
+          
+          {/* <Stack align={{base:'flex-start', md:'flex-end'}} pt={{md:4}}>
             <Box>
                 <Text fontSize={'lg'}>contact@taxedgeadvisory.co.uk</Text>
             </Box>
@@ -114,10 +115,7 @@ export default function LargeWithNewsletter() {
             <Box>
                 <Text fontSize={'sm'}>Plot 64, Mayfair, London</Text>
             </Box>
-
-
-
-          </Stack>
+          </Stack> */}
 
         </SimpleGrid>
       </Container>

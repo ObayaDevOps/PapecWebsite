@@ -19,19 +19,19 @@ export default function Home() {
   return (
     <div >
       <Head>
-        <title>Home | Tax Edge Advisory</title>
-        <meta name="description" content="Tax Edge Advisory Webpage" />
+        <title>Home | People and Potential Consultancy</title>
+        <meta name="description" content="People and Potential Consultancy" />
         <link rel="shortcut icon" href="../../../images/icon/logo-black.svg"></link>
       </Head>
 
       <Box bg={'blackAlpha.200'}>
         <LandingPageTop />
         
-        <Features1 />
+        {/* <Features1 />
 
         <CallToActionBanner />
 
-        <QualificationCard />
+        <QualificationCard /> */}
       </Box>
 
     </div>

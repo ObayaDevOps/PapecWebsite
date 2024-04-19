@@ -41,11 +41,12 @@ export default function CallToActionWithIllustration() {
     style={{ filter: 'blur(80px)' }}
     /> */}
 
-    <Box pt={{base: 8, md: 5}}  ref={ref1}>
+    <Box py={{base: 8, md: 5}}  ref={ref1}>
     <Container 
       maxW={'85vw'} 
       rounded='3xl' 
-      shadow='2xl'    
+      shadow='2xl'
+          
       background="rgba(240,255,244,0.55)"
     >
       <Stack
