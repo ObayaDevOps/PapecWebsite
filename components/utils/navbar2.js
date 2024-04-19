@@ -38,7 +38,7 @@ export default function WithSubnavigation(){
         py={4}
         shadow="md"
         border={'1px'}
-        borderColor="black"
+        borderColor="purple"
         // boxShadow={useColorModeValue('6px 6px 0 black', '6px 6px 0 cyan')}>
 
 
