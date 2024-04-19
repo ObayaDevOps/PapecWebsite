@@ -13,6 +13,7 @@ import {
   useColorModeValue,
   ScaleFade,
   SimpleGrid,
+  VStack,
   useBreakpointValue
 } from '@chakra-ui/react'
 
@@ -50,8 +51,8 @@ background="rgba(192,192,192,0.12)"
       mx="auto">
 
         <Box py={{base:6, md: 0}}>
-          <Stack spacing={4} as={Container} maxW={'3xl'} textAlign={'center'}>
-              <Heading fontSize={{base:'5xl',md:'8xl'}} bgClip="text"
+          <VStack spacing={4} as={Container} maxW={'3xl'} textAlign={'center'}>
+              <Heading fontSize={{base:'5xl',md:'7xl', lg:'7xl'}} bgClip="text"
                   bgGradient="linear(to-br, blackAlpha.900, #74449c)"
                   // textColor="white"
                   fontWeight="extrabold"
@@ -62,11 +63,10 @@ background="rgba(192,192,192,0.12)"
                     Professional HR Training
               </Heading>
 
-            <Text color={useColorModeValue('gray.700', 'gray.200')}  fontWeight={100} fontSize={{base:'sm',md:'md'}}>
-            A modern company is defined by the quality of it&apos;s Human Resources.
+            <Text textAlign='center' maxW='lg' color={useColorModeValue('gray.700', 'gray.200')}  fontWeight={100} fontSize={{base:'sm',md:'xl'}}>
             We focus on creating training systems that effectively convey your company&apos;s identity, then optimize for an enhanced learning experience.
             </Text>
-          </Stack>
+          </VStack>
         </Box>
 
 
