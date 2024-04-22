@@ -32,22 +32,22 @@ export default function CallToActionWithIllustration() {
   const isInView1 = useInView(ref1)
 
   return (
-<Box minH={{base:'320vh', md: '150vh'}}
+  <Box minH={{base:'200vh', md: '160vh'}}
 // bgGradient='linear(to-r, green.500, yellow.300)'
-// bgGradient='linear(to-r, purple.500, whiteAlpha.300)'
-background="rgba(192,192,192,0.12)"
+// bgGradient='linear(to-br, purple.100, whiteAlpha.300)'
+    background="rgba(192,192,192,0.12)"
 
 
 // bgGradient='linear(to-r, green.400, yellow.200, purple.500)'
 >     
     <Blur
-        position={'fixed'}
+        position={{base: 'none', md: 'absolute'}}
         top={'30vh'}
         left={'40vw'}
         style={{ filter: 'blur(80px)' }}
       />
 
-      <Box py={{base: 8, md: 8}}  ref={ref1}   w={{ base: "full", md: 11 / 12, xl: 9 / 12 }}
+      <Box py={{base: 8, md: 8}}  ref={ref1}   w={{ base: 9 / 12, md: 11 / 12, xl: 9 / 12 }}
       mx="auto">
 
         <Box py={{base:6, md: 0}}>
@@ -63,7 +63,7 @@ background="rgba(192,192,192,0.12)"
                     Professional HR Training
               </Heading>
 
-            <Text textAlign='center' maxW='lg' color={useColorModeValue('gray.700', 'gray.200')}  fontWeight={100} fontSize={{base:'sm',md:'xl'}}>
+            <Text textAlign='center' maxW='lg' color={useColorModeValue('gray.700', 'gray.200')}  fontWeight={100} fontSize={{base:'md',md:'xl'}}>
             We focus on creating training systems that effectively convey your company&apos;s identity, then optimize for an enhanced learning experience.
             </Text>
           </VStack>

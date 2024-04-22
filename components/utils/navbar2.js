@@ -127,7 +127,7 @@ export default function WithSubnavigation(){
                 display={{ base: "flex", md: "flex", lg:"none" }}
                 aria-label="Open menu"
                 fontSize="20px"
-                color="green.100"
+                color="pruple.300"
                 _dark={{ color: "inherit" }}
                 variant="ghost"
                 icon={<AiOutlineMenu />}
@@ -144,7 +144,7 @@ export default function WithSubnavigation(){
                 p={2}
                 pb={4}
                 m={0}
-                bg={'green.100'}
+                bg={'purple.100'}
                 zIndex={999}
                 spacing={3}
                 w="100%"
@@ -162,8 +162,8 @@ export default function WithSubnavigation(){
               variant="ghost"
               _hover={{ bg:'green.50', textColor: 'green.400'}}
               >
-                <NextLink href='/tax/tax-calculator' passHref>
-                Tax Calculator
+                <NextLink href='/#' passHref>
+                About Us
                 </NextLink>
               </Button>
 
@@ -171,8 +171,8 @@ export default function WithSubnavigation(){
               variant="ghost"
               _hover={{ bg:'green.50', textColor: 'green.400'}}
               >
-                <NextLink href='/research-and-dev/research-and-dev-landing-page' passHref>
-                Research & Development
+                <NextLink href='/#' passHref>
+                Services
                 </NextLink>
               </Button>
 
@@ -180,28 +180,11 @@ export default function WithSubnavigation(){
               variant="ghost"
               _hover={{ bg:'green.50', textColor: 'green.400'}}
               >
-                <NextLink href='/capital-allowance/capital-allowance-info' passHref>
-                Capital Allowances
-                </NextLink>
-              </Button>
-
-              <Button
-              variant="ghost"
-              _hover={{ bg:'green.50', textColor: 'green.400'}}
-              >
-                <NextLink href='/past-work/client-testimonials' passHref>
-                Client Testimonials
-                </NextLink>
-              </Button>
-
-              <Button
-              variant="ghost"
-              _hover={{ bg:'green.50', textColor: 'green.400'}}
-              >
-                <NextLink href='/info/contact-enquiry' passHref>
+                <NextLink href='/#' passHref>
                 Contact Us
                 </NextLink>
               </Button>
+
               </VStack>
             </Box>
           </HStack>
@@ -214,7 +197,7 @@ export default function WithSubnavigation(){
               display="flex"
               alignItems="center"
             >
-              <Flex  ml={{base: '-55vw', md: '-53vw'}}>
+              <Flex  ml={{base: '-60vw', md: '-53vw'}}>
                 <NextImage src={ papecLogo } width={1065/7} height={397/7}  />
               </Flex>
             </chakra.a>

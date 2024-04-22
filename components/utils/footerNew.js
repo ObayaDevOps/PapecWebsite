@@ -71,7 +71,7 @@ export default function LargeWithNewsletter() {
     <Box
       bg={useColorModeValue('yellow.300', 'gray.900')}
       // bgGradient='linear(to-r, purple.500, whiteAlpha.300)'
-      position='absolute'
+      position='relative'
       bottom='0'
       // left='0'
       width='100vw'

@@ -27,7 +27,7 @@ export default function CardBorder(props) {
         my={5}
         mx={[0, 5]}
         overflow={'hidden'}
-        bg="white"
+        // bg="white"
         // background="rgba(192,192,192,0.35)"
         bgGradient='linear(to-br, purple.200, purple.100)'
 
@@ -53,7 +53,10 @@ export default function CardBorder(props) {
 
           />
         </Box>
-        <Box p={4} pb={{base: 4, md:28}}>
+        <Box p={4} 
+        // mb={{base: 4, md:16}}
+        height={{base:'30%', md:'40%'}}
+        >
           {/* <Box bg="black" display={'inline-block'} px={2} py={1} color="white" mb={2}>
             <Text fontSize={'xs'} fontWeight="medium">
               React
