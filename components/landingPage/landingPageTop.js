@@ -124,7 +124,7 @@ export default function CallToActionWithIllustration() {
 
       >
           <VStack spacing={4} as={Container} maxW={'4xl'} textAlign={'center'}>
-              <Heading fontSize={{base:'5xl',md:'7xl', lg:'7xl'}} bgClip="text"
+              <Heading fontSize={{base:'3xl',md:'4xl', lg:'4xl'}} bgClip="text"
                   bgGradient="linear(to-br, blackAlpha.900, #74449c)"
                   // textColor="white"
                   fontWeight="extrabold"
