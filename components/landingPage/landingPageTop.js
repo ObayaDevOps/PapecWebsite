@@ -60,12 +60,14 @@ export default function CallToActionWithIllustration() {
         >
           <VStack spacing={4} as={Container} maxW={'4xl'} textAlign={'center'}>
               <Heading fontSize={{base:'5xl',md:'7xl', lg:'7xl'}} bgClip="text"
-                  bgGradient="linear(to-br, blackAlpha.900, #74449c)"
-                  // textColor="white"
+                  // bgGradient="linear(to-br, blackAlpha.900, #74449c)"
+                  // bgGradient="linear(to-br, green.500, blackAlpha.800 )"
+
+                  textColor="#638d3d"
                   fontWeight="extrabold"
                   letterSpacing={{ base: "normal", md: "tight" }}
 
-                  // fontFamily='serif'
+                  fontFamily='headingFont'
                   //#74449c
                   pt={{lg:20}}
                   >
@@ -124,7 +126,7 @@ export default function CallToActionWithIllustration() {
 
       >
           <VStack spacing={4} as={Container} maxW={'4xl'} textAlign={'center'}>
-              <Heading fontSize={{base:'3xl',md:'4xl', lg:'4xl'}} bgClip="text"
+              <Heading fontSize={{base:'3xl',md:'4xl', lg:'5xl'}} bgClip="text"
                   bgGradient="linear(to-br, blackAlpha.900, #74449c)"
                   // textColor="white"
                   fontWeight="extrabold"
@@ -134,7 +136,7 @@ export default function CallToActionWithIllustration() {
                     Our Clients
               </Heading>
 
-            <Text textAlign='center' pb={8} maxW='xl' color={useColorModeValue('gray.700', 'gray.200')}  fontWeight={100} fontSize={{base:'md',md:'lg'}}>
+            <Text textAlign='center' pb={8} maxW='xl' color={useColorModeValue('gray.700', 'gray.200')}  fontWeight={100} fontSize={{base:'md',md:'md'}}>
               Trusted by Uganda's best Management Teams
             </Text>
 
