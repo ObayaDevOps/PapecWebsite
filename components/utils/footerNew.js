@@ -95,6 +95,7 @@ export default function LargeWithNewsletter() {
               <Button as='a' href='https://www.dralegawebops.com/' size='sm' colorScheme='purple' fontSize={{base:'xs',md:'xs'}}
                 variant="outline"
                 color='green'
+                fontFamily='bodyFont'
                 borderRadius='3px'
                 boxShadow={useColorModeValue('1px 1px 0 black', '6px 6px 0 cyan')} >
               Built by DWO
@@ -102,7 +103,7 @@ export default function LargeWithNewsletter() {
 
             </Stack>
             <Box>
-            <Text fontSize={'sm'} textColor='green'>© 2024 People and Potential Consultancy. All rights reserved</Text>
+            <Text fontSize={'sm'} fontFamily='bodyFont' textColor='green'>© 2024 People and Potential Consultancy. All rights reserved</Text>
             </Box>
 
           </Stack>

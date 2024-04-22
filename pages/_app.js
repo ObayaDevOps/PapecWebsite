@@ -5,12 +5,12 @@ import FooterLargeWithNewsletter from '../components/utils/footerNew'
 // import theme from '../components/utils/theme'
 import { extendTheme } from '@chakra-ui/react'
 
-import { Poor_Story,Permanent_Marker, Jost } from 'next/font/google'
+import { Poor_Story,Permanent_Marker, Jost, Courier_Prime, Inter } from 'next/font/google'
 
 
-const headingFont = Permanent_Marker({ subsets: [ 'latin' ], weight: ['400'] })
+const headingFont = Courier_Prime({ subsets: [ 'latin' ], weight: ['400'] })
 const navBarFont = Jost({ subsets: [ 'latin' ], weight: ['400'] })
-const bodyFont = Poor_Story({ subsets: [ 'latin' ], weight: ['400'] })
+const bodyFont = Inter({ subsets: [ 'latin' ], weight: ['400'] })
 
 const theme = extendTheme({
   fonts: {

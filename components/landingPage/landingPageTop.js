@@ -60,21 +60,22 @@ export default function CallToActionWithIllustration() {
         >
           <VStack spacing={4} as={Container} maxW={'4xl'} textAlign={'center'}>
               <Heading fontSize={{base:'5xl',md:'7xl', lg:'7xl'}} bgClip="text"
-                  // bgGradient="linear(to-br, blackAlpha.900, #74449c)"
+                  bgGradient="linear(to-br, blackAlpha.900, #74449c)"
                   // bgGradient="linear(to-br, green.500, blackAlpha.800 )"
 
-                  textColor="#638d3d"
+                  // textColor="#638d3d"
                   fontWeight="extrabold"
                   letterSpacing={{ base: "normal", md: "tight" }}
 
-                  fontFamily='headingFont'
+                  // fontFamily='headingFont'
                   //#74449c
                   pt={{lg:20}}
                   >
                     Professional HR Training
               </Heading>
 
-            <Text textAlign='center' pb={2} maxW='xl' color={useColorModeValue('gray.700', 'gray.200')}  fontWeight={100} fontSize={{base:'md',md:'xl'}}>
+            <Text fontFamily='bodyFont'
+              textAlign='center' pb={2} maxW='xl' color={useColorModeValue('gray.700', 'gray.200')}  fontWeight={100} fontSize={{base:'md',md:'xl'}}>
             We focus on creating training systems that effectively convey your company&apos;s identity, then optimize for an enhanced learning experience.
             </Text>
             <Button
@@ -93,6 +94,11 @@ export default function CallToActionWithIllustration() {
               mb={{ base: 2, sm: 0 }}
               size="lg"
               cursor="pointer"
+              fontFamily='bodyFont'
+              transition="0.3s ease-in-out"
+              _hover={{
+                transform: 'scale(1.05)',
+              }}
             // shadow={'xl'}
             >
               Book a Consultation Now
@@ -136,7 +142,7 @@ export default function CallToActionWithIllustration() {
                     Our Clients
               </Heading>
 
-            <Text textAlign='center' pb={8} maxW='xl' color={useColorModeValue('gray.700', 'gray.200')}  fontWeight={100} fontSize={{base:'md',md:'md'}}>
+            <Text textAlign='center'  fontFamily='bodyFont' pb={8} maxW='xl' color={useColorModeValue('gray.700', 'gray.200')}  fontWeight={100} fontSize={{base:'md',md:'md'}}>
               Trusted by Uganda's best Management Teams
             </Text>
 

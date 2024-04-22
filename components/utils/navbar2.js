@@ -74,11 +74,11 @@ export default function WithSubnavigation(){
               colorScheme='black'
               borderRadius='3px'
               boxShadow={useColorModeValue('1px 1px 0 black', '6px 6px 0 cyan')}
-
+              fontFamily='bodyFont'
 
               _hover={{ bg:'green.50', textColor: 'green.400'}}
               >
-                <NextLink href='/#' passHref>
+                <NextLink href='/#' passHref >
                 About Us 
                 </NextLink>
               </Button>
@@ -87,6 +87,7 @@ export default function WithSubnavigation(){
               variant="outline"
               colorScheme='black'
               borderRadius='3px'
+              fontFamily='bodyFont'
               boxShadow={useColorModeValue('1px 1px 0 black', '6px 6px 0 cyan')}
               _hover={{ bg:'green.50', textColor: 'green.400'}}
               >
@@ -112,6 +113,7 @@ export default function WithSubnavigation(){
               variant="outline"
               colorScheme='black'
               borderRadius='3px'
+              fontFamily='bodyFont'
               boxShadow={useColorModeValue('1px 1px 0 black', '6px 6px 0 cyan')}
               _hover={{ bg:'green.50', textColor: 'green.400'}}
               >

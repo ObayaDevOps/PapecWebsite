@@ -62,10 +62,10 @@ export default function CardBorder(props) {
               React
             </Text>
           </Box> */}
-          <Heading color={'black'} fontSize={'2xl'} noOfLines={1}>
+          <Heading color={'black'} fontSize={'2xl'} noOfLines={1} fontFamily='bodyFont'>
             {props.title}
           </Heading>
-          <Text color={'grey.800'} noOfLines={2}>
+          <Text color={'grey.800'} noOfLines={2} fontFamily='bodyFont'>
             {props.subtitle}
           </Text>
         </Box>
@@ -77,7 +77,7 @@ export default function CardBorder(props) {
             roundedBottom={'sm'}
             cursor={'pointer'}
             w="full">
-            <Text fontSize={'md'} fontWeight={'semibold'}>
+            <Text fontSize={'md'} fontWeight={'semibold' } fontFamily='bodyFont'>
               View more
             </Text>
             <BsArrowUpRight />
