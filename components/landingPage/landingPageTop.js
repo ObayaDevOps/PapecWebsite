@@ -143,7 +143,7 @@ export default function CallToActionWithIllustration() {
               </Heading>
 
             <Text textAlign='center'  fontFamily='bodyFont' pb={8} maxW='xl' color={useColorModeValue('gray.700', 'gray.200')}  fontWeight={100} fontSize={{base:'md',md:'md'}}>
-              Trusted by Uganda's best Management Teams
+              Trusted by Uganda&apos;s best Management Teams
             </Text>
 
             <SimpleGrid columns={[1,3]} spacing={10}>
