@@ -23,13 +23,13 @@ export default function CardBorder(props) {
       <Box
         w={{base:"xs", md: "sm"}}
         h={{base:"sm", md: "md"}}
-        rounded={'sm'}
+        rounded={'md'}
         my={5}
         mx={[0, 5]}
         overflow={'hidden'}
         // bg="white"
         // background="rgba(192,192,192,0.35)"
-        bgGradient='linear(to-br, purple.200, purple.100)'
+        bgGradient='linear(to-br, purple.200, whiteAlpha.100)'
 
 
         border={'1px'}
@@ -40,7 +40,7 @@ export default function CardBorder(props) {
           transform: 'scale(1.05)',
         }}
         >
-        <Box h={'200px'} borderBottom={'1px'} borderColor="black">
+        <Box h={'200px'} borderBottom={'1px'} borderColor="purple">
           <Img
             src={
               props.img
@@ -69,7 +69,7 @@ export default function CardBorder(props) {
             {props.subtitle}
           </Text>
         </Box>
-        <HStack borderTop={'1px'} color="black">
+        <HStack borderTop={'1px'}  borderColor="purple" color="black">
           <Flex
             p={4}
             alignItems="center"

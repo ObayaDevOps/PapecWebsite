@@ -55,7 +55,7 @@ export default function WithSubnavigation(){
               alignItems="center"
             >
               <Flex >
-                <NextImage src={ papecLogo } width={1065/7} height={397/7}  />
+                <NextImage src={ papecLogo } width={1065/8} height={397/8}  />
               </Flex>
             </chakra.a>
           </Flex>
@@ -65,7 +65,7 @@ export default function WithSubnavigation(){
             <HStack
               spacing={6}
               mr={1}
-              color="#638d3d"
+              color="purple.700"
               display={{ base: "none", lg: "inline-flex" }}
             >
 
@@ -127,7 +127,7 @@ export default function WithSubnavigation(){
                 display={{ base: "flex", md: "flex", lg:"none" }}
                 aria-label="Open menu"
                 fontSize="20px"
-                color="pruple.300"
+                color="purple.300"
                 _dark={{ color: "inherit" }}
                 variant="ghost"
                 icon={<AiOutlineMenu />}

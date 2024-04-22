@@ -77,6 +77,7 @@ export default function LargeWithNewsletter() {
       width='100vw'
       border={'1px'}
       borderColor="purple"
+      
       >
       <Container as={Stack} maxW={'7xl'} py={12}>
         <SimpleGrid
