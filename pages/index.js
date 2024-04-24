@@ -1,6 +1,8 @@
 import Head from 'next/head'
 import {  Box, Icon, useColorModeValue, useBreakpointValue } from '@chakra-ui/react'
 import LandingPageTop from '../components/landingPage/landingPageTop'
+import Clients from '../components/landingPage/clients'
+
 
 import Image from 'next/image'
 import CallToActionBanner from '../components/callToActionBanner'
@@ -25,6 +27,7 @@ export default function Home() {
 
       <Box bg={'whiteAlpha.200'}>
         <LandingPageTop />
+        {/* <Clients /> */}
         
         {/* <Features1 />
 

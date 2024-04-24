@@ -199,7 +199,7 @@ export default function WithSubnavigation(){
               display="flex"
               alignItems="center"
             >
-              <Flex  ml={{base: '-60vw', md: '-53vw'}}>
+              <Flex  ml={{base: '-63vw', md: '-53vw'}}>
                 <NextImage src={ papecLogo } width={1065/7} height={397/7}  />
               </Flex>
             </chakra.a>

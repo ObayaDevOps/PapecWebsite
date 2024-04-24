@@ -26,7 +26,7 @@ function MyApp({ Component, pageProps }) {
     <ChakraProvider theme={theme}>
 
     <Box>
-      <WithSubnavigation />
+      {/* <WithSubnavigation /> */}
       <Component {...pageProps} />
       <FooterLargeWithNewsletter />
       </Box>
