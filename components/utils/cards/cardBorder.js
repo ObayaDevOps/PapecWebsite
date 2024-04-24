@@ -21,6 +21,8 @@ export default function CardBorder(props) {
   return (
     <Center py={{lg:'10vh'}}>
       <Box
+      as='a'
+      href={props.link}
         w={{base:"xs", md: "sm"}}
         h={{base:"sm", md: "md"}}
         rounded={'md'}

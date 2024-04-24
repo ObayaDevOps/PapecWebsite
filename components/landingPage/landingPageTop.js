@@ -68,9 +68,9 @@ export default function CallToActionWithIllustration() {
           <Card title='Corporate' subtitle='Ages 3-18' />
           <Card title='Health' subtitle='Ages 3-18' /> */}
 
-          <CardBorder title='Education' subtitle='Teacher training and School development' img={'https://res.cloudinary.com/medoptics-image-cloud/image/upload/v1713532448/PP-Website-Banner-9_tviyet.jpg'}/>
-          <CardBorder title='Corporate' subtitle='Workforce upskilling' img={'https://res.cloudinary.com/medoptics-image-cloud/image/upload/v1713966677/pexels-divinetechygirl-1181396_dfhvy7.jpg'}/>
-          <CardBorder title='Health' subtitle='Optical and Medical Training Platform' img={'https://res.cloudinary.com/medoptics-image-cloud/image/upload/v1713966659/pexels-shvetsa-3846022_qvifqt.jpg'}/>
+          <CardBorder title='Educational Training' subtitle='Teacher training and School development' link='/education/educationLanding' img={'https://res.cloudinary.com/medoptics-image-cloud/image/upload/v1713532448/PP-Website-Banner-9_tviyet.jpg'}/>
+          <CardBorder title='Corporate Training' subtitle='Workforce upskilling' img={'https://res.cloudinary.com/medoptics-image-cloud/image/upload/v1713966677/pexels-divinetechygirl-1181396_dfhvy7.jpg'}/>
+          <CardBorder title='Health Training' subtitle='Optical and Medical Training Platform' img={'https://res.cloudinary.com/medoptics-image-cloud/image/upload/v1713966659/pexels-shvetsa-3846022_qvifqt.jpg'}/>
     
         </SimpleGrid>
 

@@ -44,47 +44,43 @@ export default function WithSubnavigation(){
 
       >
         <Container maxW={'7xl'}>
+          <Flex alignItems="center" justifyContent={{base:"space-between", lg: "center"}} mx="auto">
 
-        <Flex alignItems="center" justifyContent="space-between" mx="auto">
-
-        <Flex  display={{ base: "none", lg: "inline-flex" }}>
-            <chakra.a
-              href="/"
-              title="Papec Home Page"
-              display="flex"
-              alignItems="center"
-            >
-              <Flex >
-                <NextImage src={ papecLogo } width={1065/8} height={397/8}  />
+            <Flex  display={{ base: "none", lg: "inline-flex" }}>
+                <chakra.a
+                  href="/"
+                  title="Papec Home Page"
+                  display="flex"
+                  alignItems="center"
+                >
+                  <Flex >
+                    <NextImage src={ papecLogo } width={1065/8} height={397/8}  />
+                  </Flex>
+                </chakra.a>
               </Flex>
-            </chakra.a>
+
+
+              <HStack display="flex" alignItems="center" spacing={1}>
+                  <Box display={{ base: "inline-flex", md: "flex", lg: "none" }}>
+
+
+                  </Box>
+              </HStack>
+
+
+            <Flex  display={{ base: "inline-flex", lg: "none" }}>
+              <chakra.a
+                href="/"
+                title="Choc Home Page"
+                display="flex"
+                alignItems="center"
+              >
+                <Flex  ml={{base: '-63vw', md: '-53vw'}}>
+                  <NextImage src={ papecLogo } width={1065/7} height={397/7}  />
+                </Flex>
+              </chakra.a>
+            </Flex>      
           </Flex>
-
-
-        <HStack display="flex" alignItems="center" spacing={1}>
-            <Box display={{ base: "inline-flex", md: "flex", lg: "none" }}>
-
-
-            </Box>
-          </HStack>
-
-
-          <Flex  display={{ base: "inline-flex", lg: "none" }}>
-            <chakra.a
-              href="/"
-              title="Choc Home Page"
-              display="flex"
-              alignItems="center"
-            >
-              <Flex  ml={{base: '-63vw', md: '-53vw'}}>
-                <NextImage src={ papecLogo } width={1065/7} height={397/7}  />
-              </Flex>
-            </chakra.a>
-          </Flex>
-
-
-         
-        </Flex>
         </Container>
 
       </chakra.header>
