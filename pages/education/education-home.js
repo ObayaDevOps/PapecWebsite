@@ -15,6 +15,7 @@ import {
   SimpleGrid,
   Img,
   VStack,
+  HStack,
   useBreakpointValue
 } from '@chakra-ui/react'
 
@@ -26,10 +27,11 @@ import Image from 'next/image'
 import Head from 'next/head'
 
 
-import NavBar from '../../components/utils/navbar2'
+import NavBar from '../../components/utils/navbar3'
 
 import Marquee from "../../components/utils/marquee"
 
+import Illustration from '../../public/images/illustrations/undraw_file_analysis_8k9b.svg';
 
 
 
@@ -73,53 +75,73 @@ export default function CallToActionWithIllustration() {
 
                 <Box py={{base:6, md: 0}}
                 >
-                <VStack spacing={4} as={Container} maxW={'4xl'} textAlign={'center'}>
-                    <Heading fontSize={{base:'5xl',md:'7xl', lg:'7xl'}} bgClip="text"
-                        // bgGradient="linear(to-br, blackAlpha.900, #74449c)"
-                        // bgGradient="linear(to-br, green.500, blackAlpha.800 )"
+                <VStack spacing={4} as={Container} maxW={'8xl'} textAlign={'center'}>
+                    <HStack>
+                        <Box>
+                            <Heading fontSize={{base:'5xl',md:'7xl', lg:'7xl'}} bgClip="text"
+                                // bgGradient="linear(to-br, blackAlpha.900, #74449c)"
+                                // bgGradient="linear(to-br, green.500, blackAlpha.800 )"
 
-                        // textColor="#638d3d"
-                        textColor="purple.800"
+                                // textColor="#638d3d"
+                                textColor="purple.900"
+                                textAlign={{base:'center', lg:'left'}}
+                                fontWeight="extrabold"
+                                letterSpacing={{ base: "normal", md: "tight" }}
 
-                        fontWeight="extrabold"
-                        letterSpacing={{ base: "normal", md: "tight" }}
+                                fontFamily='bodyFont'
+                                //#74449c
+                                pt={{lg:20}}
+                                >
+                                    Professional Educational Training
+                            </Heading>
+                            <Text fontFamily='bodyFont'
+                                                        textAlign={{base:'center', lg:'left'}}
+                                                        pb={2} maxW='xl' color={useColorModeValue('gray.700', 'gray.200')}  fontWeight={100} fontSize={{base:'md',md:'xl'}}>
+                            We focus on creating training systems that effectively convey your company&apos;s identity, then optimize for an enhanced learning experience.
+                            </Text>
+                                <Button
+                                border={'1px'}
+                                borderColor={'purple'}
+                                boxShadow={useColorModeValue('6px 6px 0 gray', '6px 6px 0 cyan')}
+                                as="a"
+                                colorScheme="whiteAlpha"
+                                textColor={useColorModeValue('purple.800', 'gray.200')}
+                                display="inline-flex"
+                                fontWeight={500}
+                                alignItems="center"
+                                w={{ base: "full", sm: "auto" }}
+                                mb={{ base: 2, sm: 0 }}
+                                size="lg"
+                                cursor="pointer"
+                                fontFamily='bodyFont'
+                                transition="0.3s ease-in-out"
+                                _hover={{
+                                    transform: 'scale(1.05)',
+                                }}
+                                // shadow={'xl'}
+                                >
+                                Book a Consultation Now
+                                </Button>
+                        </Box>
 
-                        fontFamily='bodyFont'
-                        //#74449c
-                        pt={{lg:20}}
+                        <Box
+                        border={'1px'}
+                        borderColor={'purple'}
+                        borderRadius='6px'
+                        my={12}
+                        p={20}
+                        bg={'white'}
+                        display={{base: 'none', lg:'flex'}}
                         >
-                            Professional Educational Training
-                    </Heading>
+                            <Image
+                            src={Illustration}
+                            width={600}
+                            height={600}
+                            
+                            />
+                        </Box>
+                    </HStack>
 
-                    <Text fontFamily='bodyFont'
-                    textAlign='center' pb={2} maxW='xl' color={useColorModeValue('gray.700', 'gray.200')}  fontWeight={100} fontSize={{base:'md',md:'xl'}}>
-                    We focus on creating training systems that effectively convey your company&apos;s identity, then optimize for an enhanced learning experience.
-                    </Text>
-                    <Button
-                    border={'1px'}
-                    borderColor={'purple'}
-                    boxShadow={useColorModeValue('6px 6px 0 gray', '6px 6px 0 cyan')}
-
-                    as="a"
-                    colorScheme="whiteAlpha"
-                    textColor={useColorModeValue('purple.800', 'gray.200')}
-                    display="inline-flex"
-                    fontWeight={500}
-                    alignItems="center"
-                    justifyContent="center"
-                    w={{ base: "full", sm: "auto" }}
-                    mb={{ base: 2, sm: 0 }}
-                    size="lg"
-                    cursor="pointer"
-                    fontFamily='bodyFont'
-                    transition="0.3s ease-in-out"
-                    _hover={{
-                        transform: 'scale(1.05)',
-                    }}
-                    // shadow={'xl'}
-                    >
-                    Book a Consultation Now
-                    </Button>
                 </VStack>
                 </Box>
 

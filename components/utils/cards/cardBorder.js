@@ -51,7 +51,7 @@ export default function CardBorder(props) {
             objectFit="cover"
             h="full"
             w="full"
-            alt={'Blog Image'}
+            alt={'People and Potential Consultancy Landing Page Image'}
 
           />
         </Box>
