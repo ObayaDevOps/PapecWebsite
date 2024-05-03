@@ -18,14 +18,18 @@ import {
   useBreakpointValue
 } from '@chakra-ui/react'
 
-import Lottie from "lottie-react";
 import React, { useRef } from "react";
 import { useInView } from "framer-motion";
 import CardBorder from '../../components/utils/cards/cardBorder'
 import img from '../../public/images/PP-Website-Banner-9.jpeg'
 import Image from 'next/image'
+import Head from 'next/head'
 
-import NavBar from '../../components/utils/navbar2'
+
+import NavBar from '../../components/utils/navbar3'
+
+import Marquee from "../../components/utils/marquee"
+
 
 
 
@@ -36,7 +40,21 @@ export default function CallToActionWithIllustration() {
   const isInView1 = useInView(ref1)
 
   return (
-      <Box>
+      <Box w='full'>
+        <Head>
+            <title>Corporate Home | People and Potential Consultancy</title>
+            <meta name="description" content="People and Potential Consultancy" />
+            <link rel="shortcut icon" href="../../../images/icon/People__Potential-Logo_Full_Color-1.png"></link>
+
+            <meta property="og:title" content="People and Potential Consultancy" />
+            <meta property="og:description" content="Professional HR Training" />
+            <meta property="og:image" content="https://res.cloudinary.com/medoptics-image-cloud/image/upload/v1713782566/People__Potential-Logo_Full_Color-1_wno2bv.png" />
+            <meta property="og:image:secure_url" content="https://res.cloudinary.com/medoptics-image-cloud/image/upload/v1713782566/People__Potential-Logo_Full_Color-1_wno2bv.png" />
+            <meta property="og:url" content="https://papec-website.vercel.app/" />
+            <meta property="og:type" content="website" />
+        
+        </Head>
+
           <NavBar />
         <Box minH={{base:'200vh', md: '180vh'}}
         // bgGradient='linear(to-r, green.500, yellow.300)'
@@ -61,13 +79,13 @@ export default function CallToActionWithIllustration() {
 
                         // textColor="#638d3d"
                         fontWeight="extrabold"
-                        letterSpacing={{ base: "normal", md: "tight" }}
+                        letterSpacing={{ base: "normal", md: 'normal' }}
 
-                        // fontFamily='headingFont'
+                        fontFamily='bodyFont'
                         //#74449c
                         pt={{lg:20}}
                         >
-                            Professional Educational Training
+                            Professional Corporate Training
                     </Heading>
 
                     <Text fontFamily='bodyFont'
@@ -108,14 +126,14 @@ export default function CallToActionWithIllustration() {
             <Box
                 py={{base: 8, md: 2}}  ref={ref1}   w={{ base: "full", md: 11 / 12, xl: 9 / 12 }}
                 mx="auto"
-                bgGradient='linear(to-br, purple.300, white)'
+                // bgGradient='linear(to-br, purple.300, white)'
                 rounded='md'
-                border={'1px'}
-                borderColor={'purple.200'}
+                // border={'1px'}
+                // borderColor={'purple.200'}
 
             >
-                <VStack spacing={4} as={Container} maxW={'4xl'} textAlign={'center'}>
-                    <Heading fontSize={{base:'3xl',md:'4xl', lg:'5xl'}} bgClip="text"
+                <VStack spacing={2} as={Container} maxW={'full'} textAlign={'center'}>
+                    <Heading fontSize={{base:'3xl',md:'4xl', lg:'xl'}} bgClip="text"
                         bgGradient="linear(to-br, blackAlpha.900, #74449c)"
                         // textColor="white"
                         fontWeight="extrabold"
@@ -126,66 +144,21 @@ export default function CallToActionWithIllustration() {
                             Our Clients
                     </Heading>
 
-                    <Text textAlign='center'  fontFamily='bodyFont' pb={8} maxW='xl' color={useColorModeValue('gray.700', 'gray.200')}  fontWeight={100} fontSize={{base:'md',md:'md'}}>
+                    <Text 
+                        textAlign='center'  
+                        fontFamily='bodyFont' 
+                        maxW={{base:'md', md:'xl'}} 
+                        color={useColorModeValue('gray.700', 'gray.200')}  
+                        fontWeight={100} 
+                        fontSize={{base:'sm',md:'md'}}
+                        pb={3}
+                    >
                     Trusted by Uganda&apos;s best Management Teams
                     </Text>
 
-                    <SimpleGrid columns={[1,3]} spacing={10}>
-                    <Box h={'200px'} >
-                        <Image
-                        src="https://res.cloudinary.com/medoptics-image-cloud/image/upload/v1713790964/1649744796-1649038823-aga_khan_education_services_2-1_y4crvg.png"
-                        width={1630}
-                        height={725}
-                        alt="Picture of the author"
-                        />
-                    </Box>
-
-                    <Box h={'200px'} >
-                        <Image
-                        src="https://res.cloudinary.com/medoptics-image-cloud/image/upload/v1713790964/1649744796-1649038823-aga_khan_education_services_2-1_y4crvg.png"
-                        width={1630}
-                        height={725}
-                        alt="Picture of the author"
-                        />
-                    </Box>
-
-                    <Box h={'200px'} >
-                        <Image
-                        src="https://res.cloudinary.com/medoptics-image-cloud/image/upload/v1713790964/1649744796-1649038823-aga_khan_education_services_2-1_y4crvg.png"
-                        width={1630}
-                        height={725}
-                        alt="Picture of the author"
-                        />
-                    </Box>
-
-                    <Box h={'200px'} >
-                        <Image
-                        src="https://res.cloudinary.com/medoptics-image-cloud/image/upload/v1713790964/1649744796-1649038823-aga_khan_education_services_2-1_y4crvg.png"
-                        width={1630}
-                        height={725}
-                        alt="Picture of the author"
-                        />
-                    </Box>
-
-                    <Box h={'200px'} >
-                        <Image
-                        src="https://res.cloudinary.com/medoptics-image-cloud/image/upload/v1713790964/1649744796-1649038823-aga_khan_education_services_2-1_y4crvg.png"
-                        width={1630}
-                        height={725}
-                        alt="Picture of the author"
-                        />
-                    </Box>
-
-                    <Box h={'200px'} >
-                        <Image
-                        src="https://res.cloudinary.com/medoptics-image-cloud/image/upload/v1713790964/1649744796-1649038823-aga_khan_education_services_2-1_y4crvg.png"
-                        width={1630}
-                        height={725}
-                        alt="Picture of the author"
-                        />
-                    </Box>
-
-                    </SimpleGrid>
+                
+                        <Marquee />
+                    
 
                 </VStack>
 

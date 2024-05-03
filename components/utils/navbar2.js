@@ -96,18 +96,17 @@ export default function WithSubnavigation(){
                 </NextLink>
               </Button>
 
-              {/* <Button
-              variant="ghost"
+              <Button
               variant="outline"
               colorScheme='black'
               borderRadius='3px'
               boxShadow={useColorModeValue('1px 1px 0 black', '6px 6px 0 cyan')}
               _hover={{ bg:'green.50', textColor: 'green.400'}}
               >
-                <NextLink href='/past-work/client-testimonials' passHref>
-                Client Testimonials
+                <NextLink href='/blog/blog-list' passHref>
+                Blog
                 </NextLink>
-              </Button> */}
+              </Button>
 
               <Button
               variant="outline"
@@ -117,7 +116,7 @@ export default function WithSubnavigation(){
               boxShadow={useColorModeValue('1px 1px 0 black', '6px 6px 0 cyan')}
               _hover={{ bg:'green.50', textColor: 'green.400'}}
               >
-                <NextLink href='/info/contact-enquiry' passHref>
+                <NextLink href='/contact-us' passHref>
                 Contact Us
                 </NextLink>
               </Button>

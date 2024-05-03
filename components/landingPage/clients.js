@@ -18,7 +18,6 @@ import {
   useBreakpointValue
 } from '@chakra-ui/react'
 
-import Lottie from "lottie-react";
 import React, { useRef } from "react";
 import { useInView } from "framer-motion";
 import Card from '../utils/cards/card';

@@ -18,7 +18,6 @@ import {
   useBreakpointValue
 } from '@chakra-ui/react'
 
-import Lottie from "lottie-react";
 import React, { useRef } from "react";
 import { useInView } from "framer-motion";
 import Card from '../utils/cards/card';
@@ -37,6 +36,7 @@ export default function CallToActionWithIllustration() {
   return (
     <Box>
       <NavBarPlain />
+      
 
 
     <Box 
@@ -68,9 +68,9 @@ export default function CallToActionWithIllustration() {
           <Card title='Corporate' subtitle='Ages 3-18' />
           <Card title='Health' subtitle='Ages 3-18' /> */}
 
-          <CardBorder title='Educational Training' subtitle='Teacher training and School development' link='/education/educationLanding' img={'https://res.cloudinary.com/medoptics-image-cloud/image/upload/v1713532448/PP-Website-Banner-9_tviyet.jpg'}/>
-          <CardBorder title='Corporate Training' subtitle='Workforce upskilling' img={'https://res.cloudinary.com/medoptics-image-cloud/image/upload/v1713966677/pexels-divinetechygirl-1181396_dfhvy7.jpg'}/>
-          <CardBorder title='Health Training' subtitle='Optical and Medical Training Platform' img={'https://res.cloudinary.com/medoptics-image-cloud/image/upload/v1713966659/pexels-shvetsa-3846022_qvifqt.jpg'}/>
+          <CardBorder title='Educational Training' subtitle='Teacher training and School development' link='/education/education-home' img={'https://res.cloudinary.com/medoptics-image-cloud/image/upload/v1713532448/PP-Website-Banner-9_tviyet.jpg'}/>
+          <CardBorder title='Corporate Training' subtitle='Workforce upskilling' link='/corporate/corporate-home'  img={'https://res.cloudinary.com/medoptics-image-cloud/image/upload/v1713966677/pexels-divinetechygirl-1181396_dfhvy7.jpg'}/>
+          <CardBorder title='Health Training' subtitle='Optical and Medical Training Platform'  img={'https://res.cloudinary.com/medoptics-image-cloud/image/upload/v1713966659/pexels-shvetsa-3846022_qvifqt.jpg'}/>
     
         </SimpleGrid>
 

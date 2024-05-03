@@ -1,5 +1,5 @@
 import '../styles/globals.css'
-import { ChakraProvider, Box } from '@chakra-ui/react'
+import { ChakraProvider, Box, ScaleFade, Slide } from '@chakra-ui/react'
 import WithSubnavigation from '../components/utils/navbar2'
 import FooterLargeWithNewsletter from '../components/utils/footerNew' 
 // import theme from '../components/utils/theme'
@@ -21,14 +21,22 @@ const theme = extendTheme({
 })
 
 
-function MyApp({ Component, pageProps }) {
+function MyApp({ Component, pageProps, router }) {
   return (   
     <ChakraProvider theme={theme}>
 
     <Box>
       {/* <WithSubnavigation /> */}
+      {/* <ScaleFade
+        key={router.route}
+        initialScale={0.9}
+        in="true"
+      > */}
+
       <Component {...pageProps} />
+      
       <FooterLargeWithNewsletter />
+      {/* </ScaleFade> */}
       </Box>
 
     </ChakraProvider>
