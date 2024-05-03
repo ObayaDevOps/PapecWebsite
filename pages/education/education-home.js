@@ -82,7 +82,7 @@ export default function CallToActionWithIllustration() {
                         fontWeight="extrabold"
                         letterSpacing={{ base: "normal", md: "tight" }}
 
-                        // fontFamily='headingFont'
+                        fontFamily='bodyFont'
                         //#74449c
                         pt={{lg:20}}
                         >

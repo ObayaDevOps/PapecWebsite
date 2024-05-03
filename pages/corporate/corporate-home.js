@@ -58,11 +58,13 @@ export default function CallToActionWithIllustration() {
           <NavBar />
         <Box minH={{base:'200vh', md: '180vh'}}
         // bgGradient='linear(to-r, green.500, yellow.300)'
-        // bgGradient='linear(to-br, purple.100, whiteAlpha.300)'
+        // bgGradient='linear(to-br, green.100, whiteAlpha.300)'
             // background="rgba(192,192,192,0.12)"
             // bgGradient="radial(whiteAlpha.300,green.300,whiteAlpha.100)"
                 // backgroundColor="#e5e5f7"
-                bgGradient='linear(to-br, #e5e5f7, whiteAlpha.100)'
+                bgGradient='linear(to-br, yellow.300, whiteAlpha.100)'
+                bgColor='yellow.300'
+
             > 
 
             <Box py={{base: 8, md: 2}}  ref={ref1}   w={{ base: 9 / 12, md: 11 / 12, xl: 9 / 12 }}
@@ -74,10 +76,11 @@ export default function CallToActionWithIllustration() {
                 >
                 <VStack spacing={4} as={Container} maxW={'4xl'} textAlign={'center'}>
                     <Heading fontSize={{base:'5xl',md:'7xl', lg:'7xl'}} bgClip="text"
-                        bgGradient="linear(to-br, blackAlpha.900, #74449c)"
+                        // bgGradient="linear(to-br, blackAlpha.900, yellow.400)"
                         // bgGradient="linear(to-br, green.500, blackAlpha.800 )"
-
                         // textColor="#638d3d"
+                        textColor="black"
+                        
                         fontWeight="extrabold"
                         letterSpacing={{ base: "normal", md: 'normal' }}
 
@@ -94,12 +97,12 @@ export default function CallToActionWithIllustration() {
                     </Text>
                     <Button
                     border={'1px'}
-                    borderColor={'purple'}
+                    borderColor={'green'}
                     boxShadow={useColorModeValue('6px 6px 0 gray', '6px 6px 0 cyan')}
 
                     as="a"
                     colorScheme="whiteAlpha"
-                    textColor={useColorModeValue('purple.800', 'gray.200')}
+                    textColor={useColorModeValue('green.800', 'gray.200')}
                     display="inline-flex"
                     fontWeight={500}
                     alignItems="center"
@@ -126,16 +129,17 @@ export default function CallToActionWithIllustration() {
             <Box
                 py={{base: 8, md: 2}}  ref={ref1}   w={{ base: "full", md: 11 / 12, xl: 9 / 12 }}
                 mx="auto"
-                // bgGradient='linear(to-br, purple.300, white)'
+                // bgGradient='linear(to-br, green.300, white)'
                 rounded='md'
                 // border={'1px'}
-                // borderColor={'purple.200'}
+                // borderColor={'green.200'}
 
             >
                 <VStack spacing={2} as={Container} maxW={'full'} textAlign={'center'}>
                     <Heading fontSize={{base:'3xl',md:'4xl', lg:'xl'}} bgClip="text"
-                        bgGradient="linear(to-br, blackAlpha.900, #74449c)"
-                        // textColor="white"
+                        bgGradient="linear(to-br, blackAlpha.900, green.400)"
+                        textColor="black"
+
                         fontWeight="extrabold"
                         fontFamily='bodyFont'
                         letterSpacing={{ base: "normal", md: "tight" }}
@@ -148,7 +152,7 @@ export default function CallToActionWithIllustration() {
                         textAlign='center'  
                         fontFamily='bodyFont' 
                         maxW={{base:'md', md:'xl'}} 
-                        color={useColorModeValue('gray.700', 'gray.200')}  
+                        color={useColorModeValue('green.700', 'gray.200')}  
                         fontWeight={100} 
                         fontSize={{base:'sm',md:'md'}}
                         pb={3}

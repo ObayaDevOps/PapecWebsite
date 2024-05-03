@@ -129,7 +129,7 @@ import theme from './theme';
           borderRadius='3px'
               fontFamily='bodyFont'
               boxShadow={'1px 1px 0 black'}
-              _hover={{ bg:'green.50', textColor: 'green.400'}}
+              // _hover={{ bg:'green.500', textColor: 'green.400'}}
           >
             <Popover trigger={'hover'} placement={'bottom-start'}
             >
@@ -140,7 +140,7 @@ import theme from './theme';
                   href={navItem.href ?? '#'}
                   fontWeight={500}
                   // color={linkColor}
-                  _hover={{ bg: colorMode === 'light' ? 'green.50': 'gray.700', textColor: 'green.400'}}
+                  // _hover={{ bg: colorMode === 'light' ? 'green.50': 'gray.700', textColor: 'green.400'}}
                   fontFamily={'bodyFont'}
                   textColor='purple.900'
                   >
