@@ -44,7 +44,7 @@ export default function CallToActionWithIllustration() {
         <Head>
             <title>Education Home | People and Potential Consultancy</title>
             <meta name="description" content="People and Potential Consultancy" />
-            <link rel="shortcut icon" href="../../../images/icon/People__Potential-Logo_Full_Color-1.png"></link>
+            <link rel="shortcut icon" href="../../../images/icon/People__Potential-Logo_Full_Color-2.png"></link>
 
             <meta property="og:title" content="People and Potential Consultancy" />
             <meta property="og:description" content="Professional HR Training" />
@@ -75,10 +75,12 @@ export default function CallToActionWithIllustration() {
                 >
                 <VStack spacing={4} as={Container} maxW={'4xl'} textAlign={'center'}>
                     <Heading fontSize={{base:'5xl',md:'7xl', lg:'7xl'}} bgClip="text"
-                        bgGradient="linear(to-br, blackAlpha.900, #74449c)"
+                        // bgGradient="linear(to-br, blackAlpha.900, #74449c)"
                         // bgGradient="linear(to-br, green.500, blackAlpha.800 )"
 
                         // textColor="#638d3d"
+                        textColor="purple.800"
+
                         fontWeight="extrabold"
                         letterSpacing={{ base: "normal", md: "tight" }}
 

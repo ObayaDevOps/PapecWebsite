@@ -14,7 +14,7 @@ export default function Home() {
       <Head>
         <title>Home | People and Potential Consultancy</title>
         <meta name="description" content="People and Potential Consultancy" />
-        <link rel="shortcut icon" href="../../../images/icon/People__Potential-Logo_Full_Color-1.png"></link>
+        <link rel="shortcut icon" href="../../../images/icon/People__Potential-Logo_Full_Color-2.png"></link>
 
         <meta property="og:title" content="People and Potential Consultancy" />
         <meta property="og:description" content="Professional HR Training" />
