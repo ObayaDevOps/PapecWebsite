@@ -19,32 +19,28 @@ const testimonials = [
   {
     name: 'Brandon P.',
     role: 'Chief Marketing Officer',
-    content:
-      'It really saves me time and effort. It is exactly what our business has been lacking. EEZY is the most valuable business resource we have EVER purchased. After using EEZY my business skyrocketed!',
+    content: 'Well-equipped and well-informed about the specific field. Variety of examples to study and good use of the tangible material. No room for detachment!',
     avatar:
       'https://images.unsplash.com/photo-1603415526960-f7e0328c63b1?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=80',
   },
   {
     name: 'Krysta B.',
     role: 'Entrepreneur',
-    content:
-      "I didn't even need training. We've used EEZY for the last five years. I have gotten at least 50 times the value from EEZY. I made back the purchase price in just 48 hours!",
+    content:'​This modular course is tailored to the specific leadership needs of each team and therefore is never the same twice.',
     avatar:
       'https://images.unsplash.com/photo-1598550874175-4d0ef436c909?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=80',
   },
   {
     name: 'Darcy L.',
     role: 'Movie star',
-    content:
-      "Thank you for making it painless, pleasant and most of all, hassle free! I'm good to go. No matter where you go, EEZY is the coolest, most happening thing around! I love EEZY!",
+    content: '“I liked the way you conducted the training – very audible, clear and easy to understand. I was able to take the points home”',
     avatar:
       'https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=334&q=80',
   },
   {
     name: 'Daniel T.',
     role: 'Musician',
-    content:
-      'I am so pleased with this product. EEZY is both attractive and highly adaptable. Without EEZY, we would have gone bankrupt by now. Thank you for creating this product!',
+    content: '​”Everyone at their different levels at work needs to do this course”',
     avatar:
       'https://images.unsplash.com/photo-1606513542745-97629752a13b?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=80',
   },
@@ -70,6 +66,8 @@ function TestimonialCard(props) {
       justifyContent={'space-between'}
       position={'relative'}
       bg={useColorModeValue('whiteAlpha.900', 'gray.800')}
+      border={'1px'}
+      borderColor={'purple.600'}
       _after={{
         content: '""',
         position: 'absolute',
@@ -94,14 +92,15 @@ function TestimonialCard(props) {
         top: 0,
         left: 0,
         backgroundImage: backgrounds[index % 4],
-      }}>
+      }}
+      >
       <Flex direction={'column'} textAlign={'left'} justifyContent={'space-between'}>
-        <chakra.p fontFamily={'Inter'} fontWeight={'medium'} fontSize={'lg'} pb={4}>
+        <chakra.p fontFamily={'bodyFont'} fontWeight={'medium'} fontSize={'lg'} pb={4}>
           {content}
         </chakra.p>
-        <chakra.p fontFamily={'Work Sans'} fontWeight={'bold'} fontSize={'lg'}>
+        <chakra.p fontFamily={'bodyFont'} fontWeight={'bold'} fontSize={'lg'}>
           {name}
-          <chakra.span fontFamily={'Inter'} fontWeight={'medium'} color={'gray.500'}>
+          <chakra.span fontFamily={'bodyFont'} fontWeight={'medium'} color={'gray.500'}>
             {' '}
             - {role}
           </chakra.span>
@@ -120,21 +119,17 @@ function TestimonialCard(props) {
 
 export default function GridBlurredBackdrop() {
   return (
-      <Box bg='blackAlpha.200' py={6} >
-        <Head>
-        <title>Tax Edge Advisory Enquiry</title>
-        <meta name="description" content="Tax Edge Advisory Webpage" />
-        <link rel="icon" href="../public/images/icon/logo-black.svg" />
-
-      </Head>
-
+      <Box py={6} >
         <Container 
             maxW={{base:'1xl',md:'85vw'}} 
             py={6} 
             minHeight={{md:'110vh'}}   
-            background="rgba(240,255,244,0.55)"
+            // background="rgba(240,255,244,0.55)"
+            bg='whiteAlpha.600'
             rounded='3xl' 
-            shadow='2xl'    
+            shadow='2xl'
+            border={'1px'}
+            borderColor={'purple.600'}    
         >
     <Flex
       textAlign={'center'}
@@ -148,7 +143,9 @@ export default function GridBlurredBackdrop() {
           fontWeight={'bold'}
           fontSize={20}
           textTransform={'uppercase'}
-          color={'green.400'}>
+          color={'purple.400'}
+          fontFamily='bodyFont'
+          >
           Past Client Testimonials
         </chakra.h3>
         <Heading
@@ -159,8 +156,10 @@ export default function GridBlurredBackdrop() {
             fontWeight="bold"
             lineHeight="none"
             letterSpacing={{base: "normal",md: "tight" }}
-            color="green.900"
+            color="purple.900"
             textAlign='center'
+            fontFamily={'bodyFont'}
+
           >
             <Text
               display={{
@@ -169,39 +168,34 @@ export default function GridBlurredBackdrop() {
                           }}
                           w="full"
                           bgClip="text"
-                          bgGradient='linear(to-r, blackAlpha.800, green.500)'
+                          bgGradient='linear(to-r, blackAlpha.800, purple.500)'
                           fontWeight="extrabold"
                           transition="all .65s ease" _hover={{ transform: 'scale(1.005)', filter: "brightness(120%)", }}
                           py={10}
+                          
                           >
-              Past Client Testimonials
+              Course Evaluations
             </Text>
           </Heading>
         <chakra.h2
           margin={'auto'}
-          width={'70%'}
+          width={'100%'}
           fontWeight={'medium'}
           fontSize={'lg'}
           color={useColorModeValue('gray.500', 'gray.400')}
           mt={{lg:-4}}
+          fontFamily={'bodyFont'}
+
           >
-          See why our clients
-          have chosen Tax Edge Advisory
+          ​Following their team training, the leadership team of Little Cranes Montessori Kindergarten, Kampala were asked to anonymously reflect on their experience.
         </chakra.h2>
       </Box>
-      <SimpleGrid columns={{ base: 1, xl: 2 }} spacing={'20'} mt={16} mb={16} mx={'auto'}>
+      <SimpleGrid columns={{ base: 1, xl: 2 }} spacing={'20'} mt={{base:10, lg:8}} mb={16} mx={'auto'}>
         {testimonials.map((cardInfo, index) => (
           <TestimonialCard key={index} {...cardInfo} index={index} />
         ))}
       </SimpleGrid>
-      <Box>
-        <Icon viewBox="0 0 40 35" mt={14} boxSize={10} color={'green.400'}>
-          <path
-            fill={'currentColor'}
-            d="M10.7964 5.04553e-07C8.66112 -0.000123335 6.57374 0.632971 4.79827 1.81922C3.0228 3.00547 1.63898 4.69158 0.82182 6.66433C0.00466116 8.63708 -0.209132 10.8079 0.207477 12.9021C0.624087 14.9964 1.65239 16.9201 3.16233 18.4299L19.1153 34.3828C19.2395 34.5074 19.3871 34.6062 19.5496 34.6736C19.7121 34.741 19.8863 34.7757 20.0622 34.7757C20.2381 34.7757 20.4123 34.741 20.5748 34.6736C20.7373 34.6062 20.8848 34.5074 21.0091 34.3828L36.962 18.4272C38.9319 16.3917 40.0228 13.6636 39.9996 10.8311C39.9764 7.99858 38.8409 5.28867 36.838 3.28573C34.835 1.28279 32.1251 0.147283 29.2926 0.124081C26.4601 0.100879 23.732 1.19184 21.6965 3.1617L20.0622 4.79337L18.4305 3.1617C17.4276 2.15892 16.237 1.36356 14.9267 0.821064C13.6163 0.278568 12.2119 -0.000433066 10.7937 5.04553e-07H10.7964Z"
-          />
-        </Icon>
-      </Box>
+
     </Flex>
     </Container>
     </Box>
