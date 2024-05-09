@@ -27,7 +27,7 @@ import {
   import Head from 'next/head'
   import { useState } from 'react'
   import NextImage from 'next/image';
-  import NavBar from '../../components/utils/navbar2'
+  import NavBar from '../../components/utils/navbar3'
 
 
   import constructionIllustration  from '../../public/images/illustrations/undraw_under_construction_-46-pa.svg';
@@ -83,8 +83,8 @@ import {
         <NavBar />
         
         <Flex
-          // bg={'blackAlpha.200'}
-          bgGradient='linear(to-br, #e5e5f7, whiteAlpha.100)'
+          bg={'blackAlpha.200'}
+          // bgGradient='linear(to-br, #e5e5f7, whiteAlpha.100)'
 
           align="center"
           justify="center"
@@ -106,8 +106,11 @@ import {
                 py={12} 
                 minHeight={{md:'110Fvh'}}   
                 rounded='3xl' 
-                shadow='2xl'    
+                shadow='2xl'   
+                // background='purple.200' 
                 background="rgba(240,255,244,0.65)"
+                border={'1px'}
+                borderColor={'purple.300'}
         >
           <Box
             borderRadius="lg"
@@ -122,10 +125,11 @@ import {
                     lg: '6xl'
                   }}
                   bgClip="text"
-                  bgGradient="linear(to-r, green.900, green.300)"
+                  bgGradient="linear(to-r, purple.900, purple.300)"
                   textAlign={{base:'center'}}
+                  fontFamily='bodyFont'
                   >
-                  Contact Us Today!
+                  Contact Us
                 </Heading>
     
                 <SimpleGrid columns={{base:1, md:2}}>
@@ -147,7 +151,7 @@ import {
                         fontSize="3xl"
                         icon={<MdEmail />}
                         _hover={{
-                          bg: 'green.500',
+                          bg: 'purple.500',
                           color: useColorModeValue('white', 'gray.700'),
                         }}
                         onClick={onCopy}
@@ -174,6 +178,8 @@ import {
                     bg={'white'}
                     shadow='4xl'
                     borderRadius="lg"
+                    border={'1px'}
+                    borderColor={'purple.300'}
                     p={8}
                     color={'gray.700'}
                     >
@@ -221,10 +227,10 @@ import {
                         <Button
                         type="submit"
                           colorScheme="green"
-                          bg="green.400"
+                          bg="purple.400"
                           color="white"
                           _hover={{
-                            bg: 'green.500',
+                            bg: 'purple.500',
                           }}
                           isFullWidth
                           onClick={() =>

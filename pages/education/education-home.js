@@ -118,6 +118,7 @@ const TitleSection = () => {
                             borderColor={'purple'}
                             // boxShadow={useColorModeValue('6px 6px 0 gray', '6px 6px 0 cyan')}
                             as="a"
+                            href='/info/contact-enquiry'
                             colorScheme="whiteAlpha"
                             textColor={useColorModeValue('purple.800', 'gray.200')}
                             display="inline-flex"
@@ -132,7 +133,7 @@ const TitleSection = () => {
                             _hover={{
                                 transform: 'scale(1.05)',
                             }}
-                            // shadow={'xl'}
+                            shadow={'xl'}
                             >
                             Talk to us Today
                             </Button>
@@ -475,11 +476,32 @@ const Feature = (props) => {
 
 const ThreeOffering = () => {
     return (
+      <Box mt={20} pt={16} bg="purple.500" rounded='xl'  >
+            <chakra.h2
+              // mt={2}
+              fontSize={{
+                base: "3xl",
+                sm: "4xl",
+                lg: "6xl"
+              }}
+              // lineHeight="8"
+              fontWeight="extrabold"
+              // letterSpacing="tight"
+              _light={{
+                color: "whiteAlpha.900",
+              }}
+              fontFamily='bodyFont'
+              textAlign='center'
+
+            >
+              What We Offer
+            </chakra.h2>
+
     <Flex
       bg="purple.500"
       _dark={{ bg: "#3e3e3e" }}
-      p={{base:4, md: 20}}
-      mt={20}
+      p={{base:4, md: 12, lg: 20}}
+      // mt={20}
       w="auto"
       justifyContent="center"
       alignItems="center"
@@ -487,10 +509,12 @@ const ThreeOffering = () => {
     //   minH={{base:'75vh', md: '50vh', lg: '75vh'}}
 
     >
+
+                
       <SimpleGrid
         columns={{ base: 1, md: 1, lg: 3 }}
         spacing={20}
-        px={{ base: 4, lg: 16, xl: 24 }}
+        px={{ base: 4, md: 28, lg: 16, xl: 24 }}
         pt={{base:2, md: 32, lg: 16}}
         pb={{base:20, md: 32, lg: 20}}
         mx="auto"
@@ -501,6 +525,8 @@ const ThreeOffering = () => {
         // border={'1px'}
         // borderColor="purple.600"
       >
+
+        
         <Feature
           title="Standards"
           img={'https://res.cloudinary.com/medoptics-image-cloud/image/upload/v1715030571/undraw_conference_re_2yld_bblfid.svg'}
@@ -527,5 +553,6 @@ const ThreeOffering = () => {
 
       </SimpleGrid>
     </Flex>
+    </Box>
     )
 }

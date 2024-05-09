@@ -49,6 +49,7 @@ import theme from './theme';
       <Box w="full">
         <Flex
         background="rgba(192,192,192,0.1)"
+        // background={'whiteAlpha.900'}
         // color={useColorModeValue('gray.600', 'white')}
           // minH={'60px'}
           minW="100vw"
@@ -59,7 +60,7 @@ import theme from './theme';
           maxW={'7xl'}
           shadow="md"
           border={'1px'}
-          borderColor="purple"
+          borderColor="purple.500"
 
           >
           <Flex
@@ -121,14 +122,15 @@ import theme from './theme';
 
   
     return (
-      <Stack direction={'row'} spacing={4} paddingTop={1.5}>
+      <Stack direction={'row'} spacing={4} paddingTop={1.5} w='full'>
         {NAV_ITEMS.map((navItem) => (
           <Box key={navItem.label}
-          border={'1px'}
+          // border={'1px'}
           p={1}
-          borderRadius='3px'
+          borderRadius='lg'
+          borderColor='purple.500'
               fontFamily='bodyFont'
-              boxShadow={'1px 1px 0 black'}
+              // boxShadow={'1px 1px 0 black'}
               // _hover={{ bg:'green.500', textColor: 'green.400'}}
           >
             <Popover trigger={'hover'} placement={'bottom-start'}
@@ -138,11 +140,11 @@ import theme from './theme';
                   p={2}
                   fontSize={{lg:'md'}}
                   href={navItem.href ?? '#'}
-                  fontWeight={500}
+                  fontWeight={600}
                   // color={linkColor}
                   // _hover={{ bg: colorMode === 'light' ? 'green.50': 'gray.700', textColor: 'green.400'}}
                   fontFamily={'bodyFont'}
-                  textColor='purple.900'
+                  textColor='purple.700'
                   >
                     {navItem.label}
                   </Link>
@@ -152,10 +154,12 @@ import theme from './theme';
               {navItem.children && (
                 <PopoverContent
                   border={'1px'}
+                  borderColor={'purple.500'}
+                  shadow='xl'
                   boxShadow={'xl'}
                   bg={popoverContentBgColor}
                   p={4}
-                  rounded={'none'}
+                  rounded={'xl'}
                   minW={'sm'}>
                   <Stack>
                     {navItem.children.map((child) => (
@@ -179,8 +183,8 @@ import theme from './theme';
         display={'block'}
         p={2}
         href={href}
-        // rounded={'md'}
-        _hover={{ bg: useColorModeValue('green.50', 'gray.900') }}
+        rounded={'xl'}
+        _hover={{ bg: useColorModeValue('green.100', 'gray.900') }}
         >
         <Stack direction={'row'} align={'right'}>
           <Box >
@@ -308,22 +312,22 @@ import theme from './theme';
         {
           label: 'Who We Are',
           subLabel: '',
-          href: '/about/about-us',
+          href: '/education/about/who-we-are',
         },
         {
           label: 'Vision and Purpose',
           subLabel: 'Guiding Principles',
-          href: '/about/press',
+          href: '/about/vision-and-purpose',
         },
         {
           label: 'Why Choose Us?',
           subLabel: '',
-          href: '/about/press',
+          href: '/about/why-choose-us',
         },
         {
           label: 'Consultant Profile',
           subLabel: 'Audrey Dralega, FRSA',
-          href: '/about/press',
+          href: '/about/consultant-profile',
         },
       ],
     },
@@ -361,11 +365,11 @@ import theme from './theme';
     
     
     {
-      label: 'Articles',
+      label: 'Blog',
       children: [
         {
-          label: 'Blog',
-          subLabel: "",
+          label: 'Articles',
+          subLabel: "Latest Papec News",
           href: '/blog/blog-list',
         },
       ],

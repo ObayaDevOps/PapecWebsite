@@ -80,7 +80,7 @@ export default function CardBorder(props) {
             cursor={'pointer'}
             w="full">
             <Text fontSize={'md'} fontWeight={'semibold' } fontFamily='bodyFont'>
-              View more
+              Enter Site
             </Text>
             <BsArrowUpRight />
           </Flex>
