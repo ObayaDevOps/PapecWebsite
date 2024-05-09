@@ -111,9 +111,14 @@ import {
                             People and Potential Consultancy was established in 2015 to equip leaders and organizations with the systems and practical tools needed to embed change and take their organization to the next level of performance.            </chakra.h2>
                         </Box>
 
-                        <PageContent2 />
+                        <VisionPurposeContent />
+
 
                         <FocusSection />
+
+
+                        <MultiSolutionsContent />
+
 
                         <CallToAction />
 
@@ -124,11 +129,106 @@ import {
     )
   }
 
-const PageContent2 = () => {
+const VisionPurposeContent = () => {
     return (
         <Box
-        borderWidth='1px' borderRadius='xl'
+        borderWidth='1px'
+         borderRadius='xl'
         borderColor='purple.500'
+        shadow='xl'
+       //  overflow='hidden'
+       padding={8}
+       mx={{md: 10,lg:20}}
+       // paddingRight={12}
+       background="whiteAlpha.700"
+       my={{base: 16,md:20, lg: 20}}
+     >
+       <Text
+           bgClip="text"
+           bgGradient='linear(to-r, blackAlpha.800, purple.500)'
+           fontWeight="extrabold"
+           textAlign='left'
+           fontSize={{ base: "2xl",md: "5xl",}}
+           p={{base: 4, lg:4}}
+           fontFamily='bodyFont'
+       >
+         Vision and Purpose
+       </Text>
+
+       <Box  >
+       <SimpleGrid columns={{base: 1, md:1, lg: 2}}  >
+         {/* <Center > */}
+            <Box overflow='hidden' m={{base: 2, md: 6}} borderRadius={'10px'}>
+            <Image
+                    src={'https://res.cloudinary.com/medoptics-image-cloud/image/upload/v1715262356/About-_1_lbw5wd.jpg'}
+                    width={570}
+                    height={320}
+                
+                    
+                    />
+            </Box>
+        {/* </Center> */}
+
+         <Box  mt={2} mb={{lg:20}} >
+           <SimpleGrid columns={1} spacing={10}>
+            <Box>
+                <Text
+                    bgClip="text"
+                    bgGradient='linear(to-r, blackAlpha.800, purple.500)'
+                    fontWeight="extrabold"
+                    textAlign='left'
+                    fontSize={{ base: "xl",md: "3xl",}}
+                    fontFamily='bodyFont'
+                >
+                Mission
+                </Text>
+                <Text
+                    textAlign='left'
+                    fontSize={{ base: "sm",md: "lg",}}
+                    fontFamily='bodyFont'
+                >
+                    Providing high calibre, inspirational expertise to schools and education organisations, equipping educators to take their organisation to the next level of performance – improving learning for every child.
+                </Text>
+            </Box>  
+
+            <Box>
+                <Text
+                    bgClip="text"
+                    bgGradient='linear(to-r, blackAlpha.800, purple.500)'
+                    fontWeight="extrabold"
+                    textAlign='left'
+                    fontSize={{ base: "xl",md: "3xl",}}
+                    // p={{base: 4, lg:4}}
+                    fontFamily='bodyFont'
+                >
+                Vision
+                </Text>
+                <Text
+                    textAlign='left'
+                    fontSize={{ base: "sm",md: "lg",}}
+                    // p={{base: 4, lg:4}}
+                    fontFamily='bodyFont'
+                >
+                    Transformed thinking, raised standards, creative systems.
+                </Text>
+            </Box>              
+           </SimpleGrid>
+         </Box>
+       </SimpleGrid>
+       </Box>
+       
+     </Box>        
+    )
+}
+
+
+const MultiSolutionsContent = () => {
+    return (
+        <Box
+        borderWidth='1px'
+         borderRadius='xl'
+        borderColor='purple.500'
+        shadow='xl'
        //  overflow='hidden'
        padding={8}
        mx={{md: 10,lg:20}}
@@ -313,73 +413,7 @@ const SolutionsListItem = (props) => {
     )
 }
 
-  const PageContent= () => {
-      return (
-        <HStack >
-            <Box>
-        
-                <Heading fontSize={{base:'5xl',md:'7xl', lg:'7xl'}} bgClip="text"
-                    textColor="purple.900"
-                    textAlign={{base:'center', lg:'left'}}
-                    fontWeight="extrabold"
-                    letterSpacing={{ base: "normal", md: "tight" }}
 
-                    fontFamily='bodyFont'
-                    //#74449c
-                    pt={{md:20, lg:20}}
-                    >
-                        Professional Educational Training
-                </Heading>
-                <Text 
-                    fontFamily='bodyFont'
-                    textAlign={{base:'center', lg:'left'}}
-                    pb={2}
-                    maxW='xl' 
-                    color={useColorModeValue('gray.700', 'gray.200')}  fontWeight={100} fontSize={{base:'md',md:'xl'}}>
-                We focus on creating training systems that effectively convey your company&apos;s identity, then optimize for an enhanced learning experience.
-                </Text>
-                <Flex>
-                    <Button
-                    border={'1px'}
-                    borderColor={'purple'}
-                    // boxShadow={useColorModeValue('6px 6px 0 gray', '6px 6px 0 cyan')}
-                    as="a"
-                    href='/info/contact-enquiry'
-                    colorScheme="whiteAlpha"
-                    textColor={useColorModeValue('purple.800', 'gray.200')}
-                    display="inline-flex"
-                    fontWeight={500}
-                    alignItems="center"
-                    w={{ base: "full", sm: "auto" }}
-                    mb={{ base: 2, sm: 0 }}
-                    size="lg"
-                    cursor="pointer"
-                    fontFamily='bodyFont'
-                    transition="0.3s ease-in-out"
-                    _hover={{
-                        transform: 'scale(1.05)',
-                    }}
-                    shadow={'xl'}
-                    >
-                    Talk to us Today
-                    </Button>
-                    </Flex>
-            </Box>
-
-            <Box
-            // border={'1px'}
-            // borderColor={'purple.400'}
-            // borderRadius='6px'
-            my={12}
-            p={20}
-            // bg={'white'}
-            display={{base: 'none', lg:'flex'}}
-            >
-
-            </Box>
-        </HStack>
-      )
-  }
 
   const CallToAction = () => {
     return (

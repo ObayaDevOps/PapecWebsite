@@ -311,23 +311,18 @@ import theme from './theme';
       children: [
         {
           label: 'Who We Are',
-          subLabel: '',
+          subLabel: 'Vision and Purpose ',
           href: '/education/about/who-we-are',
-        },
-        {
-          label: 'Vision and Purpose',
-          subLabel: 'Guiding Principles',
-          href: '/about/vision-and-purpose',
         },
         {
           label: 'Why Choose Us?',
           subLabel: '',
-          href: '/about/why-choose-us',
+          href: '/education/about/why-choose-us',
         },
         {
           label: 'Consultant Profile',
           subLabel: 'Audrey Dralega, FRSA',
-          href: '/about/consultant-profile',
+          href: '/education/about/consultant-profile',
         },
       ],
     },
@@ -337,12 +332,12 @@ import theme from './theme';
         {
           label: 'School Start Up',
           subLabel: 'Getting you going',
-          href: '/services/school-startup',
+          href: '/education/services/school-startup',
         },
         {
           label: 'School Development',
           subLabel: 'Moving you forward',
-          href: '/services/school-development',
+          href: '/education/services/school-development',
         },
       ],
     }, 
@@ -370,7 +365,7 @@ import theme from './theme';
         {
           label: 'Articles',
           subLabel: "Latest Papec News",
-          href: '/blog/blog-list',
+          href: '/education/blog/blog-list',
         },
       ],
     },
