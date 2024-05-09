@@ -94,7 +94,8 @@ import {
                                     bgGradient='linear(to-r, blackAlpha.800, purple.500)'
                                     fontWeight="extrabold"
                                     transition="all .65s ease" _hover={{ transform: 'scale(1.005)', filter: "brightness(120%)", }}
-                                    py={6}>
+                                    py={6}
+                                    >
                                     Why Choose Us? 
                                 </Text>
                             </Heading>

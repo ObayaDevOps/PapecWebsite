@@ -93,7 +93,7 @@ const TitleSection = () => {
                     <Box>
                 
                         <Heading fontSize={{base:'5xl',md:'7xl', lg:'7xl'}} bgClip="text"
-                            textColor="purple.900"
+                            // textColor="purple.900"
                             textAlign={{base:'center', lg:'left'}}
                             fontWeight="extrabold"
                             letterSpacing={{ base: "normal", md: "tight" }}
@@ -101,6 +101,8 @@ const TitleSection = () => {
                             fontFamily='bodyFont'
                             //#74449c
                             pt={{md:20, lg:20}}
+                            bgGradient='linear(to-r, blackAlpha.800, purple.500)'
+
                             >
                                 Professional Educational Training
                         </Heading>
@@ -115,7 +117,7 @@ const TitleSection = () => {
                         <Flex>
                             <Button
                             border={'1px'}
-                            borderColor={'purple'}
+                            borderColor={'purple.500'}
                             // boxShadow={useColorModeValue('6px 6px 0 gray', '6px 6px 0 cyan')}
                             as="a"
                             href='/info/contact-enquiry'
