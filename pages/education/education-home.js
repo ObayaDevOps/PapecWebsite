@@ -125,7 +125,7 @@ const TitleSection = () => {
                             textColor={useColorModeValue('purple.800', 'gray.200')}
                             display="inline-flex"
                             fontWeight={500}
-                            alignItems={{md:"center"}}
+                            alignItems={"center"}
                             w={{ base: "full", sm: "auto" }}
                             mb={{ base: 2, sm: 0 }}
                             size="lg"
@@ -153,8 +153,8 @@ const TitleSection = () => {
                     >
                         <Image
                         src={'https://res.cloudinary.com/medoptics-image-cloud/image/upload/v1715030601/undraw_teacher_re_sico_1_cvyauz.svg'}
-                        width={600}
-                        height={600}
+                        width={800}
+                        height={800}
                         
                         />
                     </Box>
