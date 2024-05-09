@@ -125,7 +125,7 @@ const TitleSection = () => {
                             textColor={useColorModeValue('purple.800', 'gray.200')}
                             display="inline-flex"
                             fontWeight={500}
-                            alignItems="center"
+                            alignItems={{md:"center"}}
                             w={{ base: "full", sm: "auto" }}
                             mb={{ base: 2, sm: 0 }}
                             size="lg"
