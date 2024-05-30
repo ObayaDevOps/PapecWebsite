@@ -63,10 +63,6 @@ export default function CallToActionWithIllustration() {
       >
 
         <SimpleGrid columns={{ base: 1, md: 2, lg: 3 }} spacing={{base: 10, md: 2}}>
-          
-          {/* <Card title='Education' subtitle='Teacher training and School development' />
-          <Card title='Corporate' subtitle='Ages 3-18' />
-          <Card title='Health' subtitle='Ages 3-18' /> */}
 
           <CardBorder title='Educational Training' subtitle='Teacher training and School development' link='/education/education-home' img={'https://res.cloudinary.com/medoptics-image-cloud/image/upload/v1713532448/PP-Website-Banner-9_tviyet.jpg'}/>
           <CardBorder title='Corporate Training' subtitle='Workforce upskilling' link='/corporate/corporate-home'  img={'https://res.cloudinary.com/medoptics-image-cloud/image/upload/v1713966677/pexels-divinetechygirl-1181396_dfhvy7.jpg'}/>
