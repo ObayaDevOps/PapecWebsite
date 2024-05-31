@@ -344,17 +344,13 @@ import theme from './theme';
 
     {
       label: 'Courses',
+      href: '/education/courses/course-list',
       children: [
         {
           label: 'Course List and Booking',
           subLabel: 'Choose your speciality',
           href: '/education/courses/course-list',
-        },
-        {
-          label: 'Course Feedback Form',
-          subLabel: 'Give your feedback',
-          href: '/education/courses/booking-form',
-        },
+        }
       ],
     }, 
     
@@ -365,7 +361,7 @@ import theme from './theme';
         {
           label: 'Articles',
           subLabel: "Latest Papec News",
-          href: '/education/blog/blog-list',
+          href: '/blog/blog-list',
         },
       ],
     },
