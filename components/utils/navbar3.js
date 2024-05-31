@@ -343,16 +343,16 @@ import theme from './theme';
     }, 
 
     {
-      label: 'Professional Development',
+      label: 'Courses',
       children: [
         {
-          label: 'Course List',
+          label: 'Course List and Booking',
           subLabel: 'Choose your speciality',
           href: '/education/courses/course-list',
         },
         {
-          label: 'Course Booking Form',
-          subLabel: 'Make and Enquiry',
+          label: 'Course Feedback Form',
+          subLabel: 'Give your feedback',
           href: '/education/courses/booking-form',
         },
       ],

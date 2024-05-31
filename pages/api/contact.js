@@ -14,10 +14,14 @@ export default async (req, res) => {
   });
 const data={ from: Email,
     to: process.env.RECIPIENT_ADDRESS,
-    subject: `Tax Edge Advisory Contact form submission from ${Name}`,
+    subject: `Papec Contact form submission from ${Name}`,
       html: `<h1>${Name} Has contacted you</h1>
       <p>You have a contact form submission</p><br>
+        <p><strong>Course: </strong> ${Course}</p><br>
         <p><strong>Email: </strong> ${Email}</p><br>
+        <p><strong>Phone: </strong> ${Phone}</p><br>
+        <p><strong>Payment: </strong> ${Payment}</p><br>
+        <p><strong>Participants Details: </strong> ${Participants}</p><br>
         <p><strong>Message: </strong> ${Message}</p><br>
       `}
 
