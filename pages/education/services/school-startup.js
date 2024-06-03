@@ -185,8 +185,9 @@ import {
                     textAlign='left'
                     fontSize={{ base: "sm",md: "lg",}}
                     fontFamily='bodyFont'
+                    mt={2}
                 >
-The families who will entrust their child’s education to you are reliant on the school being clear about purpose, able to set and maintain high standards and provide a safe and stimulating learning environment in which to learn. We are able to offer you the 360 degree support that moves the start up team from an idea to the successful launch of the school.                </Text>
+                The families who will entrust their child’s education to you are reliant on the school being clear about purpose, able to set and maintain high standards and provide a safe and stimulating learning environment in which to learn. We are able to offer you the 360 degree support that moves the start up team from an idea to the successful launch of the school.                </Text>
             </Box>  
   
               
@@ -214,6 +215,17 @@ The families who will entrust their child’s education to you are reliant on th
        background="whiteAlpha.700"
        my={{base: 16,md:20, lg: 20}}
      >
+
+            <Box overflow='hidden' m={{base: 2, md: 6}} borderRadius={'10px'}>
+            <Image
+                    src={'https://res.cloudinary.com/medoptics-image-cloud/image/upload/v1715259596/PP1_w92zkp.jpg'}
+                    width={570*2}
+                    height={320}
+                
+                    
+                    />
+            </Box>
+
        <Text
            bgClip="text"
            bgGradient='linear(to-r, blackAlpha.800, purple.500)'
@@ -228,19 +240,7 @@ The families who will entrust their child’s education to you are reliant on th
        </Text>
   
        <Box  >
-       <SimpleGrid columns={{base: 1, md:1, lg: 2}}  >
-         {/* <Center > */}
-            <Box overflow='hidden' m={{base: 2, md: 6}} borderRadius={'10px'}>
-            <Image
-                    src={'https://res.cloudinary.com/medoptics-image-cloud/image/upload/v1715259596/PP1_w92zkp.jpg'}
-                    width={570}
-                    height={320}
-                
-                    
-                    />
-            </Box>
-        {/* </Center> */}
-  
+       <SimpleGrid columns={{base: 1, md:1, lg: 1}}  >
          <Box  mt={2} mb={{lg:20}} >
            <SimpleGrid columns={1} spacing={6}>
                 <SolutionsListItem text=" Formulation and alignment of the vision, mission and school motto; clarity is the most important selling point a new school can have. We will enable you to formulate your message clearly and concisely, to raise interest and ensure you attract the families who will benefit the most from what you offer." />

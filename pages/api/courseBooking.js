@@ -1,15 +1,8 @@
 import nodemailer from "nodemailer"
 
 //make this a promise: https://stackoverflow.com/questions/60684227/api-resolved-without-sending-a-response-in-nextjs
-
-//https://www.getmailbird.com/setup/access-bluehost-via-imap-smtp
-//https://clean.email/blog/email-settings/bluehost-email-settings
-
-
-//tls - https://stackoverflow.com/questions/38191770/nodemailer-2-x-configuration-for-office-365-direct-send
-
 export default async (req, res) => {
-  const { Name, Email, Message } = req.body;
+  const { Name, Course, Email, Phone, Payment, Participants, Message } = req.body;
   const transporter = nodemailer.createTransport({
     host: "smtp.gmail.com",
     port: 587,
@@ -18,33 +11,17 @@ export default async (req, res) => {
       user: process.env.SMTP_USER,
       pass: process.env.SMTP_PASSWORD
     }
-
-
-
-
-    // service:"outlook365",
-    // auth: {
-    //   user: process.env.SMTP_USER,
-    //   pass: process.env.SMTP_PASSWORD
-    // },
-
-    // host: "smtp.office365.com",
-    // port: 587,
-    // secure: false,
-    // auth: {
-    //   user: process.env.SMTP_USER,
-    //   pass: process.env.SMTP_PASSWORD
-    // },
-    // tls: {
-    //     ciphers: 'SSLv3'
-    // }
   });
 const data={ from: Email,
     to: process.env.RECIPIENT_ADDRESS,
-    subject: `Papec Contact form submission from ${Name}`,
+    subject: `Papec Course Booking form submission from ${Name}`,
       html: `<h1>${Name} Has contacted you</h1>
       <p>You have a contact form submission</p><br>
+        <p><strong>Course: </strong> ${Course}</p><br>
         <p><strong>Email: </strong> ${Email}</p><br>
+        <p><strong>Phone: </strong> ${Phone}</p><br>
+        <p><strong>Payment: </strong> ${Payment}</p><br>
+        <p><strong>Participants Details: </strong> ${Participants}</p><br>
         <p><strong>Message: </strong> ${Message}</p><br>
       `}
 

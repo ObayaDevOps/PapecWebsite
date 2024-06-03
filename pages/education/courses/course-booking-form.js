@@ -37,12 +37,16 @@ import { useState } from 'react'
         Course: event.target.course.value,
         Email: event.target.email.value,
         Phone: event.target.phone.value,
-        Participants: event.target.participants.value,
+        Participants: event.target.participantsDetails.value,
         Message: event.target.message.value,
         Payment: event.target.payment.value,
       }
 
-      const res = await fetch('/api/contact', {
+      console.log('USER DATA');
+      console.log(userTypedData);
+
+
+      const res = await fetch('/api/courseBooking', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
@@ -52,6 +56,7 @@ import { useState } from 'react'
     }
 
     const toast = useToast()
+
     return (
       <Box
       bg={'white'}
@@ -73,7 +78,9 @@ import { useState } from 'react'
             type="text"
             name="course">
             <option>Effective teaching Methods for Maths MA1</option>
-            {/* <option>Nigeria</option> */}
+            <option>Reading from Scratch: EN1</option>
+            <option>International Teaching Assistant: PE 1</option>
+
           </Select>
         </FormControl>
 
@@ -151,7 +158,8 @@ import { useState } from 'react'
 
           <FormControl>
           <FormLabel>Payment Method</FormLabel>
-          <Select placeholder='Select Prefered Payment Option'>
+          <Select placeholder='Select Prefered Payment Option'  id="payment"
+              name="payment">
             <option>Bank Deposit (Preferred) </option>
             <option>Cheque </option>
             <option>Cash Payment </option>

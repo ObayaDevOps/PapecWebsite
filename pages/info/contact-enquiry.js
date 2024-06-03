@@ -30,7 +30,7 @@ import {
   import NavBar from '../../components/utils/navbar3'
 
 
-  import constructionIllustration  from '../../public/images/illustrations/undraw_under_construction_-46-pa.svg';
+  import contactIllustration  from '../../public/images/illustrations/undraw_real_time_collaboration_c62i.svg';
 
 
   //We add the rest of the code here : https://greedytaker.in/nextjs/email-sending-contact-page-nextjs
@@ -83,7 +83,7 @@ import {
         <NavBar />
         
         <Flex
-          bg={'blackAlpha.200'}
+          bgGradient='linear(to-br, #e5e5f7, whiteAlpha.100)'
           // bgGradient='linear(to-br, #e5e5f7, whiteAlpha.100)'
 
           align="center"
@@ -92,12 +92,19 @@ import {
           pt={8} pb={12}
           >
 
-        <Head>
-          <title>People and Potential Enquiry</title>
-          <meta name="description" content="People and Potential Webpage" />
-          <link rel="icon" href="../public/images/icon/logo-black.svg" />
+          <Head>
+              <title>Contact | People and Potential Consultancy</title>
+              <meta name="description" content="People and Potential Consultancy" />
+              <link rel="shortcut icon" href="../../../images/icon/People__Potential-Logo_Full_Color-2.png"></link>
 
-        </Head>
+              <meta property="og:title" content="People and Potential Consultancy" />
+              <meta property="og:description" content="Professional HR Training" />
+              <meta property="og:image" content="https://res.cloudinary.com/medoptics-image-cloud/image/upload/v1713782566/People__Potential-Logo_Full_Color-1_wno2bv.png" />
+              <meta property="og:image:secure_url" content="https://res.cloudinary.com/medoptics-image-cloud/image/upload/v1713782566/People__Potential-Logo_Full_Color-1_wno2bv.png" />
+              <meta property="og:url" content="https://papec-website.vercel.app/" />
+              <meta property="og:type" content="website" />
+          
+          </Head>
 
 
 
@@ -107,15 +114,14 @@ import {
                 minHeight={{md:'110Fvh'}}   
                 rounded='3xl' 
                 shadow='2xl'   
-                // background='purple.200' 
-                background="rgba(240,255,244,0.65)"
+                bg='whiteAlpha.600'
                 border={'1px'}
                 borderColor={'purple.300'}
         >
           <Box
             borderRadius="lg"
-            m={{ base: 5, md: 16, lg: 10 }}
-            p={{ base: 5, lg: 5 }}>
+            m={{ base: 5, md: 16, lg: 5 }}
+            p={{ base: 5, lg: 0 }}>
             <Box >
               <VStack spacing={{ base: 4, md: 8, lg: 10 }}>
                 <Heading
@@ -132,7 +138,7 @@ import {
                   Contact Us
                 </Heading>
     
-                <SimpleGrid columns={{base:1, md:2}}>
+                <SimpleGrid columns={{base:1, md:1}}>
                 <Stack
                   spacing={{ base: 4, md: 8, lg: 8 }}
                   direction={{ base: 'column', md: 'row' }}>
@@ -182,7 +188,9 @@ import {
                     borderColor={'purple.300'}
                     p={8}
                     color={'gray.700'}
+                    minW={{lg:'4xl'}}
                     >
+                      
                     <form onSubmit={(e) => userData(e)}>
                       <VStack spacing={5}>
                         <FormControl isRequired>
@@ -250,10 +258,10 @@ import {
                   </Box>
                 </Stack>
 
-                <Box>
-                  <NextImage src={constructionIllustration} width={500} height={500} >
+                {/* <Box p={{base:8, md: 10}}>
+                  <NextImage src={contactIllustration} width={400} height={400} >
                   </NextImage>
-                </Box>
+                </Box> */}
                 </SimpleGrid>
 
               </VStack>

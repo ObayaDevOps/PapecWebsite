@@ -370,7 +370,7 @@ const SolutionsListItem = (props) => {
           <Icon as={CheckIcon} />
         </Box>
         <VStack align={'start'}>
-          <Text color={'black'} fontWeight={200} fontSize={'xl'} fontFamily='bodyFont' >{props.text}</Text>
+          <Text color={'black'} fontWeight={200} fontSize={'xl'} textAlign='left' fontFamily='bodyFont' >{props.text}</Text>
         </VStack>
       </HStack>
       </Box>

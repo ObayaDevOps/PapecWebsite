@@ -156,19 +156,20 @@ const VisionPurposeContent = () => {
          bgGradient='linear(to-r, blackAlpha.800, purple.500)'
          fontWeight="extrabold"
          textAlign='left'
-         fontSize={{ base: "2xl",md: "5xl",}}
+         fontSize={{ base: "2xl",md: "3xl",lg: "5xl"}}
          p={{base: 4, lg:4}}
          fontFamily='bodyFont'
      >
        What we Offer
      </Text>
 
-     <Box  >
-     <SimpleGrid columns={{base: 1, md:1, lg: 2}}  >
+     <Box>
+       
+     <SimpleGrid columns={{base: 1, md:1, lg: 1}} >
 
        <Box  mt={2} mb={{lg:20}} >
          <SimpleGrid columns={1} spacing={10}>
-          <Box>
+          <Box ml={6}>
               <Text
                   textAlign='left'
                   fontSize={{ base: "sm",md: "lg",}}
@@ -180,14 +181,24 @@ const VisionPurposeContent = () => {
               </Text>
           </Box>  
          </SimpleGrid>
+
+         <Box overflow='hidden' m={{base: 2, md: 6}} borderRadius={'10px'}>
+            <Image
+                    src={'https://res.cloudinary.com/medoptics-image-cloud/image/upload/v1717407360/1000028379_rekc3e.jpg'}
+                    width={1936/3}
+                    height={1936/3}
+                
+                    
+                    />
+            </Box>
        </Box>
      </SimpleGrid>
 
 
 
-     <Box>
-            <TabsSection />
-          </Box> 
+     <Box mx={{lg:6}}>
+        <TabsSection />
+      </Box> 
      </Box>
      
    </Box>        
