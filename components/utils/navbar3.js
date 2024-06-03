@@ -355,16 +355,16 @@ import theme from './theme';
     }, 
     
     
-    {
-      label: 'Blog',
-      children: [
-        {
-          label: 'Articles',
-          subLabel: "Latest Papec News",
-          href: '/blog/blog-list',
-        },
-      ],
-    },
+    // {
+    //   label: 'Blog',
+    //   children: [
+    //     {
+    //       label: 'Articles',
+    //       subLabel: "Latest Papec News",
+    //       href: '/blog/blog-list',
+    //     },
+    //   ],
+    // },
     { //Now need to show how to display the list of items and have links to them
       //Easy ?
       label: 'Contact Us',
