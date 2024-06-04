@@ -17,30 +17,37 @@ import Head from 'next/head';
 
 const testimonials = [
   {
-    name: 'Brandon P.',
-    role: 'Chief Marketing Officer',
-    content: 'Well-equipped and well-informed about the specific field. Variety of examples to study and good use of the tangible material. No room for detachment!',
+    name: 'ISU, Board of Directors',
+    role: 'Governance Course ',
+    content: 'Your flexibility and willingness to rethink the agenda midway was necessary to ensure the successful outcomes.',
     avatar:
       'https://images.unsplash.com/photo-1603415526960-f7e0328c63b1?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=80',
   },
   {
-    name: 'Krysta B.',
-    role: 'Entrepreneur',
-    content:'​This modular course is tailored to the specific leadership needs of each team and therefore is never the same twice.',
+    name: 'Kings International School Kampala, Director',
+    role: 'Equipping Leaders Course',
+    content:'​I just wanted to write and let you know how much we have enjoyed having you coach us. You really are an extremely good communicator. Everything we\'ve heard or discussed with you has been exactly what we\'ve needed to hear. You are really, really good at your job! ',
     avatar:
       'https://images.unsplash.com/photo-1598550874175-4d0ef436c909?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=80',
   },
   {
-    name: 'Darcy L.',
-    role: 'Movie star',
-    content: '“I liked the way you conducted the training – very audible, clear and easy to understand. I was able to take the points home”',
+    name: 'Little Cranes Montessori Kindergarten, Headteacher',
+    role: 'Professional Development Course',
+    content: 'Well-equipped and well-informed about the specific field. Variety of examples to study and good use of the tangible materia. No room for detachment!',
     avatar:
       'https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=334&q=80',
   },
   {
-    name: 'Daniel T.',
-    role: 'Musician',
-    content: '​”Everyone at their different levels at work needs to do this course”',
+    name: 'Taibah International School, Headteacher',
+    role: 'School Operations Audit & Review Course',
+    content: 'Thorough and very useful in giving us a clear view of areas of strength and our overlooked areas.',
+    avatar:
+      'https://images.unsplash.com/photo-1606513542745-97629752a13b?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=80',
+  },
+  {
+    name: 'The North Green School, Director',
+    role: 'School Start Up Course',
+    content: 'The Consultantcy support received was beyond exceptional. It exceeded our expectations!',
     avatar:
       'https://images.unsplash.com/photo-1606513542745-97629752a13b?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=80',
   },
@@ -187,7 +194,7 @@ export default function GridBlurredBackdrop() {
           fontFamily={'bodyFont'}
 
           >
-          ​Following their team training, the leadership team of Little Cranes Montessori Kindergarten, Kampala were asked to anonymously reflect on their experience.
+          ​Following their team training, participants from Kampala were asked to reflect on their experience.
         </chakra.h2>
       </Box>
       <SimpleGrid columns={{ base: 1, xl: 2 }} spacing={'20'} mt={{base:10, lg:8}} mb={16} mx={'auto'}>

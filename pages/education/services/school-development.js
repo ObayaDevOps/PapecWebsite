@@ -165,9 +165,9 @@ import {
          {/* <Center > */}
             <Box overflow='hidden' m={{base: 2, md: 6}} borderRadius={'10px'}>
             <Image
-                    src={'https://res.cloudinary.com/medoptics-image-cloud/image/upload/v1717075019/Consultant_zl8arc.jpg'}
-                    width={570}
-                    height={320}
+                    src={'https://res.cloudinary.com/medoptics-image-cloud/image/upload/v1717074276/PP-Website-Banner-4_mv8poh.jpg'}
+                    width={1366}
+                    height={500}
                 
                     
                     />
@@ -234,13 +234,13 @@ import {
        </Text>
   
        <Box  >
-       <SimpleGrid columns={{base: 1, md:1, lg: 2}}  >
+       <SimpleGrid columns={{base: 1, md:1, lg: 1}}  >
          {/* <Center > */}
             <Box overflow='hidden' m={{base: 2, md: 6}} borderRadius={'10px'}>
             <Image
-                    src={'https://res.cloudinary.com/medoptics-image-cloud/image/upload/v1715259596/PP1_w92zkp.jpg'}
-                    width={570}
-                    height={320}
+                    src={'https://res.cloudinary.com/medoptics-image-cloud/image/upload/v1717496641/PP2_vgac0v.jpg'}
+                    width={1366}
+                    height={500}
                 
                     
                     />
@@ -295,13 +295,13 @@ This may include:
        </Text>
   
        <Box  >
-       <SimpleGrid columns={{base: 1, md:1, lg: 2}}  >
+       <SimpleGrid columns={{base: 1, md:1, lg: 1}}  >
          {/* <Center > */}
             <Box overflow='hidden' m={{base: 2, md: 6}} borderRadius={'10px'}>
             <Image
-                    src={'https://res.cloudinary.com/medoptics-image-cloud/image/upload/v1715259596/PP1_w92zkp.jpg'}
-                    width={570}
-                    height={320}
+                    src={'https://res.cloudinary.com/medoptics-image-cloud/image/upload/v1717074277/PP-Website-Banner-7_cz77xw.jpg'}
+                    width={1366}
+                    height={500}
                 
                     
                     />

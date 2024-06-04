@@ -118,17 +118,23 @@ export default function LargeWithNewsletter() {
           </Stack> */}
 
           
-          {/* <Stack align={{base:'flex-start', md:'flex-end'}} pt={{md:4}}>
+          <Stack align={{base:'flex-start', md:'flex-end'}} pt={{md:4}}>
             <Box>
-                <Text fontSize={'lg'}>contact@taxedgeadvisory.co.uk</Text>
+                <Text fontSize={'lg'} fontFamily='bodyFont' textColor='green'>info@peopleandpotential.org</Text>
             </Box>
             <Box>
-                <Text fontSize={'lg'}>0700000000</Text>
+                <Text fontSize={'lg'} fontFamily='bodyFont' textColor='green'>+256 793 231969</Text>
             </Box>
             <Box>
-                <Text fontSize={'sm'}>Plot 64, Mayfair, London</Text>
+                <Text fontSize={'lg'} fontFamily='bodyFont' textColor='green'>+256 787 921975</Text>
             </Box>
-          </Stack> */}
+            <Box>
+                <Text fontSize={'sm'} fontFamily='bodyFont' textColor='green'>PO. Box 27348, Kampala</Text>
+            </Box>
+            <Box>
+                <Text fontSize={'sm'} fontFamily='bodyFont' textColor='green'>18 Millennium House Nsambya Road</Text>
+            </Box>
+          </Stack>
 
         </SimpleGrid>
       </Container>

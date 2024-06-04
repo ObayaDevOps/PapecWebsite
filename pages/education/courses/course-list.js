@@ -22,7 +22,8 @@ import {
   Tab, 
   TabPanel,
   UnorderedList,
-  ListItem
+  ListItem,
+  OrderedList
 } from '@chakra-ui/react'
 
 import { CheckIcon, ChatIcon, ArrowRightIcon } from '@chakra-ui/icons'
@@ -123,6 +124,8 @@ export default function CoursesPageComponent() {
 
                       <VisionPurposeContent />
 
+                      <CourseInfo />
+
 
 
                       <BookingFormSection />
@@ -136,6 +139,55 @@ export default function CoursesPageComponent() {
       </Box>
   )
 }
+
+
+const CourseInfo = () => {
+  return (
+    <Box
+      borderWidth='1px'
+      borderRadius='xl'
+      borderColor='purple.500'
+      shadow='xl'
+      //  overflow='hidden'
+      padding={8}
+      mx={{md: 10,lg:20}}
+      // paddingRight={12}
+      background="whiteAlpha.700"
+      my={{base: 16,md:20, lg: 20}}
+    >
+           <Text
+         bgClip="text"
+         bgGradient='linear(to-r, blackAlpha.800, purple.500)'
+         fontWeight="extrabold"
+         textAlign='center'
+         fontSize={{ base: "2xl",md: "5xl",}}
+         p={{base: 4, lg:4}}
+         fontFamily='bodyFont'
+     >
+       Areas of Training
+     </Text>
+
+     <Box ml={6}>
+     <SimpleGrid columns={1} spacing={4}>
+        <SolutionsListItem text="Subject Knowledge" />
+        <SolutionsListItem text="Teaching and Learning Strategies" />
+        <SolutionsListItem text="School Development" />
+        <SolutionsListItem text="Child Development" />
+        <SolutionsListItem text="Management & Finance" />
+        <SolutionsListItem text="Early Childhood Education" />
+        <SolutionsListItem text="Governance & Leadership" />
+        <SolutionsListItem text="International Education" />
+      </SimpleGrid>
+      </Box>  
+
+
+      
+      
+    </Box>
+  )
+}
+
+
 
 const VisionPurposeContent = () => {
   return (
@@ -184,9 +236,9 @@ const VisionPurposeContent = () => {
 
          <Box overflow='hidden' m={{base: 2, md: 6}} borderRadius={'10px'}>
             <Image
-                    src={'https://res.cloudinary.com/medoptics-image-cloud/image/upload/v1717407360/1000028379_rekc3e.jpg'}
-                    width={1936/3}
-                    height={1936/3}
+                    src={'https://res.cloudinary.com/medoptics-image-cloud/image/upload/v1717074280/slider-3_yoybfu.jpg'}
+                    width={1366}
+                    height={520}
                 
                     
                     />
@@ -196,7 +248,7 @@ const VisionPurposeContent = () => {
 
 
 
-     <Box mx={{lg:6}}>
+     <Box mx={{lg:6}} >
         <TabsSection />
       </Box> 
      </Box>

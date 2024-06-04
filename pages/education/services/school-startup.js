@@ -159,7 +159,7 @@ import {
          {/* <Center > */}
             <Box overflow='hidden' m={{base: 2, md: 6}} borderRadius={'10px'}>
             <Image
-                    src={'https://res.cloudinary.com/medoptics-image-cloud/image/upload/v1717075019/Consultant_zl8arc.jpg'}
+                    src={'https://res.cloudinary.com/medoptics-image-cloud/image/upload/v1717496201/WhatsApp_Image_2024-05-30_at_21.58.32_1_eywqxr.jpg'}
                     width={570}
                     height={320}
                 
@@ -187,7 +187,18 @@ import {
                     fontFamily='bodyFont'
                     mt={2}
                 >
-                The families who will entrust their child’s education to you are reliant on the school being clear about purpose, able to set and maintain high standards and provide a safe and stimulating learning environment in which to learn. We are able to offer you the 360 degree support that moves the start up team from an idea to the successful launch of the school.                </Text>
+                The families who will entrust their child’s education to you are reliant on the school being clear about purpose, able to set and maintain high standards and provide a safe and stimulating learning environment in which to learn. 
+                </Text>
+            
+                <Text
+                    textAlign='left'
+                    fontSize={{ base: "sm",md: "lg",}}
+                    fontFamily='bodyFont'
+                    mt={2}
+                >
+                 We are able to offer you the 360 degree support that moves the start up team from an idea to the successful launch of the school.                </Text>
+            
+
             </Box>  
   
               

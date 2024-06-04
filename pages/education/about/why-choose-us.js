@@ -188,7 +188,7 @@ const TopContent = () => {
 
          <Box overflow='hidden' m={{base: 2, md: 6}} borderRadius={'10px'}>
             <Image
-                    src={'https://res.cloudinary.com/medoptics-image-cloud/image/upload/v1715262356/About-_1_lbw5wd.jpg'}
+                    src={'https://res.cloudinary.com/medoptics-image-cloud/image/upload/v1717407360/1000028379_rekc3e.jpg'}
                     width={570}
                     height={320}     
             />
@@ -196,7 +196,7 @@ const TopContent = () => {
 
         <Box overflow='hidden' m={{base: 2, md: 6}} borderRadius={'10px'}>
             <Image
-                    src={'https://res.cloudinary.com/medoptics-image-cloud/image/upload/v1715262356/About-_1_lbw5wd.jpg'}
+                    src={'https://res.cloudinary.com/medoptics-image-cloud/image/upload/v1717074291/About-us_e3pzcc.jpg'}
                     width={570}
                     height={320}     
             />
@@ -257,20 +257,19 @@ const ConsultExperienceContent = () => {
                     fontFamily='bodyFont'
                     textColor='purple.800'
                     p={{base: 4, lg:4}}
-           
            >
            People & Potential consultancy draws on a small pool of well-qualified specialist education consultants to meet the specific requirements of organizations. These consultants hold specialisms in a variety of areas including the following: 
            </Text>
        </Box>
 
        <Box  >
-       <SimpleGrid columns={{base: 1, md:1, lg: 2}}  >
+       <SimpleGrid columns={{base: 1, md:1, lg: 1}}  >
          {/* <Center > */}
             <Box overflow='hidden' m={{base: 2, md: 6}} borderRadius={'10px'}>
             <Image
                     src={'https://res.cloudinary.com/medoptics-image-cloud/image/upload/v1715259596/PP1_w92zkp.jpg'}
-                    width={570}
-                    height={320}
+                    width={570*2}
+                    height={320*2}
                 
                     
                     />

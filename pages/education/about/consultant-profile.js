@@ -188,8 +188,25 @@ const VisionPurposeContent = () => {
                   textAlign='left'
                   fontSize={{ base: "sm",md: "lg",}}
                   fontFamily='bodyFont'
+                  mb={2}
               >
-                Prior to relocating to Uganda, Audrey served as Course Tutor in the School of Education Centre for Studies in Science & Mathematics Education (CSSME), University of Leeds, UK. There she taught the Primary Mathematics component of the Post Graduate Certificate in Education (PGCE) and her course component was deemed ‘most practical and informative’ in the student end of year evaluations. She has delivered numerous BTEC & Higher National Certificate (HNC) training courses including Early Childhood Learning, Special Needs Education, Curriculum Mathematics and Curriculum Science and designed and delivered training both in her schools in the UK and in the international sector.
+                Prior to relocating to Uganda, Audrey served as Course Tutor in the School of Education Centre for Studies in Science & Mathematics Education (CSSME), University of Leeds, UK. 
+              </Text>
+              <Text
+                  textAlign='left'
+                  fontSize={{ base: "sm",md: "lg",}}
+                  fontFamily='bodyFont'
+                  mb={2}
+              >
+                There she taught the Primary Mathematics component of the Post Graduate Certificate in Education (PGCE) and her course component was deemed ‘most practical and informative’ in the student end of year evaluations. 
+              </Text>
+              <Text
+                  textAlign='left'
+                  fontSize={{ base: "sm",md: "lg",}}
+                  fontFamily='bodyFont'
+                  mb={2}
+              >
+                 She has delivered numerous BTEC & Higher National Certificate (HNC) training courses including Early Childhood Learning, Special Needs Education, Curriculum Mathematics and Curriculum Science and designed and delivered training both in her schools in the UK and in the international sector.
               </Text>
           </Box>  
 
