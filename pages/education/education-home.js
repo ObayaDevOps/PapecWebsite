@@ -89,7 +89,7 @@ const TitleSection = () => {
         >
             <Box py={{base:6, md: 8}} >
             <VStack spacing={4} as={Container} maxW={'8xl'} textAlign={'center'}>
-                <HStack >
+                <HStack>
                     <Box>
                 
                         <Heading fontSize={{base:'5xl',md:'7xl', lg:'7xl'}} bgClip="text"
@@ -109,12 +109,15 @@ const TitleSection = () => {
                         <Text 
                             fontFamily='bodyFont'
                             textAlign={{base:'center', lg:'left'}}
-                            pb={2}
+                            py={4}
                             maxW='xl' 
-                            color={useColorModeValue('gray.700', 'gray.200')}  fontWeight={100} fontSize={{base:'md',md:'xl'}}>
+                            color={useColorModeValue('gray.700', 'gray.200')}
+                            fontWeight={100} fontSize={{base:'md',md:'xl'}}
+                            textAlign={{base:'center', md: 'center', lg:'left'}}
+                            >
                         We focus on creating training systems that effectively convey your company&apos;s identity, then optimize for an enhanced learning experience.
                         </Text>
-                        <Flex>
+                        <Flex justify={{base:'center', md: 'center', lg:'left'}}>
                             <Button
                             border={'1px'}
                             borderColor={'purple.500'}
