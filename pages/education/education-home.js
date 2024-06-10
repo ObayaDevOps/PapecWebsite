@@ -121,7 +121,6 @@ const TitleSection = () => {
                             maxW='xl' 
                             color={useColorModeValue('gray.700', 'gray.200')}
                             fontWeight={100} fontSize={{base:'md',md:'xl'}}
-                            textAlign={{base:'center', md: 'center', lg:'left'}}
                             >
                         We focus on creating training systems that effectively convey your company&apos;s identity, then optimize for an enhanced learning experience.
                         </Text>
