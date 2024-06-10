@@ -14,7 +14,7 @@ import {
   useColorModeValue,
 } from '@chakra-ui/react'
 import { ReactNode } from 'react'
-import { FaInstagram, FaLinkedin, FaTwitter, FaYoutube } from 'react-icons/fa'
+import { FaInstagram, FaLinkedin, FaLinkedinIn, FaTwitter, FaYoutube } from 'react-icons/fa'
 import { BiMailSend } from 'react-icons/bi'
 
 import NextLink from 'next/link'
@@ -26,7 +26,8 @@ import Image from 'next/image'
 const Logo = (props) => {
   return (
     <NextLink href='/#'>
-        <Image src={papecLogo} width={1065/7} height={397/7}/>
+        <Image src={'https://res.cloudinary.com/medoptics-image-cloud/image/upload/v1718006910/Untitled_design_6_tv0jdx.png'} 
+        width={434/2} height={181/2}/>
   </NextLink>
   )
 }
@@ -38,7 +39,7 @@ const SocialButton = ({
 }) => {
   return (
     <chakra.button
-      bg={useColorModeValue('blackAlpha.100', 'whiteAlpha.100')}
+      bg={useColorModeValue('purple.100', 'whiteAlpha.100')}
       rounded={'full'}
       w={8}
       h={8}
@@ -50,7 +51,7 @@ const SocialButton = ({
       justifyContent={'center'}
       transition={'background 0.3s ease'}
       _hover={{
-        bg: useColorModeValue('blackAlpha.200', 'whiteAlpha.200'),
+        bg: useColorModeValue('purple.400', 'whiteAlpha.200'),
       }}>
       <VisuallyHidden>{label}</VisuallyHidden>
       {children}
@@ -69,7 +70,7 @@ const ListHeader = ({ children }) => {
 export default function LargeWithNewsletter() {
   return (
     <Box
-      bg={useColorModeValue('yellow.300', 'gray.900')}
+      bg={useColorModeValue('purple.600', 'gray.900')}
       // bgGradient='linear(to-r, purple.500, whiteAlpha.300)'
       position='relative'
       bottom='0'
@@ -90,11 +91,11 @@ export default function LargeWithNewsletter() {
 
             <Stack direction={'row'} spacing={4}>
               <SocialButton  label={'LinkedIn'} href={'/#'}>
-                <FaLinkedin />
+                <FaLinkedinIn />
               </SocialButton>
               <Button as='a' href='https://www.dralegawebops.com/' size='sm' colorScheme='purple' fontSize={{base:'xs',md:'xs'}}
                 variant="outline"
-                color='green'
+                color='white'
                 fontFamily='bodyFont'
                 borderRadius='3px'
                 boxShadow={useColorModeValue('1px 1px 0 black', '6px 6px 0 cyan')} >
@@ -103,7 +104,7 @@ export default function LargeWithNewsletter() {
 
             </Stack>
             <Box>
-            <Text fontSize={'sm'} fontFamily='bodyFont' textColor='green'>© 2024 People and Potential Consultancy. All rights reserved</Text>
+            <Text fontSize={'sm'} fontFamily='bodyFont' textColor='white'>© 2024 People and Potential Consultancy. All rights reserved</Text>
             </Box>
 
           </Stack>
@@ -120,19 +121,19 @@ export default function LargeWithNewsletter() {
           
           <Stack align={{base:'flex-start', md:'flex-end'}} pt={{md:4}}>
             <Box>
-                <Text fontSize={'lg'} fontFamily='bodyFont' textColor='green'>info@peopleandpotential.org</Text>
+                <Text fontSize={'sm'} fontFamily='bodyFont' textColor='white'>info@peopleandpotential.org</Text>
             </Box>
             <Box>
-                <Text fontSize={'lg'} fontFamily='bodyFont' textColor='green'>+256 793 231969</Text>
+                <Text fontSize={'sm'} fontFamily='bodyFont' textColor='white'>+256 793 231969</Text>
             </Box>
             <Box>
-                <Text fontSize={'lg'} fontFamily='bodyFont' textColor='green'>+256 787 921975</Text>
+                <Text fontSize={'sm'} fontFamily='bodyFont' textColor='white'>+256 787 921975</Text>
             </Box>
             <Box>
-                <Text fontSize={'sm'} fontFamily='bodyFont' textColor='green'>PO. Box 27348, Kampala</Text>
+                <Text fontSize={'sm'} fontFamily='bodyFont' textColor='white'>PO. Box 27348, Kampala</Text>
             </Box>
             <Box>
-                <Text fontSize={'sm'} fontFamily='bodyFont' textColor='green'>18 Millennium House Nsambya Road</Text>
+                <Text fontSize={'sm'} fontFamily='bodyFont' textColor='white'>18 Millennium House Nsambya Road</Text>
             </Box>
           </Stack>
 
