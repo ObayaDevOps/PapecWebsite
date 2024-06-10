@@ -77,10 +77,9 @@ import { useState } from 'react'
             id="course"
             type="text"
             name="course">
-            <option>[Mathematics] Effective teaching Methods for Maths: MA1</option>
+            {/* <option>[Mathematics] Effective teaching Methods for Maths: MA1</option> */}
             <option>[English] Reading from Scratch: EN1</option>
             <option>[Pedagogy] International Teaching Assistant: PE1</option>
-
           </Select>
         </FormControl>
 

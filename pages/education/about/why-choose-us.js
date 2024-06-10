@@ -463,6 +463,8 @@ const SolutionsListItem = (props) => {
             lineHeight="shorter"
             color="purple.900"
             fontFamily='bodyFont'
+            textAlign='left'
+
             _dark={{ color: "gray.100" }}
           >
             <chakra.span display="block">

@@ -160,7 +160,7 @@ const VisionPurposeContent = () => {
          {/* <Center > */}
             <Box overflow='hidden' m={{base: 2, md: 6}} borderRadius={'10px'}>
             <Image
-                    src={'https://res.cloudinary.com/medoptics-image-cloud/image/upload/v1715262356/About-_1_lbw5wd.jpg'}
+                    src={'https://res.cloudinary.com/medoptics-image-cloud/image/upload/v1718010286/Untitled_design_7_p7g8bk.png'}
                     width={570}
                     height={320}
                 
@@ -253,7 +253,7 @@ const MultiSolutionsContent = () => {
          {/* <Center > */}
             <Box overflow='hidden' m={{base: 2, md: 6}} borderRadius={'10px'}>
             <Image
-                    src={'https://res.cloudinary.com/medoptics-image-cloud/image/upload/v1715259596/PP1_w92zkp.jpg'}
+                    src={'https://res.cloudinary.com/medoptics-image-cloud/image/upload/v1718010582/pexels-divinetechygirl-1181355_g1qwia.jpg'}
                     width={570}
                     height={320}
                 
@@ -444,6 +444,7 @@ const SolutionsListItem = (props) => {
             lineHeight="shorter"
             color="purple.900"
             fontFamily='bodyFont'
+            textAlign='left'
             _dark={{ color: "gray.100" }}
           >
             <chakra.span display="block">

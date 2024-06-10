@@ -234,7 +234,7 @@ const VisionPurposeContent = () => {
           </Box>  
          </SimpleGrid>
 
-         <Box overflow='hidden' m={{base: 2, md: 6}} borderRadius={'10px'}>
+         <Box overflow='hidden' m={{base: 2, md: 2}} borderRadius={'10px'}>
             <Image
                     src={'https://res.cloudinary.com/medoptics-image-cloud/image/upload/v1717074280/slider-3_yoybfu.jpg'}
                     width={1366}
@@ -248,9 +248,11 @@ const VisionPurposeContent = () => {
 
 
 
-     <Box mx={{lg:6}} >
+     {/* <Box mx={{lg:6}} >
         <TabsSection />
-      </Box> 
+      </Box>  */}
+
+      
      </Box>
      
    </Box>        
@@ -417,6 +419,8 @@ const CallToAction = () => {
           lineHeight="shorter"
           color="purple.900"
           fontFamily='bodyFont'
+          textAlign='left'
+
           _dark={{ color: "gray.100" }}
         >
           <chakra.span display="block">
