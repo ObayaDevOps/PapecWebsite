@@ -40,11 +40,7 @@ import Illustration3 from '../../public/images/illustrations/undraw_conference_r
 import ClientTestimonials from '../past-work/client-testimonials'
 
 
-export default function CallToActionWithIllustration() {
-  const scaleFactor = 0.9;
-
-  const ref1 = useRef(null)
-  const isInView1 = useInView(ref1)
+export default function EducationHomePage() {
 
   return (
       <Box>
@@ -81,8 +77,20 @@ export default function CallToActionWithIllustration() {
 }
 
 const TitleSection = () => {
+  const scaleFactor = 0.9;
+
+  const ref1 = useRef(null)
+  const isInView1 = useInView(ref1)
+
+
 
     return(
+
+      <ScaleFade initialScale={0.6}
+    in={isInView1}>
+      
+
+    
         <Box py={{base: 8, md: 2}}   w={{ base: 9 / 12, md: 11 / 12, xl: 9 / 12 }}
         mx="auto"
         minH={{lg:'75vh'}}       
@@ -102,7 +110,7 @@ const TitleSection = () => {
                             //#74449c
                             pt={{md:20, lg:20}}
                             bgGradient='linear(to-r, blackAlpha.800, purple.500)'
-
+                            ref={ref1}
                             >
                                 Professional Educational Training
                         </Heading>
@@ -167,6 +175,8 @@ const TitleSection = () => {
             </Box>
 
         </Box>
+
+        </ScaleFade>
     )
 }
 
