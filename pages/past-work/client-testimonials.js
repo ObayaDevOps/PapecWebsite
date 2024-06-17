@@ -21,35 +21,35 @@ const testimonials = [
     role: 'Governance Course ',
     content: 'Your flexibility and willingness to rethink the agenda midway was necessary to ensure the successful outcomes.',
     avatar:
-      'https://images.unsplash.com/photo-1603415526960-f7e0328c63b1?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=80',
+      'https://res.cloudinary.com/medoptics-image-cloud/image/upload/v1718637864/images_1_jje5hj.jpg',
   },
   {
     name: 'Kings International School Kampala, Director',
     role: 'Equipping Leaders Course',
     content:'​I just wanted to write and let you know how much we have enjoyed having you coach us. You really are an extremely good communicator. Everything we\'ve heard or discussed with you has been exactly what we\'ve needed to hear. You are really, really good at your job! ',
     avatar:
-      'https://images.unsplash.com/photo-1598550874175-4d0ef436c909?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=80',
+      'https://res.cloudinary.com/medoptics-image-cloud/image/upload/v1718637806/thTJLxxo_400x400_jgniba.jpg',
   },
   {
     name: 'Little Cranes Montessori Kindergarten, Headteacher',
     role: 'Professional Development Course',
-    content: 'Well-equipped and well-informed about the specific field. Variety of examples to study and good use of the tangible materia. No room for detachment!',
+    content: 'Well-equipped and well-informed about the specific field. Variety of examples to study and good use of the tangible material. No room for detachment!',
     avatar:
-      'https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=334&q=80',
+      'https://res.cloudinary.com/medoptics-image-cloud/image/upload/v1718637805/images_fjxltj.jpg',
   },
   {
     name: 'Taibah International School, Headteacher',
     role: 'School Operations Audit & Review Course',
     content: 'Thorough and very useful in giving us a clear view of areas of strength and our overlooked areas.',
     avatar:
-      'https://images.unsplash.com/photo-1606513542745-97629752a13b?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=80',
+      'https://res.cloudinary.com/medoptics-image-cloud/image/upload/v1718637806/Taibah-International-School-logo-300x155_kzzuvd.jpg',
   },
   {
     name: 'The North Green School, Director',
     role: 'School Start Up Course',
     content: 'The Consultantcy support received was beyond exceptional. It exceeded our expectations!',
     avatar:
-      'https://images.unsplash.com/photo-1606513542745-97629752a13b?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=80',
+      'https://res.cloudinary.com/medoptics-image-cloud/image/upload/v1718637987/images_2_zpvxof.jpg',
   },
 ]
 
