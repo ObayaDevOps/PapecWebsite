@@ -320,8 +320,8 @@ import theme from './theme';
           href: '/education/about/why-choose-us',
         },
         {
-          label: 'Consultant Profile',
-          subLabel: 'Audrey Dralega, FRSA',
+          label: 'Consultant Profiles',
+          // subLabel: 'Audrey Dralega, FRSA',
           href: '/education/about/consultant-profile',
         },
       ],

@@ -72,7 +72,7 @@ export default function ConsultantPageComponent() {
                           color={'purple.400'}
                           fontFamily='bodyFont'
                           >
-                              Consultant Profile
+                              Profiles
                           </chakra.h3>
                           <Heading
                               as={'h1'}
@@ -95,7 +95,7 @@ export default function ConsultantPageComponent() {
                                   fontWeight="extrabold"
                                   transition="all .65s ease" _hover={{ transform: 'scale(1.005)', filter: "brightness(120%)", }}
                                   py={6}>
-                                  Audrey Dralega
+                                  Our Consultants
                               </Text>
                           </Heading>
                           <chakra.h2
@@ -113,10 +113,14 @@ export default function ConsultantPageComponent() {
                            </chakra.h2>
                       </Box>
 
-                      <VisionPurposeContent />
+                      <ConsultantProfileContent1 />
 
 
-                      <FocusSection />
+                      <ConsultantProfileContent2 />
+
+
+
+                      {/* <FocusSection /> */}
 
 
                       <MultiSolutionsContent />
@@ -131,7 +135,7 @@ export default function ConsultantPageComponent() {
   )
 }
 
-const VisionPurposeContent = () => {
+const ConsultantProfileContent1 = () => {
   return (
       <Box
       borderWidth='1px'
@@ -154,13 +158,13 @@ const VisionPurposeContent = () => {
          p={{base: 4, lg:4}}
          fontFamily='bodyFont'
      >
-       Background
+       Audrey Dralega
      </Text>
 
      <Box  >
-     <SimpleGrid columns={{base: 1, md:1, lg: 2}}  >
+     <SimpleGrid columns={{base: 1, md:1, lg: 1}}  >
        {/* <Center > */}
-          <Box overflow='hidden' m={{base: 2, md: 6}} borderRadius={'10px'}>
+          {/* <Box overflow='hidden' m={{base: 2, md: 6}} borderRadius={'10px'}>
           <Image
                   src={'https://res.cloudinary.com/medoptics-image-cloud/image/upload/v1717075019/Consultant_zl8arc.jpg'}
                   width={570}
@@ -168,10 +172,10 @@ const VisionPurposeContent = () => {
               
                   
                   />
-          </Box>
+          </Box> */}
       {/* </Center> */}
 
-       <Box  mt={2} mb={{lg:20}} >
+       <Box  mt={2} mb={{lg:20}} p={4} >
          <SimpleGrid columns={1} spacing={10}>
           <Box>
               {/* <Text
@@ -220,6 +224,102 @@ const VisionPurposeContent = () => {
   )
 }
 
+const ConsultantProfileContent2 = () => {
+  return (
+      <Box
+      borderWidth='1px'
+       borderRadius='xl'
+      borderColor='purple.500'
+      shadow='xl'
+     //  overflow='hidden'
+     padding={8}
+     mx={{md: 10,lg:20}}
+     // paddingRight={12}
+     background="whiteAlpha.700"
+     my={{base: 16,md:20, lg: 20}}
+   >
+     <Text
+         bgClip="text"
+         bgGradient='linear(to-r, blackAlpha.800, purple.500)'
+         fontWeight="extrabold"
+         textAlign='left'
+         fontSize={{ base: "2xl",md: "5xl",}}
+         p={{base: 4, lg:4}}
+         fontFamily='bodyFont'
+     >
+       Fiona Naggaga Musoke
+     </Text>
+
+     <Box  >
+     <SimpleGrid columns={{base: 1, md:1, lg: 1}}  >
+       {/* <Center > */}
+          {/* <Box overflow='hidden' m={{base: 2, md: 6}} borderRadius={'10px'}>
+          <Image
+                  src={'https://res.cloudinary.com/medoptics-image-cloud/image/upload/v1717075019/Consultant_zl8arc.jpg'}
+                  width={570}
+                  height={320}
+              
+                  
+                  />
+          </Box> */}
+      {/* </Center> */}
+
+       <Box  mt={2} mb={{lg:20}} p={4} >
+         <SimpleGrid columns={1} spacing={10}>
+          <Box>
+              {/* <Text
+                  bgClip="text"
+                  bgGradient='linear(to-r, blackAlpha.800, purple.500)'
+                  fontWeight="extrabold"
+                  textAlign='left'
+                  fontSize={{ base: "xl",md: "3xl",}}
+                  fontFamily='bodyFont'
+              >
+              Background
+              </Text> */}
+              <Text
+                  textAlign='left'
+                  fontSize={{ base: "sm",md: "lg",}}
+                  fontFamily='bodyFont'
+                  mb={2}
+              >
+                Fiona Naggaga Musoke has over a decade of international school teaching experience as well
+as a keen understanding of the Ugandan National Curriculum. Following her Bachelor&#39;s
+Degree in Law from Makerere University, where she graduated among the top students in her
+class, Fiona’s interest in Human Rights led to her employment at the Uganda Human Rights
+Commission. After relocating from Uganda, Fiona obtained a Postgraduate Certificate in Law
+from the University of London which included a course on the International Rights of the
+Child. She then made the decision to pursue her true passion which is education.
+              </Text>
+              <Text
+                  textAlign='left'
+                  fontSize={{ base: "sm",md: "lg",}}
+                  fontFamily='bodyFont'
+                  mb={2}
+              >
+                Fiona has a Postgraduate Certificate in Education (International) from the University of
+Nottingham. She successfully completed a COBIS Programme for Middle Leaders and
+several TES Safeguarding and Duty of Care courses.
+              </Text>
+              <Text
+                  textAlign='left'
+                  fontSize={{ base: "sm",md: "lg",}}
+                  fontFamily='bodyFont'
+                  mb={2}
+              >
+                 She has delivered numerous BTEC & Higher National Certificate (HNC) training courses including Early Childhood Learning, Special Needs Education, Curriculum Mathematics and Curriculum Science and designed and delivered training both in her schools in the UK and in the international sector.
+              </Text>
+          </Box>  
+
+            
+         </SimpleGrid>
+       </Box>
+     </SimpleGrid>
+     </Box>
+     
+   </Box>        
+  )
+}
 
 const MultiSolutionsContent = () => {
   return (

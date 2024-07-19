@@ -24,13 +24,6 @@ const testimonials = [
       'https://res.cloudinary.com/medoptics-image-cloud/image/upload/v1718637864/images_1_jje5hj.jpg',
   },
   {
-    name: 'Kings International School Kampala, Director',
-    role: 'Equipping Leaders Course',
-    content:'​I just wanted to write and let you know how much we have enjoyed having you coach us. You really are an extremely good communicator. Everything we\'ve heard or discussed with you has been exactly what we\'ve needed to hear. You are really, really good at your job! ',
-    avatar:
-      'https://res.cloudinary.com/medoptics-image-cloud/image/upload/v1718637806/thTJLxxo_400x400_jgniba.jpg',
-  },
-  {
     name: 'Little Cranes Montessori Kindergarten, Headteacher',
     role: 'Professional Development Course',
     content: 'Well-equipped and well-informed about the specific field. Variety of examples to study and good use of the tangible material. No room for detachment!',
@@ -50,6 +43,13 @@ const testimonials = [
     content: 'The Consultantcy support received was beyond exceptional. It exceeded our expectations!',
     avatar:
       'https://res.cloudinary.com/medoptics-image-cloud/image/upload/v1718637987/images_2_zpvxof.jpg',
+  },
+  {
+    name: 'Kings International School Kampala, Director',
+    role: 'Equipping Leaders Course',
+    content:'​I just wanted to write and let you know how much we have enjoyed having you coach us. You really are an extremely good communicator. Everything we\'ve heard or discussed with you has been exactly what we\'ve needed to hear. You are really, really good at your job! ',
+    avatar:
+      'https://res.cloudinary.com/medoptics-image-cloud/image/upload/v1718637806/thTJLxxo_400x400_jgniba.jpg',
   },
 ]
 

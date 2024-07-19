@@ -31,6 +31,7 @@ import { CheckIcon, ChatIcon, ArrowRightIcon } from '@chakra-ui/icons'
 
 import Head from 'next/head';
 import Image from 'next/image'
+import Link from 'next/link'
 
 import NavBar from '../../../components/utils/navbar3'
 import BookingForm from '../courses/course-booking-form'
@@ -124,11 +125,10 @@ export default function CoursesPageComponent() {
 
                       <VisionPurposeContent />
 
-                      <CourseInfo />
+                      {/* <CourseInfo /> */}
 
 
-
-                      <BookingFormSection />
+                      {/* <BookingFormSection /> */}
 
 
                       <CallToAction />
@@ -164,7 +164,7 @@ const CourseInfo = () => {
          p={{base: 4, lg:4}}
          fontFamily='bodyFont'
      >
-       Areas of Training
+       Select Your Area of Training:
      </Text>
 
      <Box ml={6}>
@@ -198,7 +198,7 @@ const VisionPurposeContent = () => {
       shadow='xl'
      //  overflow='hidden'
      padding={8}
-     mx={{md: 10,lg:20}}
+     mx={{base: 0, md: 10,lg:20}}
      // paddingRight={12}
      background="whiteAlpha.700"
      my={{base: 16,md:20, lg: 20}}
@@ -209,7 +209,8 @@ const VisionPurposeContent = () => {
          fontWeight="extrabold"
          textAlign='left'
          fontSize={{ base: "2xl",md: "3xl",lg: "5xl"}}
-         p={{base: 4, lg:4}}
+
+         p={{base: 2, lg:4}}
          fontFamily='bodyFont'
      >
        What we Offer
@@ -221,11 +222,12 @@ const VisionPurposeContent = () => {
 
        <Box  mt={2} mb={{lg:20}} >
          <SimpleGrid columns={1} spacing={10}>
-          <Box ml={6}>
+          <Box ml={{base:2, md: 6}}>
               <Text
                   textAlign='left'
                   fontSize={{ base: "sm",md: "lg",}}
                   fontFamily='bodyFont'
+                  mb={4}
               >
                   Courses can be tailored to your specific needs. If you don’t see the course you need – contact us. We may be able to help.
 
@@ -251,6 +253,49 @@ const VisionPurposeContent = () => {
      {/* <Box mx={{lg:6}} >
         <TabsSection />
       </Box>  */}
+
+<Box
+      // borderWidth='1px'
+      // borderRadius='xl'
+      // borderColor='purple.500'
+      // shadow='xl'
+      //  overflow='hidden'
+      padding={2}
+      // mx={{md: 10,lg:20}}
+      // paddingRight={12}
+      background="whiteAlpha.700"
+      my={{base: 16,md:12, lg: 8}}
+    >
+           <Text
+         bgClip="text"
+         bgGradient='linear(to-r, blackAlpha.800, purple.500)'
+         fontWeight="extrabold"
+         textAlign='left'
+         fontSize={{ base: "xl",md: "3xl", lg:"5xl"}}
+         p={{base: 2, lg:4}}
+         mb={{base: 4}}
+         fontFamily='bodyFont'
+     >
+       Choose Your Area of Training:
+     </Text>
+
+     <Box ml={{base:2, md:4}}>
+     <SimpleGrid columns={1} spacing={4}>
+        <SolutionsListItem text="Subject Knowledge" href='/education/courses/course-booking-form' />
+        <SolutionsListItem text="Teaching and Learning Strategies" href='/education/courses/course-booking-form' />
+        <SolutionsListItem text="School Development" href='/education/courses/course-booking-form' />
+        <SolutionsListItem text="Child Development" href='/education/courses/course-booking-form' />
+        <SolutionsListItem text="Management & Finance" href='/education/courses/course-booking-form' />
+        <SolutionsListItem text="Early Childhood Education" href='/education/courses/course-booking-form' />
+        <SolutionsListItem text="Governance & Leadership" href='/education/courses/course-booking-form' />
+        <SolutionsListItem text="International Education" href='/education/courses/course-booking-form' />
+      </SimpleGrid>
+      </Box>  
+
+
+      
+      
+    </Box>
 
       
      </Box>
@@ -372,16 +417,22 @@ const SolutionsListItem = (props) => {
       paddingRight={{base:8,md:12}}
       // bgColor="gray.100"
       background="whiteAlpha.800"
+               transition="all .65s ease" _hover={{ transform: 'scale(1.03)', filter: "brightness(120%)", bg:'blackAlpha.200' }}
+
       // border='30px'
       // shadow={'md'}
       >
       <HStack  align={'flex-start'} >
         
-        <Box color={'green.400'} px={2} >
+        <Box color={'green.400'} px={2} 
+
+        >
           <Icon as={CheckIcon} />
         </Box>
         <VStack align={'start'}>
-          <Text color={'black'} fontWeight={200} fontSize={'xl'} fontFamily='bodyFont' >{props.text}</Text>
+          <Link href={props.href}>
+            <Text color={'black'} fontWeight={200} fontSize={{base: 'lg', md:'xl'}} fontFamily='bodyFont' >{props.text}</Text>
+          </Link>
         </VStack>
       </HStack>
       </Box>

@@ -1,7 +1,7 @@
 import '../styles/globals.css'
 import { ChakraProvider, Box, ScaleFade, Slide } from '@chakra-ui/react'
 import WithSubnavigation from '../components/utils/navbar2'
-import FooterLargeWithNewsletter from '../components/utils/footerNew' 
+import FooterLargeWithNewsletter from '../components/utils/footer' 
 // import theme from '../components/utils/theme'
 import { extendTheme } from '@chakra-ui/react'
 
