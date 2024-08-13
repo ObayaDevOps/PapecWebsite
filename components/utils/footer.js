@@ -118,7 +118,6 @@ export default function LargeWithNewsletter() {
             </Box>
           </Stack> */}
 
-          
           <Stack align={{base:'flex-start', md:'flex-end'}} pt={{md:4}}>
             <Box>
                 <Text fontSize={'sm'} fontFamily='bodyFont' textColor='white'>info@peopleandpotential.org</Text>
@@ -136,6 +135,64 @@ export default function LargeWithNewsletter() {
                 <Text fontSize={'sm'} fontFamily='bodyFont' textColor='white'>18 Millennium House Nsambya Road</Text>
             </Box>
           </Stack>
+
+          <SimpleGrid columns={{ base: 1, md: 2, lg:3 }} spacing={{base: 10, md: 10}}>
+
+
+          <Stack  align={{base:'flex-start', md:'flex-start'}} >
+            <Box>
+                <Text fontWeight={800} fontSize={'lg'} fontFamily='bodyFont' textColor='white'>Site Map</Text>
+            </Box>
+            <Box as='a' href='/#'>
+                <Text fontSize={'sm'} fontFamily='bodyFont' textColor='white'>Home</Text>
+            </Box>
+            <Box >
+                <Text fontSize={'sm'}  fontWeight={800} fontFamily='bodyFont' textColor='white'>About Us</Text>
+            </Box>
+            <Box  as='a' href='/education/about/who-we-are'>
+                <Text fontSize={'sm'} fontFamily='bodyFont' textColor='white'>Who We Are</Text>
+            </Box>
+            <Box as='a' href='/education/about/why-choose-us'>
+                <Text fontSize={'sm'} fontFamily='bodyFont' textColor='white'>Why Choose Us</Text>
+            </Box>
+            <Box as='a' href='/education/about/consultant-profile'>
+                <Text fontSize={'sm'} fontFamily='bodyFont' textColor='white'>Consultant Profiles</Text>
+                
+            </Box>
+            </Stack>
+            <Stack pt={{md:4}}>
+            <Box>
+                <Text fontSize={'sm'}  fontWeight={800} fontFamily='bodyFont' textColor='white'>Services</Text>
+            </Box>
+            <Box as='a' href='/education/services/school-startup'>
+                <Text fontSize={'sm'} fontFamily='bodyFont' textColor='white'>School Start Up</Text>
+            </Box>
+            <Box as='a' href='/education/services/school-development'>
+                <Text fontSize={'sm'} fontFamily='bodyFont' textColor='white'>School Development</Text>
+            </Box>
+            <Box>
+                <Text fontSize={'sm'}  fontWeight={800} fontFamily='bodyFont' textColor='white'>Courses</Text>
+            </Box>
+            <Box as='a' href='/education/courses/course-list'>
+                <Text fontSize={'sm'} fontFamily='bodyFont' textColor='white'>Course List</Text>
+            </Box>
+            <Box as='a' href='/education/courses/course-booking-form'>
+                <Text fontSize={'sm'} fontFamily='bodyFont' textColor='white'>Course Booking Form</Text>
+            </Box>
+            </Stack>
+            <Stack pt={4}>
+            <Box>
+                <Text fontSize={'sm'}  fontWeight={800} fontFamily='bodyFont' textColor='white'>Contact</Text>
+            </Box>
+            <Box as='a' href='/info/contact-enquiry'>
+                <Text fontSize={'sm'} fontFamily='bodyFont' textColor='white'>Contact Form</Text>
+            </Box>
+            
+
+          </Stack>
+          </SimpleGrid>
+          
+
 
         </SimpleGrid>
       </Container>

@@ -31,6 +31,10 @@ import NextLink from 'next/link'
 
 import NavBar from '../../components/utils/navbar3'
 import Marquee from "../../components/utils/marquee"
+
+import ImageGridPhotoGallery from '../../components/image-grid-Lightbox/imageGridPhotoGallery'
+import Carousel from '../../components/carousel'
+
 import Illustration1 from '../../public/images/illustrations/undraw_teacher_re_sico (1).svg';
 import Illustration2 from '../../public/images/illustrations/undraw_teaching_re_g7e3.svg';
 import Illustration3 from '../../public/images/illustrations/undraw_conference_re_2yld.svg';
@@ -65,13 +69,86 @@ export default function EducationHomePage() {
             bgGradient='linear(to-br, #e5e5f7, whiteAlpha.100)'
         > 
             <TitleSection />
+            <Carousel />
             {/* <ClientsMarquee /> */}
+            {/* <PhotoGrid /> */}
             <ThreeOffering />
             <ChooseUsSection />
             <ClientTestimonials />
             <CallToAction />
 
         </Box>
+    </Box>
+  )
+}
+
+
+const PhotoGrid = () => {
+  const imageGridImages =[
+    {   
+        src: "https://res.cloudinary.com/medoptics-image-cloud/image/upload/v1717496641/PP2_vgac0v.jpg",
+        width: 770,
+        height: 300,
+        caption: "Papec",
+    },
+    {   
+      src: "https://res.cloudinary.com/medoptics-image-cloud/image/upload/v1717407360/1000028379_rekc3e.jpg",
+      width: 1936,
+      height: 1936,
+      caption: "Papec",
+    },
+    {   
+      src: "https://res.cloudinary.com/medoptics-image-cloud/image/upload/v1717407365/IMG_20200215_095503_n1naci.jpg",
+      width: 4608,
+      height: 3456,
+      caption: "Papec",
+    },
+    {   
+      src: "https://res.cloudinary.com/medoptics-image-cloud/image/upload/v1713532448/PP-Website-Banner-9_tviyet.jpg",
+      width: 1366,
+      height: 500,
+      caption: "Papec",
+    },
+    {   
+      src: "https://res.cloudinary.com/medoptics-image-cloud/image/upload/v1715259596/PP1_w92zkp.jpg",
+      width: 570,
+      height: 320,
+      caption: "Papec",
+    },
+    {   
+      src: "https://res.cloudinary.com/medoptics-image-cloud/image/upload/v1717074276/PP-Website-Banner-4_mv8poh.jpg",
+      width: 1366,
+      height: 500,
+      caption: "Papec",
+    },
+    {   
+      src: "https://res.cloudinary.com/medoptics-image-cloud/image/upload/v1717074277/PP-Website-Banner-7_cz77xw.jpg",
+      width: 1366,
+      height: 500,
+      caption: "Papec",
+    },
+    {   
+      src: "https://res.cloudinary.com/medoptics-image-cloud/image/upload/v1717074280/slider-3_yoybfu.jpg",
+      width: 1366,
+      height: 520,
+      caption: "Papec",
+    },
+    {   
+      src: "https://res.cloudinary.com/medoptics-image-cloud/image/upload/v1717074291/About-us_e3pzcc.jpg",
+      width: 570,
+      height: 320,
+      caption: "Papec",
+    },
+
+
+        
+  
+  
+  ] 
+
+  return (
+    <Box p={{base: 10, lg: 24}} minH={'75vh'}>
+     <ImageGridPhotoGallery photos={imageGridImages} />
     </Box>
   )
 }
@@ -86,23 +163,23 @@ const TitleSection = () => {
 
     return(
 
-      <ScaleFade initialScale={0.6}
-    in={isInView1}>
+    //   <ScaleFade initialScale={0.6}
+    // in={isInView1}>
       
 
     
         <Box py={{base: 8, md: 2}}   w={{ base: 9 / 12, md: 11 / 12, xl: 9 / 12 }}
         mx="auto"
-        minH={{lg:'75vh'}}       
+        minH={{md:'25vh', lg:'45vh'}}       
         >
-            <Box py={{base:6, md: 8}} >
+            <Box py={{base:6, md: 0, lg: 0}} >
             <VStack spacing={4} as={Container} maxW={'8xl'} textAlign={'center'}>
                 <HStack>
                     <Box>
-                
+
                         <Heading fontSize={{base:'5xl',md:'7xl', lg:'7xl'}} bgClip="text"
                             // textColor="purple.900"
-                            textAlign={{base:'center', lg:'left'}}
+                            textAlign={{base:'center'}}
                             fontWeight="extrabold"
                             letterSpacing={{ base: "normal", md: "tight" }}
 
@@ -114,9 +191,11 @@ const TitleSection = () => {
                             >
                                 Professional Educational Training
                         </Heading>
+                        <Flex justify={{base:'center', md: 'center', lg:'center'}}>
+
                         <Text 
                             fontFamily='bodyFont'
-                            textAlign={{base:'center', lg:'left'}}
+                            textAlign={{base:'center'}}
                             py={4}
                             maxW='xl' 
                             color={useColorModeValue('gray.700', 'gray.200')}
@@ -124,7 +203,9 @@ const TitleSection = () => {
                             >
                         We focus on creating training systems that effectively convey your company&apos;s identity, then optimize for an enhanced learning experience.
                         </Text>
-                        <Flex justify={{base:'center', md: 'center', lg:'left'}}>
+                        </Flex>
+
+                        <Flex justify={{base:'center', md: 'center', lg:'center'}}>
                             <Button
                             border={'1px'}
                             borderColor={'purple.500'}
@@ -152,7 +233,7 @@ const TitleSection = () => {
                             </Flex>
                     </Box>
 
-                    <Box
+                    {/* <Box
                     // border={'1px'}
                     // borderColor={'purple.400'}
                     // borderRadius='6px'
@@ -160,14 +241,16 @@ const TitleSection = () => {
                     p={20}
                     // bg={'white'}
                     display={{base: 'none', lg:'flex'}}
+                    rounded={'2xl'}
                     >
                         <Image
-                        src={'https://res.cloudinary.com/medoptics-image-cloud/image/upload/v1715030601/undraw_teacher_re_sico_1_cvyauz.svg'}
-                        width={800}
-                        height={800}
+                        src={'https://res.cloudinary.com/medoptics-image-cloud/image/upload/v1715259596/PP1_w92zkp.jpg'}
+                        width={570*3}
+                        height={320*3}
+                        rounded={'2xl'}
                         
                         />
-                    </Box>
+                    </Box> */}
                 </HStack>
 
             </VStack>
@@ -175,7 +258,7 @@ const TitleSection = () => {
 
         </Box>
 
-        </ScaleFade>
+        // </ScaleFade>
     )
 }
 
@@ -494,10 +577,9 @@ const ThreeOffering = () => {
     return (
       <Box mt={20} pt={16} bg="purple.500" rounded='xl'  >
             <chakra.h2
-              // mt={2}
+              mt={2}
               fontSize={{
-                base: "3xl",
-                sm: "4xl",
+                base: "5xl",
                 lg: "6xl"
               }}
               // lineHeight="8"
@@ -545,7 +627,7 @@ const ThreeOffering = () => {
         
         <Feature
           title="Standards"
-          img={'https://res.cloudinary.com/medoptics-image-cloud/image/upload/v1715030571/undraw_conference_re_2yld_bblfid.svg'}
+          img={'https://res.cloudinary.com/medoptics-image-cloud/image/upload/v1717074291/About-us_e3pzcc.jpg'}
         >
           Drive achievement through rigorous review, analysis and collaborative strategic planning 
         </Feature>
@@ -553,7 +635,7 @@ const ThreeOffering = () => {
         <Feature
           title="Training"
           // img={'https://res.cloudinary.com/medoptics-image-cloud/image/upload/v1715030808/undraw_team_collaboration_re_ow29_anrjuw.svg'}
-          img={'https://res.cloudinary.com/medoptics-image-cloud/image/upload/v1715030808/undraw_team_collaboration_re_ow29_anrjuw.svg'}
+          img={'https://res.cloudinary.com/medoptics-image-cloud/image/upload/v1717407365/IMG_20200215_095503_n1naci.jpg'}
 
         >
           Equip and inspire educators through focused high-calibre training, mentoring & coaching
@@ -561,7 +643,7 @@ const ThreeOffering = () => {
 
         <Feature
           title="Systems"
-          img={'https://res.cloudinary.com/medoptics-image-cloud/image/upload/v1715030591/undraw_teaching_re_g7e3_ff9imi.svg'}
+          img={'https://res.cloudinary.com/medoptics-image-cloud/image/upload/v1717407360/1000028379_rekc3e.jpg'}
 
         >
           Design of systems that work to embed improvements in everyday practice.

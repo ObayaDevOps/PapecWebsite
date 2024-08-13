@@ -108,7 +108,7 @@ export default function ConsultantPageComponent() {
                           fontFamily={'bodyFont'}
 
                           >
-                          With a blend of national and international education experience, Audrey Dralega offers a balanced understanding of education systems and school development.
+                          With a blend of national and international education experience, we offer a balanced understanding of education systems and school development.
                           
                            </chakra.h2>
                       </Box>
