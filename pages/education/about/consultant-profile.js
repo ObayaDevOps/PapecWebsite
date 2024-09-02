@@ -301,15 +301,7 @@ Child. She then made the decision to pursue her true passion which is education.
 Nottingham. She successfully completed a COBIS Programme for Middle Leaders and
 several TES Safeguarding and Duty of Care courses.
               </Text>
-              <Text
-                  textAlign='left'
-                  fontSize={{ base: "sm",md: "lg",}}
-                  fontFamily='bodyFont'
-                  mb={2}
-              >
-                 She has delivered numerous BTEC & Higher National Certificate (HNC) training courses including Early Childhood Learning, Special Needs Education, Curriculum Mathematics and Curriculum Science and designed and delivered training both in her schools in the UK and in the international sector.
-              </Text>
-          </Box>  
+
 
             
          </SimpleGrid>
