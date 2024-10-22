@@ -302,7 +302,7 @@ Nottingham. She successfully completed a COBIS Programme for Middle Leaders and
 several TES Safeguarding and Duty of Care courses.
               </Text>
 
-
+          </Box>
             
          </SimpleGrid>
        </Box>

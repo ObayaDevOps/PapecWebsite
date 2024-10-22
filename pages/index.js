@@ -7,8 +7,29 @@ import Clients from '../components/landingPage/clients'
 import Image from 'next/image'
 import CallToActionBanner from '../components/callToActionBanner'
 
+import  client  from '../src/sanity/lib/client.js'
 
-export default function Home() {
+
+export async function getStaticProps() {
+  const landingPageContent = await client.fetch(`
+    *[_type == "landingPage"]`);
+
+  return {
+    props: {
+      landingPageContent,
+    },
+    revalidate: 10, // In seconds
+  };
+}
+
+
+
+export default function Home(props) {
+
+  console.log('Index - landingPageContent')
+
+  console.log(props)  
+  
   return (
     <div >
       <Head>
@@ -26,7 +47,7 @@ export default function Home() {
       </Head>
 
       <Box bg={'whiteAlpha.200'}>
-        <EducationLanding />
+        <EducationLanding content={props} />
         
         {/* <Clients /> */}
         

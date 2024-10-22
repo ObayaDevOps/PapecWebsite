@@ -1,20 +1,5 @@
 import { PackageIcon } from '@sanity/icons'
-import { format, parseISO } from 'date-fns'
-import { defineField, defineType, defineConfig } from 'sanity'
-// import { muxInput } from 'sanity-plugin-mux-input'
-
-/**
- *
- * Here you'll be able to edit the different fields that appear when you 
- * create or edit a post in the studio.
- * 
- * Here you can see the different schema types that are available:
-
-  https://www.sanity.io/docs/schema-types
-
- */
-
-
+import { defineField, defineType } from 'sanity'
 
 export default defineType({
   name: 'landingPage',
@@ -29,107 +14,83 @@ export default defineType({
       validation: (rule) => rule.required(),
     }),
     defineField({
-      name: 'eventName',
-      title: 'Event Name',
+      name: 'heading',
+      title: 'Heading',
       type: 'string',
       validation: (rule) => rule.required(),
     }),
     defineField({
-      name: 'subTitle',
-      title: 'Sub Title',
-      type: 'string',
+      name: 'description',
+      title: 'Description',
+      type: 'text',
+      validation: (rule) => rule.required(),
     }),
-
-    //Archive Images
     defineField({
-        name: 'eventLandingDisplayImage',
-        title: 'Event Landing Display Image',
-        type: 'image',
-        options: {
-          hotspot: true,
+      name: 'carouselImages',
+      title: 'Carousel Images',
+      type: 'array',
+      of: [{ type: 'image' }],
+      validation: (rule) => rule.required().min(1).max(5),
+    }),
+    defineField({
+      name: 'whatWeOffer',
+      title: 'What We Offer',
+      type: 'array',
+      of: [
+        {
+          type: 'object',
+          fields: [
+            { name: 'title', title: 'Title', type: 'string' },
+            { name: 'description', title: 'Description', type: 'text' },
+            { name: 'image', title: 'Image', type: 'image' },
+          ],
         },
-      }),
-
-      defineField({
-        name: 'eventStartTime',
-        title: 'Event Start Time',
-        type: 'datetime',
-        validation: (rule) => rule.required(),
-      }), 
-
-      defineField({
-        name: 'eventEndTime',
-        title: 'Event End Time',
-        type: 'datetime',
-        validation: (rule) => rule.required(),
-      }), 
-
-      //For the Archive Page
-      defineField({
-        name: 'eventLandingPageDisplayShortDescription',
-        title: 'Event Landing Page Display Short Description',
-        type: 'string',
-        validation: (rule) => rule.required(),
-      }),
-
+      ],
+      validation: (rule) => rule.required().min(3),
+    }),
     defineField({
-      name: 'eventParagraphText1',
-      title: 'Event Description Paragraph 1',
-      type: 'text',
+      name: 'whyChooseUs',
+      title: 'Why Choose Us',
+      type: 'object',
+      fields: [
+        { name: 'title', title: 'Title', type: 'string' },
+        { name: 'description', title: 'Description', type: 'text' },
+      ],
       validation: (rule) => rule.required(),
     }),
-
     defineField({
-      name: 'eventParagraphText2',
-      title: 'Event Paragraph Text 2 (Optional)',
-      type: 'text',
+      name: 'testimonials',
+      title: 'Testimonials',
+      type: 'array',
+      of: [
+        {
+          type: 'object',
+          fields: [
+            { name: 'quote', title: 'Quote', type: 'text' },
+            { name: 'author', title: 'Author', type: 'string' },
+            { name: 'course', title: 'Course', type: 'string' },
+            { name: 'image', title: 'Image', type: 'image' },
+          ],
+        },
+      ],
+      validation: (rule) => rule.required().min(1),
     }),
-
     defineField({
-      name: 'eventParagraphText3',
-      title: 'Event Paragraph Text 3 (Optional)',
-      type: 'text',
-    }),
-
-    defineField({
-      name: 'contactSocialLink',
-      title: 'Contact Social Link (Instagram)',
-      type: 'url',
+      name: 'callToAction',
+      title: 'Call to Action',
+      type: 'object',
+      fields: [
+        { name: 'title', title: 'Title', type: 'string' },
+        { name: 'subtitle', title: 'Subtitle', type: 'string' },
+      ],
       validation: (rule) => rule.required(),
-
     }),
-
-    //Slug - URL
-    {
-        title: 'Slug (This will be the url link name - just click generate)',
-        name: 'slug',
-        type: 'slug',
-        options: {
-          source: 'title',
-          maxLength: 200, // will be ignored if slugify is set
-          slugify: input => input
-                               .toLowerCase()
-                               .replace(/\s+/g, '-')
-                               .slice(0, 200)
-        }
-    }
-
 
   ],
   preview: {
     select: {
       title: 'title',
-      author: 'author.name',
-      date: 'date',
-      media: 'coverImage',
-    },
-    prepare({ title, media, author, date }) {
-      const subtitles = [
-        author && `by ${author}`,
-        date && `on ${format(parseISO(date), 'LLL d, yyyy')}`,
-      ].filter(Boolean)
-
-      return { title, media, subtitle: subtitles.join(' ') }
+      media: 'carouselImages.0',
     },
   },
 })
