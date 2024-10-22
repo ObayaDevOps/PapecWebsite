@@ -33,8 +33,8 @@ import Head from 'next/head';
 import Image from 'next/image'
 import Link from 'next/link'
 
-import NavBar from '../../../components/utils/navbar3'
-import BookingForm from '../courses/course-booking-form'
+import NavBar from '../components/utils/navbar3'
+import BookingForm from './education/courses/course-booking-form'
 
 export default function CoursesPageComponent() {
   return (

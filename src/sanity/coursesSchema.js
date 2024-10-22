@@ -34,7 +34,6 @@ export default defineType({
           type: 'object',
           fields: [
             { name: 'title', title: 'Title', type: 'string' },
-            { name: 'link', title: 'Link', type: 'url' },
           ],
         },
       ],
@@ -48,20 +47,6 @@ export default defineType({
         { name: 'title', title: 'Title', type: 'string' },
         { name: 'subtitle', title: 'Subtitle', type: 'string' },
       ],
-      validation: (rule) => rule.required(),
-    }),
-    defineField({
-      name: 'slug',
-      title: 'Slug',
-      type: 'slug',
-      options: {
-        source: 'title',
-        maxLength: 200,
-        slugify: input => input
-          .toLowerCase()
-          .replace(/\s+/g, '-')
-          .slice(0, 200)
-      },
       validation: (rule) => rule.required(),
     }),
   ],

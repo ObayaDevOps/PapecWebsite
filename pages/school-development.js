@@ -1,5 +1,3 @@
-
-
 import {
     Avatar,
     Box,
@@ -24,117 +22,154 @@ import {
   import Head from 'next/head';
   import Image from 'next/image'
   
-  import NavBar from '../../../components/utils/navbar3'
+  import NavBar from '../components/utils/navbar3'
+  import imageUrlBuilder from '@sanity/image-url'
+import {getImageDimensions} from '@sanity/asset-utils'
+import client from '../src/sanity/lib/client.js'
+
+// Initialize the image URL builder
+const builder = imageUrlBuilder(client)
+
+function urlFor(source) {
+  return builder.image(source)
+}
+
+
+export async function getStaticProps() {
+  const servicesSchoolDevelopmentPageContent = await client.fetch(`
+    *[_type == "servicesSchoolDevelopment"][0]
+  `);
+
+  return {
+    props: {
+      servicesSchoolDevelopmentPageContent,
+    },
+    revalidate: 10, // In seconds
+  };
+}
+
   
-  export default function SchoolDevelopmentPageComponent() {
+  export default function SchoolDevelopmentPageComponent({ servicesSchoolDevelopmentPageContent }) {
+    const { 
+      title, 
+      heading, 
+      introduction, 
+      image1, 
+      whereToBegin, 
+      reviewProcessHeading, 
+      reviewProcess, 
+      developmentPrioritiesHeading, 
+      developmentPriorities, 
+      callToAction 
+    } = servicesSchoolDevelopmentPageContent;
+
+    const imageUrl = urlFor(image1).url();
+    const { width, height } = getImageDimensions(image1);
+
     return (
-        <Box>
-            <Head>
-                <title>School Development | People and Potential Consultancy</title>
-                <meta name="description" content="People and Potential Consultancy" />
-                <link rel="shortcut icon" href="../../../images/icon/People__Potential-Logo_Full_Color-2.png"></link>
+      <Box>
+        <Head>
+          <title>{title} | People and Potential Consultancy</title>
+          <meta name="description" content="People and Potential Consultancy" />
+          <link rel="shortcut icon" href="../../../images/icon/People__Potential-Logo_Full_Color-2.png"></link>
   
-                <meta property="og:title" content="People and Potential Consultancy" />
-                <meta property="og:description" content="Professional HR Training" />
-                <meta property="og:image" content="https://res.cloudinary.com/medoptics-image-cloud/image/upload/v1713782566/People__Potential-Logo_Full_Color-1_wno2bv.png" />
-                <meta property="og:image:secure_url" content="https://res.cloudinary.com/medoptics-image-cloud/image/upload/v1713782566/People__Potential-Logo_Full_Color-1_wno2bv.png" />
-                <meta property="og:url" content="https://papec-website.vercel.app/" />
-                <meta property="og:type" content="website" />
-            
-            </Head>
+          <meta property="og:title" content="People and Potential Consultancy" />
+          <meta property="og:description" content="Professional HR Training" />
+          <meta property="og:image" content="https://res.cloudinary.com/medoptics-image-cloud/image/upload/v1713782566/People__Potential-Logo_Full_Color-1_wno2bv.png" />
+          <meta property="og:image:secure_url" content="https://res.cloudinary.com/medoptics-image-cloud/image/upload/v1713782566/People__Potential-Logo_Full_Color-1_wno2bv.png" />
+          <meta property="og:url" content="https://papec-website.vercel.app/" />
+          <meta property="og:type" content="website" />
+        
+        </Head>
   
-            <NavBar />
+        <NavBar />
   
-            <Box py={6} bgGradient='linear(to-br, #e5e5f7, whiteAlpha.100)'>
-                <Container 
-                    maxW={{base:'1xl',md:'85vw'}} 
-                    py={6} 
-                    minHeight={{md:'110vh'}}   
-                    // background="rgba(240,255,244,0.55)"
-                    bg='whiteAlpha.600'
-                    rounded='3xl' 
-                    shadow='2xl'
-                    border={'1px'}
-                    borderColor={'purple.600'}    
-                >
-                    <Flex
-                        textAlign={'center'}
-                        pt={10}
-                        justifyContent={'center'}
-                        direction={'column'}
-                        width={'full'}
-                        overflow={'hidden'}>
-                        <Box width={{ base: 'full', sm: 'lg', lg: 'xl' }} margin={'auto'}>
-                            <chakra.h3
-                            fontWeight={'bold'}
-                            fontSize={20}
-                            textTransform={'uppercase'}
-                            color={'purple.400'}
-                            fontFamily='bodyFont'
-                            >
-                                Services
-                            </chakra.h3>
-                            <Heading
-                                as={'h1'}
-                                mb={{base: 2, md: 10}}
-                                fontSize={{ base: "5xl",md: "6xl", lg:"7xl",}}
-                                minHeight={'1vh'}
-                                fontWeight="bold"
-                                lineHeight="none"
-                                letterSpacing={{base: "normal",md: "tight" }}
-                                color="purple.900"
-                                textAlign='center'
-                                fontFamily={'bodyFont'}>
-                                <Text
-                                    display={{base: "block",
-                                                // lg: "inline",
-                                            }}
-                                    w="full"
-                                    bgClip="text"
-                                    bgGradient='linear(to-r, blackAlpha.800, purple.500)'
-                                    fontWeight="extrabold"
-                                    transition="all .65s ease" _hover={{ transform: 'scale(1.005)', filter: "brightness(120%)", }}
-                                    py={6}>
-                                    School Development
-                                </Text>
-                            </Heading>
-                            <chakra.h2
-                            margin={'auto'}
-                            width={'100%'}
-                            fontWeight={'medium'}
-                            fontSize={'lg'}
-                            color={useColorModeValue('gray.500', 'gray.400')}
-                            mt={{base:-2,md: -8, lg:-8}}
-                            fontFamily={'bodyFont'}
+        <Box py={6} bgGradient='linear(to-br, #e5e5f7, whiteAlpha.100)'>
+            <Container 
+                maxW={{base:'1xl',md:'85vw'}} 
+                py={6} 
+                minHeight={{md:'110vh'}}   
+                bg='whiteAlpha.600'
+                rounded='3xl' 
+                shadow='2xl'
+                border={'1px'}
+                borderColor={'purple.600'}    
+            >
+                <Flex
+                    textAlign={'center'}
+                    pt={10}
+                    justifyContent={'center'}
+                    direction={'column'}
+                    width={'full'}
+                    overflow={'hidden'}>
+                    <Box width={{ base: 'full', sm: 'lg', lg: 'xl' }} margin={'auto'}>
+                        <chakra.h3
+                        fontWeight={'bold'}
+                        fontSize={20}
+                        textTransform={'uppercase'}
+                        color={'purple.400'}
+                        fontFamily='bodyFont'
+                        >
+                            Services
+                        </chakra.h3>
+                        <Heading
+                            as={'h1'}
+                            mb={{base: 2, md: 10}}
+                            fontSize={{ base: "5xl",md: "6xl", lg:"7xl",}}
+                            minHeight={'1vh'}
+                            fontWeight="bold"
+                            lineHeight="none"
+                            letterSpacing={{base: "normal",md: "tight" }}
+                            color="purple.900"
+                            textAlign='center'
+                            fontFamily={'bodyFont'}>
+                            <Text
+                                display={{base: "block"}}
+                                w="full"
+                                bgClip="text"
+                                bgGradient='linear(to-r, blackAlpha.800, purple.500)'
+                                fontWeight="extrabold"
+                                transition="all .65s ease" _hover={{ transform: 'scale(1.005)', filter: "brightness(120%)", }}
+                                py={6}>
+                                {heading}
+                            </Text>
+                        </Heading>
+                        <chakra.h2
+                        margin={'auto'}
+                        width={'100%'}
+                        fontWeight={'medium'}
+                        fontSize={'lg'}
+                        color={useColorModeValue('gray.500', 'gray.400')}
+                        mt={{base:-2,md: -8, lg:-8}}
+                        fontFamily={'bodyFont'}
   
-                            >
-                            Systematic school development planning underpins effective practice and is essential to ensuring high standards and ongoing school improvement. 
-                            
-                             </chakra.h2>
-                        </Box>
+                        >
+                        {introduction}
+                        </chakra.h2>
+                    </Box>
   
-                        <VisionPurposeContent />
+                    <VisionPurposeContent whereToBegin={whereToBegin} imageUrl={imageUrl} width={width} height={height} />
   
     
   
-                        <ReviewContent />
+                    <ReviewContent reviewProcessHeading={reviewProcessHeading} reviewProcess={reviewProcess} />
                         
 
 
-                        <NextStepsContent />
+                    <NextStepsContent developmentPrioritiesHeading={developmentPrioritiesHeading} developmentPriorities={developmentPriorities} />
 
   
   
-                        <CallToAction />
+                    <CallToAction callToAction={callToAction} />
   
-                    </Flex>
-                </Container>
-            </Box>
+                </Flex>
+            </Container>
         </Box>
+    </Box>
     )
   }
   
-  const VisionPurposeContent = () => {
+  const VisionPurposeContent = ({ whereToBegin, imageUrl, width, height }) => {
     return (
         <Box
         borderWidth='1px'
@@ -165,11 +200,10 @@ import {
          {/* <Center > */}
             <Box overflow='hidden' m={{base: 2, md: 6}} borderRadius={'10px'}>
             <Image
-                    src={'https://res.cloudinary.com/medoptics-image-cloud/image/upload/v1717074276/PP-Website-Banner-4_mv8poh.jpg'}
-                    width={1366}
-                    height={500}
-                
-                    
+                    src={imageUrl}
+                    width={width}
+                    height={height}
+                    alt="School Development"
                     />
             </Box>
         {/* </Center> */}
@@ -192,7 +226,7 @@ import {
                     fontSize={{ base: "sm",md: "lg",}}
                     fontFamily='bodyFont'
                 >
-                  The starting point for this process is to gain thorough understanding of previous and current practice. The review process is always tailored to the specific needs of the school.
+                  {whereToBegin}
                 </Text>
             </Box>  
   
@@ -207,7 +241,7 @@ import {
   }
   
   
-  const ReviewContent = () => {
+  const ReviewContent = ({ reviewProcessHeading, reviewProcess }) => {
     return (
         <Box
         borderWidth='1px'
@@ -230,7 +264,7 @@ import {
            p={{base: 4, lg:4}}
            fontFamily='bodyFont'
        >
-         We offer a full school review process which may include:
+         {reviewProcessHeading}
        </Text>
   
        <Box  >
@@ -241,21 +275,16 @@ import {
                     src={'https://res.cloudinary.com/medoptics-image-cloud/image/upload/v1717496641/PP2_vgac0v.jpg'}
                     width={1366}
                     height={500}
-                
-                    
+                    alt="Review Process"
                     />
             </Box>
         {/* </Center> */}
   
          <Box  mt={2} mb={{lg:20}} >
            <SimpleGrid columns={1} spacing={6}>
-                <SolutionsListItem text="Review of current systems and practice" />
-                <SolutionsListItem text="Review of classroom practice and performance" />
-                <SolutionsListItem text="Assessment processes, use of tracking data and systems for monitoring processes" />
-                <SolutionsListItem text="Audit of parental, staff and children’s expectations and perceptions" />             
-                <SolutionsListItem text="Lesson observation and evaluation of teaching standards" />             
-                <SolutionsListItem text="Resources and financial planning for best value" />           
-           
+                {reviewProcess.map((item, index) => (
+                    <SolutionsListItem key={index} text={item} />
+                ))}
            </SimpleGrid>
          </Box>
        </SimpleGrid>
@@ -266,7 +295,7 @@ import {
   }
   
 
-  const NextStepsContent = () => {
+  const NextStepsContent = ({ developmentPrioritiesHeading, developmentPriorities }) => {
     return (
         <Box
         borderWidth='1px'
@@ -289,9 +318,7 @@ import {
            p={{base: 4, lg:4}}
            fontFamily='bodyFont'
        >
-         The next step is the identification of priorities for development and well-targeted advice and support to ensure effective outcomes.
-
-This may include:
+         {developmentPrioritiesHeading}
        </Text>
   
        <Box  >
@@ -302,23 +329,16 @@ This may include:
                     src={'https://res.cloudinary.com/medoptics-image-cloud/image/upload/v1717074277/PP-Website-Banner-7_cz77xw.jpg'}
                     width={1366}
                     height={500}
-                
-                    
+                    alt="Development Priorities"
                     />
             </Box>
         {/* </Center> */}
   
          <Box  mt={2} mb={{lg:20}} >
            <SimpleGrid columns={1} spacing={6}>
-                <SolutionsListItem text="Guidance for the Leadership Team on prioritising and planning Strategies for effective learning & teaching" />
-                <SolutionsListItem text="Developing a thorough understanding of curriculum requirements and the rationale behind teaching strategies" />
-                <SolutionsListItem text="Guidance on financial planning and the development of resources" />
-                <SolutionsListItem text="Development of systems for assessing learning & tracking achievement" />             
-                <SolutionsListItem text="Teacher development, mentoring and training" />             
-                <SolutionsListItem text="Organisational structure and management" />           
-                <SolutionsListItem text="Guidance on compliance to international or national standards" />           
-                <SolutionsListItem text="Curriculum overview and development"/>           
-
+                {developmentPriorities.map((item, index) => (
+                    <SolutionsListItem key={index} text={item} />
+                ))}
            </SimpleGrid>
          </Box>
        </SimpleGrid>
@@ -357,7 +377,7 @@ This may include:
   
   
   
-  const CallToAction = () => {
+  const CallToAction = ({ callToAction }) => {
     return (
       <Flex
       // bg="#edf3f8"
@@ -391,7 +411,7 @@ This may include:
             _dark={{ color: "gray.100" }}
           >
             <chakra.span display="block">
-            Don&apos;t Leave it to Chance
+              {callToAction.title}
             </chakra.span>
             <chakra.span
               display="block"
@@ -401,7 +421,7 @@ This may include:
             bgGradient="linear(to-r, purple.900, purple.300)"
             pr={10}
             >
-              Take your School to the Next Level!
+              {callToAction.subtitle}
             </chakra.span>
           </chakra.h2>
           <Stack

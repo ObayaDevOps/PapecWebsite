@@ -332,12 +332,12 @@ import theme from './theme';
         {
           label: 'School Start Up',
           subLabel: 'Getting you going',
-          href: '/education/services/school-startup',
+          href: '/school-startup',
         },
         {
           label: 'School Development',
           subLabel: 'Moving you forward',
-          href: '/education/services/school-development',
+          href: '/school-development',
         },
       ],
     }, 
@@ -349,7 +349,7 @@ import theme from './theme';
         {
           label: 'Course List and Booking',
           subLabel: 'Choose your speciality',
-          href: '/education/courses/course-list',
+          href: '/course-list',
         }
       ],
     }, 
