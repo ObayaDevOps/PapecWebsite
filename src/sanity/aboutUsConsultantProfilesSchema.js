@@ -14,6 +14,12 @@ export default defineType({
       validation: (rule) => rule.required(),
     }),
     defineField({
+      name: 'heading',
+      title: 'Heading',
+      type: 'string',
+      validation: (rule) => rule.required(),
+    }),
+    defineField({
       name: 'introduction',
       title: 'Introduction',
       type: 'text',
@@ -35,13 +41,7 @@ export default defineType({
       ],
       validation: (rule) => rule.required().min(1),
     }),
-    defineField({
-      name: 'skills',
-      title: 'Skills',
-      type: 'array',
-      of: [{ type: 'string' }],
-      validation: (rule) => rule.required().min(1),
-    }),
+
     defineField({
       name: 'callToAction',
       title: 'Call to Action',
@@ -52,20 +52,7 @@ export default defineType({
       ],
       validation: (rule) => rule.required(),
     }),
-    defineField({
-      name: 'slug',
-      title: 'Slug',
-      type: 'slug',
-      options: {
-        source: 'title',
-        maxLength: 200,
-        slugify: input => input
-          .toLowerCase()
-          .replace(/\s+/g, '-')
-          .slice(0, 200)
-      },
-      validation: (rule) => rule.required(),
-    }),
+    
   ],
   preview: {
     select: {
