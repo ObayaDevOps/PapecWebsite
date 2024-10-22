@@ -24,7 +24,7 @@ import {
   import Head from 'next/head';
   import Image from 'next/image'
 
-  import NavBar from '../../../components/utils/navbar3'
+  import NavBar from '../components/utils/navbar3'
 
   export default function WhoWeArePageComponent() {
     return (

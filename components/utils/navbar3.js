@@ -312,17 +312,17 @@ import theme from './theme';
         {
           label: 'Who We Are',
           subLabel: 'Vision and Purpose ',
-          href: '/education/about/who-we-are',
+          href: '/who-we-are',
         },
         {
           label: 'Why Choose Us?',
           subLabel: '',
-          href: '/education/about/why-choose-us',
+          href: '/why-choose-us',
         },
         {
           label: 'Consultant Profiles',
           // subLabel: 'Audrey Dralega, FRSA',
-          href: '/education/about/consultant-profile',
+          href: '/consultant-profile',
         },
       ],
     },

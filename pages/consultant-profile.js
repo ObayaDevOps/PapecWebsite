@@ -24,7 +24,7 @@ import { CheckIcon, ChatIcon, ArrowRightIcon } from '@chakra-ui/icons'
 import Head from 'next/head';
 import Image from 'next/image'
 
-import NavBar from '../../../components/utils/navbar3'
+import NavBar from '../components/utils/navbar3'
 
 export default function ConsultantPageComponent() {
   return (
@@ -284,12 +284,12 @@ const ConsultantProfileContent2 = () => {
                   mb={2}
               >
                 Fiona Naggaga Musoke has over a decade of international school teaching experience as well
-as a keen understanding of the Ugandan National Curriculum. Following her Bachelor&#39;s
-Degree in Law from Makerere University, where she graduated among the top students in her
-class, Fiona’s interest in Human Rights led to her employment at the Uganda Human Rights
-Commission. After relocating from Uganda, Fiona obtained a Postgraduate Certificate in Law
-from the University of London which included a course on the International Rights of the
-Child. She then made the decision to pursue her true passion which is education.
+                as a keen understanding of the Ugandan National Curriculum. Following her Bachelor&#39;s
+                Degree in Law from Makerere University, where she graduated among the top students in her
+                class, Fiona’s interest in Human Rights led to her employment at the Uganda Human Rights
+                Commission. After relocating from Uganda, Fiona obtained a Postgraduate Certificate in Law
+                from the University of London which included a course on the International Rights of the
+                Child. She then made the decision to pursue her true passion which is education.
               </Text>
               <Text
                   textAlign='left'

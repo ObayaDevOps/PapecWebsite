@@ -1,10 +1,10 @@
-import { UserIcon } from '@sanity/icons'
+import { PackageIcon } from '@sanity/icons'
 import { defineField, defineType } from 'sanity'
 
 export default defineType({
   name: 'aboutUsWhoWeAre',
-  title: 'About Us Who We Are',
-  icon: UserIcon,
+  title: 'About Us -  Who We Are',
+  icon: PackageIcon,
   type: 'document',
   fields: [
     defineField({
@@ -14,9 +14,24 @@ export default defineType({
       validation: (rule) => rule.required(),
     }),
     defineField({
+      name: 'heading',
+      title: 'Heading',
+      type: 'string',
+      validation: (rule) => rule.required(),
+    }),
+    defineField({
       name: 'whoWeAre',
       title: 'Who We Are',
       type: 'text',
+      validation: (rule) => rule.required(),
+    }),
+    defineField({
+      name: 'visionAndPurposeImage',
+      title: 'Vision and Purpose Image',
+      type: 'image',
+      options: {
+        hotspot: true, // Enables the hotspot feature for better image cropping
+      },
       validation: (rule) => rule.required(),
     }),
     defineField({
@@ -32,15 +47,24 @@ export default defineType({
       validation: (rule) => rule.required(),
     }),
     defineField({
-      name: 'ourFocus',
-      title: 'Our Focus',
+      name: 'ourFocusParagraph1',
+      title: 'Our Focus Paragraph 1',
       type: 'text',
       validation: (rule) => rule.required(),
     }),
     defineField({
-      name: 'consultantExpertise',
-      title: 'Consultant Expertise',
+      name: 'ourFocusParagraph2',
+      title: 'Our Focus Paragraph 2',
       type: 'text',
+      validation: (rule) => rule.required(),
+    }),
+    defineField({
+      name: 'multidisciplinaryImage',
+      title: 'Multidisciplinary Image',
+      type: 'image',
+      options: {
+        hotspot: true, // Enables the hotspot feature for better image cropping
+      },
       validation: (rule) => rule.required(),
     }),
     defineField({
@@ -60,20 +84,7 @@ export default defineType({
       ],
       validation: (rule) => rule.required(),
     }),
-    defineField({
-      name: 'slug',
-      title: 'Slug',
-      type: 'slug',
-      options: {
-        source: 'title',
-        maxLength: 200,
-        slugify: input => input
-          .toLowerCase()
-          .replace(/\s+/g, '-')
-          .slice(0, 200)
-      },
-      validation: (rule) => rule.required(),
-    }),
+    
   ],
   preview: {
     select: {
