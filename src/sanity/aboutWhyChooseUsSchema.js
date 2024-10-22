@@ -14,33 +14,70 @@ export default defineType({
       validation: (rule) => rule.required(),
     }),
     defineField({
+      name: 'heading',
+      title: 'Heading',
+      type: 'string',
+      validation: (rule) => rule.required(),
+    }),
+    defineField({
       name: 'introduction',
       title: 'Introduction',
       type: 'text',
       validation: (rule) => rule.required(),
     }),
     defineField({
-      name: 'highAchievingOrganizations',
-      title: 'High Achieving Organizations',
+      name: 'image1',
+      title: 'Image 1',
+      type: 'image',
+      validation: (rule) => rule.required(),
+    }),
+    defineField({
+      name: 'paragraph1',
+      title: 'Paragraph 1',
       type: 'text',
       validation: (rule) => rule.required(),
     }),
     defineField({
-      name: 'ourApproach',
-      title: 'Our Approach',
+      name: 'paragraph2',
+      title: 'Paragraph 2',
       type: 'text',
       validation: (rule) => rule.required(),
     }),
     defineField({
-      name: 'consultancySupport',
-      title: 'Consultancy Support',
+      name: 'image2',
+      title: 'Image 2',
+      type: 'image',
+      validation: (rule) => rule.required(),
+    }),
+    defineField({
+      name: 'image3',
+      title: 'Image 3',
+      type: 'image',
+      validation: (rule) => rule.required(),
+    }),
+    defineField({
+      name: 'paragraph3',
+      title: 'Paragraph 3',
       type: 'text',
+      validation: (rule) => rule.required(),
+    }),
+
+    defineField({
+      name: 'consultancyHeading',
+      title: 'Consultancy Heading',
+      type: 'string',
       validation: (rule) => rule.required(),
     }),
     defineField({
       name: 'consultancyExperienceBase',
       title: 'Consultancy Experience Base',
       type: 'text',
+      validation: (rule) => rule.required(),
+    }),
+    defineField({
+      name: 'image4',
+      title: 'Image 4',
+      type: 'image',
       validation: (rule) => rule.required(),
     }),
     defineField({
@@ -60,20 +97,7 @@ export default defineType({
       ],
       validation: (rule) => rule.required(),
     }),
-    defineField({
-      name: 'slug',
-      title: 'Slug',
-      type: 'slug',
-      options: {
-        source: 'title',
-        maxLength: 200,
-        slugify: input => input
-          .toLowerCase()
-          .replace(/\s+/g, '-')
-          .slice(0, 200)
-      },
-      validation: (rule) => rule.required(),
-    }),
+
   ],
   preview: {
     select: {
