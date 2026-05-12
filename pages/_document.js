@@ -10,7 +10,7 @@ export default class Document extends NextDocument {
       <Html lang='en'>
         <Head>
         <meta name="description" content="People and Potential Consultancy Webpage" />
-        <link rel="icon" href="../public/images/icon/logo-black.svg" />
+        <link rel="icon" href="/images/icon/People__Potential-Logo_Full_Color-2.png" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" 
         rel="stylesheet" />

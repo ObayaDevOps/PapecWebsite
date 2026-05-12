@@ -24,10 +24,10 @@ import {
   import React from 'react';
   import { BsGithub, BsLinkedin, BsPerson, BsTwitter } from 'react-icons/bs';
   import { MdEmail, MdOutlineEmail } from 'react-icons/md';
-  import Head from 'next/head'
   import { useState } from 'react'
   import NextImage from 'next/image';
   import NavBar from '../../components/utils/navbar3'
+  import SeoHead from '../../components/utils/seoHead'
 
 
   import contactIllustration  from '../../public/images/illustrations/undraw_real_time_collaboration_c62i.svg';
@@ -53,29 +53,58 @@ import {
   
   export default function ContactFormWithSocialButtons() {
     const { hasCopied, onCopy } = useClipboard('info@peopleandpotential.org');
-    const [submitted, setSubmitted] = useState(false);
-
+    const [submitting, setSubmitting] = useState(false);
+    const toast = useToast()
 
     const userData = async event => {
       event.preventDefault()
-      setSubmitted(true)
+      if (submitting) return
+      setSubmitting(true)
 
-      let userTypedData = {
-        Name: event.target.name.value,
-        Email: event.target.email.value,
-        Message: event.target.message.value
+      const form = event.target
+      const userTypedData = {
+        Name: form.name.value,
+        Email: form.email.value,
+        Message: form.message.value
       }
 
-      const res = await fetch('/api/contact', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json'
-        },
-        body: JSON.stringify(userTypedData)
-      })
-    }
+      try {
+        const res = await fetch('/api/contact', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(userTypedData)
+        })
 
-    const toast = useToast()
+        if (res.ok) {
+          toast({
+            title: 'Message Sent.',
+            description: "We will get back to you soon!",
+            status: 'success',
+            duration: 9000,
+            isClosable: true,
+          })
+          form.reset()
+        } else {
+          toast({
+            title: 'Could not send message.',
+            description: "Please try again or email us directly.",
+            status: 'error',
+            duration: 9000,
+            isClosable: true,
+          })
+        }
+      } catch (err) {
+        toast({
+          title: 'Network error.',
+          description: "Please check your connection and try again.",
+          status: 'error',
+          duration: 9000,
+          isClosable: true,
+        })
+      } finally {
+        setSubmitting(false)
+      }
+    }
   
     return (
       <Box>
@@ -92,19 +121,7 @@ import {
           pt={8} pb={12}
           >
 
-          <Head>
-              <title>Contact | People and Potential Consultancy</title>
-              <meta name="description" content="People and Potential Consultancy" />
-              <link rel="shortcut icon" href="../../../images/icon/People__Potential-Logo_Full_Color-2.png"></link>
-
-              <meta property="og:title" content="People and Potential Consultancy" />
-              <meta property="og:description" content="Professional HR Training" />
-              <meta property="og:image" content="https://res.cloudinary.com/medoptics-image-cloud/image/upload/v1713782566/People__Potential-Logo_Full_Color-1_wno2bv.png" />
-              <meta property="og:image:secure_url" content="https://res.cloudinary.com/medoptics-image-cloud/image/upload/v1713782566/People__Potential-Logo_Full_Color-1_wno2bv.png" />
-              <meta property="og:url" content="https://papec-website.vercel.app/" />
-              <meta property="og:type" content="website" />
-          
-          </Head>
+          <SeoHead title="Contact" />
 
 
 
@@ -182,7 +199,7 @@ import {
     
                   <Box
                     bg={'white'}
-                    shadow='4xl'
+                    shadow='2xl'
                     borderRadius="lg"
                     border={'1px'}
                     borderColor={'purple.300'}
@@ -233,24 +250,15 @@ import {
                         </FormControl>
       
                         <Button
-                        type="submit"
+                          type="submit"
                           colorScheme="green"
                           bg="purple.400"
                           color="white"
-                          _hover={{
-                            bg: 'purple.500',
-                          }}
-                          isFullWidth
-                          onClick={() =>
-                            toast({
-                              title: 'Message Sent.',
-                              description: "We will get back to you soon!",
-                              status: 'success',
-                              duration: 9000,
-                              isClosable: true,
-                            })}
-          
-                          >
+                          _hover={{ bg: 'purple.500' }}
+                          width="100%"
+                          isLoading={submitting}
+                          loadingText="Sending..."
+                        >
                           Send Message
                         </Button>
                       </VStack>

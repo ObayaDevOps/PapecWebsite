@@ -1,29 +1,27 @@
-import { extendTheme } from '@chakra-ui/react'
+import { extendTheme } from '@chakra-ui/react';
+import { Jost, Courier_Prime, Inter } from 'next/font/google';
 
-//Use this file as the central point of configuration 
+const headingFont = Courier_Prime({ subsets: ['latin'], weight: ['400'] });
+const navBarFont = Jost({ subsets: ['latin'], weight: ['400'] });
+const bodyFont = Inter({ subsets: ['latin'], weight: ['400'] });
 
 const theme = extendTheme({
-    config:{
-      initialColorMode: 'light',
-      useSystemColorMode: false
+  config: {
+    initialColorMode: 'light',
+    useSystemColorMode: false,
+  },
+  fonts: {
+    headingFont: headingFont.style.fontFamily,
+    bodyFont: bodyFont.style.fontFamily,
+    navBarFont: navBarFont.style.fontFamily,
+  },
+  semanticTokens: {
+    gradients: {
+      'brand.pageBg': 'linear(to-br, #e5e5f7, whiteAlpha.100)',
+      'brand.heading': 'linear(to-r, blackAlpha.800, purple.500)',
+      'brand.cta': 'linear(to-r, purple.900, purple.300)',
     },
-    fonts:{
-      heading: 'Arvo, sans-serif',
-      body: 'Arial, sans-serif',
-      text:  'Arvo, sans-serif',
-    },
-    colors:{
-      50: '#f2f2f2',
-      100: '#d9d9d9',
-      200: '#bfbfbf',
-      300: '#a6a6a6',
-      400: '#8c8c8c',
-      500: '#737373',
-      600: '#595959',
-      700: '#404040',
-      800: '#262626',
-      900: '#0d0d0d',
-    }
-    
-  })
- export default theme  
+  },
+});
+
+export default theme;

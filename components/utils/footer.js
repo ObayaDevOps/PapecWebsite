@@ -1,5 +1,3 @@
-'use client'
-
 import {
   Box,
   chakra,
@@ -26,8 +24,10 @@ import Image from 'next/image'
 const Logo = (props) => {
   return (
     <NextLink href='/#'>
-        <Image src={'https://res.cloudinary.com/medoptics-image-cloud/image/upload/v1718006910/Untitled_design_6_tv0jdx.png'} 
-        width={434/2} height={181/2}/>
+        <Image
+          src={'https://res.cloudinary.com/medoptics-image-cloud/image/upload/v1718006910/Untitled_design_6_tv0jdx.png'}
+          width={434/2} height={181/2}
+          alt="People and Potential Consultancy" />
   </NextLink>
   )
 }
@@ -143,40 +143,40 @@ export default function LargeWithNewsletter() {
             <Box>
                 <Text fontWeight={800} fontSize={'lg'} fontFamily='bodyFont' textColor='white'>Site Map</Text>
             </Box>
-            <Box as='a' href='/#'>
+            <Box as={NextLink} href='/'>
                 <Text fontSize={'sm'} fontFamily='bodyFont' textColor='white'>Home</Text>
             </Box>
             <Box >
                 <Text fontSize={'sm'}  fontWeight={800} fontFamily='bodyFont' textColor='white'>About Us</Text>
             </Box>
-            <Box  as='a' href='/education/about/who-we-are'>
+            <Box  as={NextLink} href='/who-we-are'>
                 <Text fontSize={'sm'} fontFamily='bodyFont' textColor='white'>Who We Are</Text>
             </Box>
-            <Box as='a' href='/education/about/why-choose-us'>
+            <Box as={NextLink} href='/why-choose-us'>
                 <Text fontSize={'sm'} fontFamily='bodyFont' textColor='white'>Why Choose Us</Text>
             </Box>
-            <Box as='a' href='/education/about/consultant-profile'>
+            <Box as={NextLink} href='/consultant-profile'>
                 <Text fontSize={'sm'} fontFamily='bodyFont' textColor='white'>Consultant Profiles</Text>
-                
+
             </Box>
             </Stack>
             <Stack pt={{md:4}}>
             <Box>
                 <Text fontSize={'sm'}  fontWeight={800} fontFamily='bodyFont' textColor='white'>Services</Text>
             </Box>
-            <Box as='a' href='/education/services/school-startup'>
+            <Box as={NextLink} href='/school-startup'>
                 <Text fontSize={'sm'} fontFamily='bodyFont' textColor='white'>School Start Up</Text>
             </Box>
-            <Box as='a' href='/education/services/school-development'>
+            <Box as={NextLink} href='/school-development'>
                 <Text fontSize={'sm'} fontFamily='bodyFont' textColor='white'>School Development</Text>
             </Box>
             <Box>
                 <Text fontSize={'sm'}  fontWeight={800} fontFamily='bodyFont' textColor='white'>Courses</Text>
             </Box>
-            <Box as='a' href='/education/courses/course-list'>
+            <Box as={NextLink} href='/course-list'>
                 <Text fontSize={'sm'} fontFamily='bodyFont' textColor='white'>Course List</Text>
             </Box>
-            <Box as='a' href='/education/courses/course-booking-form'>
+            <Box as={NextLink} href='/education/courses/course-booking-form'>
                 <Text fontSize={'sm'} fontFamily='bodyFont' textColor='white'>Course Booking Form</Text>
             </Box>
             </Stack>
@@ -184,7 +184,7 @@ export default function LargeWithNewsletter() {
             <Box>
                 <Text fontSize={'sm'}  fontWeight={800} fontFamily='bodyFont' textColor='white'>Contact</Text>
             </Box>
-            <Box as='a' href='/info/contact-enquiry'>
+            <Box as={NextLink} href='/info/contact-enquiry'>
                 <Text fontSize={'sm'} fontFamily='bodyFont' textColor='white'>Contact Form</Text>
             </Box>
             

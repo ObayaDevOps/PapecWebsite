@@ -43,70 +43,49 @@ import theme from './theme';
 
   export default function WithSubnavigation() {
     const { isOpen, onToggle } = useDisclosure();
-    const { colorMode, toggleColorMode } = useColorMode()
-  
+
     return (
       <Box w="full">
         <Flex
-        background="rgba(192,192,192,0.1)"
-        // background={'whiteAlpha.900'}
-        // color={useColorModeValue('gray.600', 'white')}
-          // minH={'60px'}
+          background="rgba(192,192,192,0.1)"
           minW="100vw"
           py={{ base: 2 }}
           px={{ base: 2, sm: 4 }}
-          // align={'center'}
-          alignItems="center" justifyContent="space-between" mx="auto"
+          alignItems="center"
+          justifyContent="space-between"
+          mx="auto"
           maxW={'7xl'}
           shadow="md"
           border={'1px'}
           borderColor="purple.500"
+        >
+          <IconButton
+            onClick={onToggle}
+            icon={isOpen ? <CloseIcon w={3} h={3} /> : <HamburgerIcon w={5} h={5} />}
+            variant={'ghost'}
+            aria-label={'Toggle Navigation'}
+            display={{ base: 'flex', lg: 'none' }}
+          />
 
+          <chakra.a
+            href="/"
+            title="Papec Home Page"
+            display="flex"
+            alignItems="center"
           >
-          <Flex
-            flex={{ base: 1, lg: 'auto' }}
-            ml={{ base: -2 }}
-            display={{ base: 'flex', lg:'none' }}
-            maxW={'8xl'}
-
-            >
-            <IconButton
-              onClick={onToggle}
-              icon={
-                isOpen ? <CloseIcon w={3} h={3} /> : <HamburgerIcon w={5} h={5} />
-              }
-              variant={'ghost'}
-              aria-label={'Toggle Navigation'}
+            <NextImage
+              src={papecLogo}
+              width={1065 / 8}
+              height={397 / 8}
+              alt="People and Potential Consultancy"
             />
+          </chakra.a>
+
+          <Flex display={{ base: 'none', lg: 'flex' }}>
+            <DesktopNav />
           </Flex>
-          <Flex alignItems="center" justifyContent="space-between" mx="auto">
-
-          {/* <Flex flex={{ base: 1 }} justify={{ base: 'center', md: 'start' }}> */}
-          {/* <NextLink href='/#' passHref>
-                <NextImage src={colorMode === 'light' ? papecLogo:  papecLogo} width={1065/7} height={397/7}/>
-          </NextLink> */}
-
-
-          <Flex  display={{ base: "inline-flex", lg: "inline-flex" }}>
-            <chakra.a
-              href="/"
-              title="Papec Home Page"
-              display="flex"
-              // alignItems="right"
-            >
-              <Flex  ml={{base: '-63vw',md: '-57vw', lg: '-15vw'}}>
-                <NextImage src={ papecLogo } width={1065/8} height={397/8}  />
-              </Flex>
-            </chakra.a>
-          </Flex>
-
-            <Flex display={{ base: 'none', lg: 'flex' }}  >
-              <DesktopNav />
-            </Flex>
-          </Flex>
-  
         </Flex>
-  
+
         <Collapse in={isOpen} animateOpacity>
           <MobileNav />
         </Collapse>
@@ -344,7 +323,7 @@ import theme from './theme';
 
     {
       label: 'Courses',
-      href: '/education/courses/course-list',
+      href: '/course-list',
       children: [
         {
           label: 'Course List and Booking',
@@ -352,7 +331,7 @@ import theme from './theme';
           href: '/course-list',
         }
       ],
-    }, 
+    },
     
     
     // {

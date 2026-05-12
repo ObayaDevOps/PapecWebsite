@@ -1,9 +1,14 @@
-import React, { useCallback, useState } from "react";
+import React, { useCallback, useMemo, useState } from "react";
 import { Box, Flex, HStack, Image, Stack, Text } from "@chakra-ui/react";
-import NextImage from 'next/image'
+import imageUrlBuilder from "@sanity/image-url";
+import client from "../src/sanity/lib/client.js";
 
+const builder = imageUrlBuilder(client);
+function urlFor(source) {
+  return builder.image(source);
+}
 
-export default function App(){
+export default function Carousel({ images }) {
   const SLIDE_CHANGE_THRESHOLD = 100;
 
   const arrowStyles = {
@@ -25,97 +30,12 @@ export default function App(){
     },
   };
 
-
-  const slides =[
-    {   
-        img: "https://res.cloudinary.com/medoptics-image-cloud/image/upload/v1717496641/PP2_vgac0v.jpg",
-        width: 770,
-        height: 300,
-        caption: "Papec",
-    },
-    // {   
-    //   img: "https://res.cloudinary.com/medoptics-image-cloud/image/upload/v1717407360/1000028379_rekc3e.jpg",
-    //   width: 1936,
-    //   height: 1936,
-    //   caption: "Papec",
-    // },
-    // {   
-    //   img: "https://res.cloudinary.com/medoptics-image-cloud/image/upload/v1717407365/IMG_20200215_095503_n1naci.jpg",
-    //   width: 4608,
-    //   height: 3456,
-    //   caption: "Papec",
-    // },
-    {   
-      img: "https://res.cloudinary.com/medoptics-image-cloud/image/upload/v1713532448/PP-Website-Banner-9_tviyet.jpg",
-      width: 1366,
-      height: 500,
-      caption: "Papec",
-    },
-    // {   
-    //   img: "https://res.cloudinary.com/medoptics-image-cloud/image/upload/v1715259596/PP1_w92zkp.jpg",
-    //   width: 570,
-    //   height: 320,
-    //   caption: "Papec",
-    // },
-    {   
-      img: "https://res.cloudinary.com/medoptics-image-cloud/image/upload/v1717074276/PP-Website-Banner-4_mv8poh.jpg",
-      width: 1366,
-      height: 500,
-      caption: "Papec",
-    },
-    {   
-      img: "https://res.cloudinary.com/medoptics-image-cloud/image/upload/v1717074277/PP-Website-Banner-7_cz77xw.jpg",
-      width: 1366,
-      height: 500,
-      caption: "Papec",
-    },
-    {   
-      img: "https://res.cloudinary.com/medoptics-image-cloud/image/upload/v1717074280/slider-3_yoybfu.jpg",
-      width: 1366,
-      height: 520,
-      caption: "Papec",
-    },
-    // {   
-    //   img: "https://res.cloudinary.com/medoptics-image-cloud/image/upload/v1717074291/About-us_e3pzcc.jpg",
-    //   width: 570,
-    //   height: 320,
-    //   caption: "Papec",
-    // },
-
-
-        
-  
-  
-  ] 
-
-  // const slides = [
-  //   {
-  //     img: "https://images.pexels.com/photos/2599537/pexels-photo-2599537.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-  //     label: "First Slide",
-  //     description: "Nulla vitae elit libero, a pharetra augue mollis interdum.",
-  //   },
-  //   {
-  //     img: "https://images.pexels.com/photos/2714581/pexels-photo-2714581.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-  //     label: "Second Slide",
-  //     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-  //   },
-  //   {
-  //     img: "https://images.pexels.com/photos/2878019/pexels-photo-2878019.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260",
-  //     label: "Third Slide",
-  //     description:
-  //       "Praesent commodo cursus magna, vel scelerisque nisl consectetur.",
-  //   },
-  //   {
-  //     img: "https://images.pexels.com/photos/1142950/pexels-photo-1142950.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-  //     label: "Fourth Slide",
-  //     description: "Nulla vitae elit libero, a pharetra augue mollis interdum.",
-  //   },
-  //   {
-  //     img: "https://images.pexels.com/photos/3124111/pexels-photo-3124111.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-  //     label: "Fifth Slide",
-  //     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-  //   },
-  // ];
+  const slides = useMemo(() => {
+    if (!Array.isArray(images) || images.length === 0) return [];
+    return images
+      .filter((img) => img?.asset?._ref)
+      .map((img) => ({ img: urlFor(img).url(), caption: "Papec" }));
+  }, [images]);
 
   const [currentSlide, setCurrentSlide] = useState(0);
   const [dragging, setDragging] = useState(false);
@@ -126,10 +46,10 @@ export default function App(){
 
   const prevSlide = useCallback(() => {
     setCurrentSlide((s) => (s === 0 ? slidesCount - 1 : s - 1));
-  }, []);
+  }, [slidesCount]);
   const nextSlide = useCallback(() => {
     setCurrentSlide((s) => (s === slidesCount - 1 ? 0 : s + 1));
-  }, []);
+  }, [slidesCount]);
 
   const handleMouseDown = useCallback((e) => {
     setDragging(true);
@@ -159,7 +79,8 @@ export default function App(){
     }
   }, [dragging, dragOffset, prevSlide, nextSlide]);
 
-  // Do not move first slide to the right and last slide to the left
+  if (slidesCount === 0) return null;
+
   const slideOffset =
     currentSlide === 0
       ? Math.min(dragOffset, 0)
@@ -175,10 +96,8 @@ export default function App(){
   return (
     <Flex
       w="full"
-      // bg="#edf3f8"
-      minH={{md:'80vh'}}
+      minH={{ md: "80vh" }}
       _dark={{ bg: "#3e3e3e" }}
-      // p={10}
       alignItems="center"
       justifyContent="center"
       style={{ cursor: dragging ? "grabbing" : "auto" }}
@@ -186,9 +105,7 @@ export default function App(){
     >
       <Flex w="full" overflow="hidden" pos="relative">
         <Flex
-          // h="400px"
           w="full"
-          // h="full"
           onMouseUp={handleMouseUp}
           onMouseMove={handleMouseMove}
           onMouseDown={handleMouseDown}
@@ -196,30 +113,15 @@ export default function App(){
         >
           {slides.map((slide, sid) => (
             <Flex key={`slide-${sid}`} boxSize="full" shadow="md" flex="none">
-              <Text
-                color="white"
-                fontSize="xs"
-                p="8px 12px"
-                pos="absolute"
-                top="0"
-              >
+              <Text color="white" fontSize="xs" p="8px 12px" pos="absolute" top="0">
                 {sid + 1} / {slidesCount}
               </Text>
               <Image
                 src={slide.img}
-                alt="carousel image"
+                alt={slide.caption || "Carousel image"}
                 boxSize="full"
                 backgroundSize="cover"
               />
-              {/* <NextImage
-                src={slide.img}
-                height={slide.height} width={slide.width}
-                alt="carousel image"
-                boxSize="full"
-                backgroundSize="cover"
-              /> */}
-
-
               <Stack
                 p="8px 12px"
                 pos="absolute"
@@ -229,7 +131,9 @@ export default function App(){
                 mb="8"
                 color="white"
               >
-                <Text fontSize="5xl" fontFamily='bodyFont'>{slide.label}</Text>
+                <Text fontSize="5xl" fontFamily="bodyFont">
+                  {slide.label}
+                </Text>
                 <Text fontSize="lg">{slide.description}</Text>
               </Stack>
             </Flex>
@@ -254,10 +158,10 @@ export default function App(){
               transition="background-color 0.6s ease"
               _hover={{ bg: "blackAlpha.800" }}
               onClick={() => setCurrentSlide(slide)}
-            ></Box>
+            />
           ))}
         </HStack>
       </Flex>
     </Flex>
   );
-};
+}

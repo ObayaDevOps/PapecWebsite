@@ -1,10 +1,12 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
-}
-module.exports = {
   images: {
-    domains: ['res.cloudinary.com', 'cdn.sanity.io'],
+    remotePatterns: [
+      { protocol: 'https', hostname: 'res.cloudinary.com' },
+      { protocol: 'https', hostname: 'cdn.sanity.io' },
+    ],
   },
 };
 
+module.exports = nextConfig;

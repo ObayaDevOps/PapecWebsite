@@ -1,5 +1,3 @@
-'use client'
-
 import {
   Avatar,
   Box,
@@ -12,7 +10,6 @@ import {
   Text,
   useColorModeValue,
 } from '@chakra-ui/react'
-import Head from 'next/head';
 
 
 const testimonials = [

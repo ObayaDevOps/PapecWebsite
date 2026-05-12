@@ -22,7 +22,7 @@ import { BsGithub, BsLinkedin, BsPerson, BsTwitter } from 'react-icons/bs';
 import { MdEmail, MdOutlineEmail, MdOutlinePhone } from 'react-icons/md';
 import { useState } from 'react'
 import NavBar from '../../../components/utils/navbar3'
-import Head from 'next/head';
+import SeoHead from '../../../components/utils/seoHead'
 
 
 
@@ -47,10 +47,6 @@ import Head from 'next/head';
         Payment: event.target.payment.value,
       }
 
-      console.log('USER DATA');
-      console.log(userTypedData);
-
-
       const res = await fetch('/api/courseBooking', {
         method: 'POST',
         headers: {
@@ -64,18 +60,7 @@ import Head from 'next/head';
 
     return (
       <Box bgGradient='linear(to-br, #e5e5f7, whiteAlpha.100)' minH='100%'>
-        <Head>
-              <title>Course Booking Form | People and Potential Consultancy</title>
-              <meta name="description" content="People and Potential Consultancy" />
-              <link rel="shortcut icon" href="../../../images/icon/People__Potential-Logo_Full_Color-2.png"></link>
-
-              <meta property="og:title" content="People and Potential Consultancy" />
-              <meta property="og:description" content="Professional HR Training" />
-              <meta property="og:image" content="https://res.cloudinary.com/medoptics-image-cloud/image/upload/v1713782566/People__Potential-Logo_Full_Color-1_wno2bv.png" />
-              <meta property="og:image:secure_url" content="https://res.cloudinary.com/medoptics-image-cloud/image/upload/v1713782566/People__Potential-Logo_Full_Color-1_wno2bv.png" />
-              <meta property="og:url" content="https://papec-website.vercel.app/" />
-              <meta property="og:type" content="website" />
-          </Head>
+        <SeoHead title="Course Booking Form" />
 
         <Box bg='white'>
           <NavBar />
