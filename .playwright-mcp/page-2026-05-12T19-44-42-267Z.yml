@@ -1,0 +1,100 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e3]:
+    - generic [ref=e4]:
+      - generic [ref=e6]:
+        - button "Toggle Navigation" [ref=e7] [cursor=pointer]:
+          - img [ref=e8]
+        - link "People and Potential Consultancy" [ref=e10] [cursor=pointer]:
+          - /url: /
+          - img "People and Potential Consultancy" [ref=e11]
+      - generic [ref=e16]:
+        - heading "Contact Us" [level=2] [ref=e17]
+        - generic [ref=e19]:
+          - generic [ref=e20]:
+            - button "email" [ref=e21] [cursor=pointer]:
+              - img [ref=e22]
+            - link "linkedin" [ref=e25] [cursor=pointer]:
+              - /url: https://www.linkedin.com/in/audrey-dralega-frsa-00b37448/
+              - button "linkedin" [ref=e26]:
+                - img [ref=e27]
+          - generic [ref=e31]:
+            - group [ref=e32]:
+              - generic [ref=e33]: Name*
+              - generic [ref=e34]:
+                - img [ref=e36]
+                - textbox "Name" [ref=e38]:
+                  - /placeholder: Your Name
+            - group [ref=e39]:
+              - generic [ref=e40]: Email*
+              - generic [ref=e41]:
+                - img [ref=e43]
+                - textbox "Email" [ref=e46]:
+                  - /placeholder: Your Email
+            - group [ref=e47]:
+              - generic [ref=e48]: Message*
+              - textbox "Message" [ref=e49]:
+                - /placeholder: Your Message
+            - button "Send Message" [ref=e50] [cursor=pointer]
+    - generic [ref=e53]:
+      - generic [ref=e54]:
+        - link "People and Potential Consultancy" [ref=e56] [cursor=pointer]:
+          - /url: /#
+          - img "People and Potential Consultancy" [ref=e57]
+        - generic [ref=e58]:
+          - link "LinkedIn" [ref=e59] [cursor=pointer]:
+            - /url: /#
+            - generic [ref=e60]: LinkedIn
+            - img [ref=e61]
+          - link "Built by DWO" [ref=e63] [cursor=pointer]:
+            - /url: https://www.dralegawebops.com/
+        - paragraph [ref=e65]: © 2024 People and Potential Consultancy. All rights reserved
+      - generic [ref=e66]:
+        - paragraph [ref=e68]: info@peopleandpotential.org
+        - paragraph [ref=e70]: +256 793 231969
+        - paragraph [ref=e72]: +256 787 921975
+        - paragraph [ref=e74]: PO. Box 27348, Kampala
+        - paragraph [ref=e76]: 18 Millennium House Nsambya Road
+      - generic [ref=e77]:
+        - generic [ref=e78]:
+          - paragraph [ref=e80]: Site Map
+          - link "Home" [ref=e81] [cursor=pointer]:
+            - /url: /
+            - paragraph [ref=e82]: Home
+          - paragraph [ref=e84]: About Us
+          - link "Who We Are" [ref=e85] [cursor=pointer]:
+            - /url: /who-we-are
+            - paragraph [ref=e86]: Who We Are
+          - link "Why Choose Us" [ref=e87] [cursor=pointer]:
+            - /url: /why-choose-us
+            - paragraph [ref=e88]: Why Choose Us
+          - link "Consultant Profiles" [ref=e89] [cursor=pointer]:
+            - /url: /consultant-profile
+            - paragraph [ref=e90]: Consultant Profiles
+        - generic [ref=e91]:
+          - paragraph [ref=e93]: Services
+          - link "School Start Up" [ref=e94] [cursor=pointer]:
+            - /url: /school-startup
+            - paragraph [ref=e95]: School Start Up
+          - link "School Development" [ref=e96] [cursor=pointer]:
+            - /url: /school-development
+            - paragraph [ref=e97]: School Development
+          - paragraph [ref=e99]: Courses
+          - link "Course List" [ref=e100] [cursor=pointer]:
+            - /url: /course-list
+            - paragraph [ref=e101]: Course List
+          - link "Course Booking Form" [ref=e102] [cursor=pointer]:
+            - /url: /education/courses/course-booking-form
+            - paragraph [ref=e103]: Course Booking Form
+        - generic [ref=e104]:
+          - paragraph [ref=e106]: Contact
+          - link "Contact Form" [ref=e107] [cursor=pointer]:
+            - /url: /info/contact-enquiry
+            - paragraph [ref=e108]: Contact Form
+  - alert [ref=e109]
+  - generic:
+    - region "Notifications-top"
+    - region "Notifications-top-left"
+    - region "Notifications-top-right"
+    - region "Notifications-bottom-left"
+    - region "Notifications-bottom"
+    - region "Notifications-bottom-right"

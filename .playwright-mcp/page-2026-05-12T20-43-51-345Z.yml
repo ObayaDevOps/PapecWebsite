@@ -1,0 +1,208 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e3]:
+    - generic [ref=e5]:
+      - generic [ref=e7]:
+        - link "People and Potential Consultancy" [ref=e8] [cursor=pointer]:
+          - /url: /
+          - img "People and Potential Consultancy" [ref=e9]
+        - generic [ref=e10]:
+          - generic [ref=e11]:
+            - link "About Us" [ref=e13] [cursor=pointer]:
+              - /url: "#"
+            - link "Services" [ref=e15] [cursor=pointer]:
+              - /url: "#"
+            - link "Courses" [ref=e17] [cursor=pointer]:
+              - /url: /course-list
+            - link "Contact Us" [ref=e19] [cursor=pointer]:
+              - /url: /info/contact-enquiry
+          - link "Book a Course" [ref=e20] [cursor=pointer]:
+            - /url: /education/courses/course-booking-form
+      - generic [ref=e21]:
+        - generic [ref=e22]:
+          - generic [ref=e29]:
+            - paragraph [ref=e30]: Professional Educational Consultancy
+            - heading "Professional Educational Trainings" [level=1] [ref=e31]
+            - paragraph [ref=e32]: We focus on creating training systems that effectively convey your company's identity, then optimize for an enhanced learning experience.
+            - generic [ref=e33]:
+              - link "Talk to Us Today" [ref=e34] [cursor=pointer]:
+                - /url: /info/contact-enquiry
+              - link "Our Services" [ref=e35] [cursor=pointer]:
+                - /url: /why-choose-us
+            - generic [ref=e36]:
+              - generic [ref=e37]:
+                - paragraph [ref=e38]: 50+
+                - paragraph [ref=e39]: Schools Supported
+              - separator [ref=e40]
+              - generic [ref=e41]:
+                - paragraph [ref=e42]: 10+
+                - paragraph [ref=e43]: Countries
+              - separator [ref=e44]
+              - generic [ref=e45]:
+                - paragraph [ref=e46]: 15+
+                - paragraph [ref=e47]: Years Experience
+          - button "Previous slide" [ref=e48] [cursor=pointer]:
+            - img [ref=e49]
+          - button "Next slide" [ref=e51] [cursor=pointer]:
+            - img [ref=e52]
+        - generic [ref=e60]:
+          - paragraph [ref=e61]: What We Do
+          - heading "What We Offer" [level=2] [ref=e62]
+          - generic [ref=e63]:
+            - group [ref=e64]:
+              - img "Standards" [ref=e65]
+              - img [ref=e68]
+              - generic [ref=e70]:
+                - heading "Standards" [level=3] [ref=e71]
+                - paragraph [ref=e72]: Drive achievement through rigorous review, analysis and collaborative strategic planning
+            - group [ref=e73]:
+              - img "Training" [ref=e74]
+              - img [ref=e77]
+              - generic [ref=e79]:
+                - heading "Training" [level=3] [ref=e80]
+                - paragraph [ref=e81]: Equip and inspire educators through focused high-calibre training, mentoring & coaching
+            - group [ref=e82]:
+              - img "Systems" [ref=e83]
+              - img [ref=e86]
+              - generic [ref=e88]:
+                - heading "Systems" [level=3] [ref=e89]
+                - paragraph [ref=e90]: Design of systems that work to embed improvements in everyday practice.
+        - generic [ref=e93]:
+          - generic [ref=e94]:
+            - paragraph [ref=e95]: Why Choose Us
+            - heading "High achievers never stop striving" [level=2] [ref=e96]
+            - paragraph [ref=e97]: People & Potential Consultancy helps schools and organizations like yours identify areas for growth and implement systems for continuous improvement. We build frameworks for progress tracking, performance management, and creating thriving learning environments. Let's help every child reach their full potential.
+            - paragraph [ref=e98]: We build frameworks for progress tracking, performance management, and creating thriving learning environments.
+            - link "Learn More About Us" [ref=e99] [cursor=pointer]:
+              - /url: /why-choose-us
+          - generic [ref=e100]:
+            - generic [ref=e101]:
+              - paragraph [ref=e102]: 50+
+              - paragraph [ref=e103]: Schools Supported
+            - generic [ref=e104]:
+              - paragraph [ref=e105]: 10+
+              - paragraph [ref=e106]: Countries Reached
+            - generic [ref=e107]:
+              - paragraph [ref=e108]: 100%
+              - paragraph [ref=e109]: Client Focus
+            - generic [ref=e110]:
+              - paragraph [ref=e111]: 15+
+              - paragraph [ref=e112]: Years Experience
+        - generic [ref=e114]:
+          - generic [ref=e115]:
+            - paragraph [ref=e116]: Past Client Testimonials
+            - heading "What Our Clients Say" [level=2] [ref=e117]
+            - paragraph [ref=e118]: Following their team training, participants were asked to reflect on their experience.
+          - generic [ref=e119]:
+            - generic [ref=e120]:
+              - paragraph [ref=e121]: “
+              - generic [ref=e122]:
+                - paragraph [ref=e123]: Your flexibility and willingness to rethink the agenda midway was necessary to ensure the successful outcomes.
+                - generic [ref=e124]:
+                  - img "avatar" [ref=e126]
+                  - generic [ref=e129]:
+                    - paragraph [ref=e130]: ISU, Board of Directors
+                    - paragraph [ref=e131]: Governance Course
+            - generic [ref=e132]:
+              - paragraph [ref=e133]: “
+              - generic [ref=e134]:
+                - paragraph [ref=e135]: Well-equipped and well-informed about the specific field. Variety of examples to study and good use of the tangible material. No room for detachment!
+                - generic [ref=e136]:
+                  - img "avatar" [ref=e138]
+                  - generic [ref=e141]:
+                    - paragraph [ref=e142]: Little Cranes Montessori Kindergarten, Headteacher
+                    - paragraph [ref=e143]: Professional Development Course
+            - generic [ref=e144]:
+              - paragraph [ref=e145]: “
+              - generic [ref=e146]:
+                - paragraph [ref=e147]: Thorough and very useful in giving us a clear view of areas of strength and our overlooked areas.
+                - generic [ref=e148]:
+                  - img "avatar" [ref=e150]
+                  - generic [ref=e153]:
+                    - paragraph [ref=e154]: Taibah International School, Headteacher
+                    - paragraph [ref=e155]: School Operations Audit & Review Course
+            - generic [ref=e156]:
+              - paragraph [ref=e157]: “
+              - generic [ref=e158]:
+                - paragraph [ref=e159]: The Consultancy support received was beyond exceptional. It exceeded our expectations!
+                - generic [ref=e160]:
+                  - img "avatar" [ref=e162]
+                  - generic [ref=e165]:
+                    - paragraph [ref=e166]: The North Green School, Director
+                    - paragraph [ref=e167]: School Start Up Course
+            - generic [ref=e168]:
+              - paragraph [ref=e169]: “
+              - generic [ref=e170]:
+                - paragraph [ref=e171]: I just wanted to write and let you know how much we have enjoyed having you coach us. You really are an extremely good communicator. Everything we've heard or discussed with you has been exactly what we've needed to hear. You are really, really good at your job!
+                - generic [ref=e172]:
+                  - img "avatar" [ref=e174]
+                  - generic [ref=e177]:
+                    - paragraph [ref=e178]: Kings International School Kampala, Director
+                    - paragraph [ref=e179]: Equipping Leaders Course
+        - generic [ref=e181]:
+          - heading "Don't Leave it to Chance Take your School to the Next Level!" [level=2] [ref=e182]:
+            - generic [ref=e183]: Don't Leave it to Chance
+            - generic [ref=e184]: Take your School to the Next Level!
+          - link "Talk to us Today" [ref=e186] [cursor=pointer]:
+            - /url: /info/contact-enquiry
+    - generic [ref=e188]:
+      - generic [ref=e189]:
+        - generic [ref=e190]:
+          - link "People and Potential Consultancy" [ref=e192] [cursor=pointer]:
+            - /url: /
+            - img "People and Potential Consultancy" [ref=e193]
+          - generic [ref=e194]:
+            - link [ref=e195] [cursor=pointer]:
+              - /url: https://www.linkedin.com/in/audrey-dralega-frsa-00b37448/
+              - img [ref=e196]
+            - link "Built by DWO" [ref=e198] [cursor=pointer]:
+              - /url: https://www.dralegawebops.com/
+        - generic [ref=e199]:
+          - paragraph [ref=e200]: Contact
+          - paragraph [ref=e201]: info@peopleandpotential.org
+          - paragraph [ref=e202]: +256 793 231969
+          - paragraph [ref=e203]: +256 787 921975
+          - paragraph [ref=e204]: PO. Box 27348, Kampala
+          - paragraph [ref=e205]: 18 Millennium House Nsambya Road
+        - generic [ref=e206]:
+          - paragraph [ref=e207]: About Us
+          - link "Home" [ref=e208] [cursor=pointer]:
+            - /url: /
+            - paragraph [ref=e209]: Home
+          - link "Who We Are" [ref=e210] [cursor=pointer]:
+            - /url: /who-we-are
+            - paragraph [ref=e211]: Who We Are
+          - link "Why Choose Us" [ref=e212] [cursor=pointer]:
+            - /url: /why-choose-us
+            - paragraph [ref=e213]: Why Choose Us
+          - link "Consultant Profiles" [ref=e214] [cursor=pointer]:
+            - /url: /consultant-profile
+            - paragraph [ref=e215]: Consultant Profiles
+        - generic [ref=e216]:
+          - paragraph [ref=e217]: Services
+          - link "School Start Up" [ref=e218] [cursor=pointer]:
+            - /url: /school-startup
+            - paragraph [ref=e219]: School Start Up
+          - link "School Development" [ref=e220] [cursor=pointer]:
+            - /url: /school-development
+            - paragraph [ref=e221]: School Development
+          - paragraph [ref=e223]: Courses
+          - link "Course List" [ref=e224] [cursor=pointer]:
+            - /url: /course-list
+            - paragraph [ref=e225]: Course List
+          - link "Course Booking" [ref=e226] [cursor=pointer]:
+            - /url: /education/courses/course-booking-form
+            - paragraph [ref=e227]: Course Booking
+          - paragraph [ref=e229]: Contact
+          - link "Contact Form" [ref=e230] [cursor=pointer]:
+            - /url: /info/contact-enquiry
+            - paragraph [ref=e231]: Contact Form
+      - separator [ref=e232]
+      - paragraph [ref=e233]: © 2024 People and Potential Consultancy. All rights reserved.
+  - alert [ref=e234]
+  - generic:
+    - region "Notifications-top"
+    - region "Notifications-top-left"
+    - region "Notifications-top-right"
+    - region "Notifications-bottom-left"
+    - region "Notifications-bottom"
+    - region "Notifications-bottom-right"

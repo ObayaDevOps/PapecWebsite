@@ -1,0 +1,127 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e3]:
+    - generic [ref=e4]:
+      - generic [ref=e6]:
+        - button "Toggle Navigation" [ref=e7] [cursor=pointer]:
+          - img [ref=e8]
+        - link "People and Potential Consultancy" [ref=e10] [cursor=pointer]:
+          - /url: /
+          - img "People and Potential Consultancy" [ref=e11]
+      - generic [ref=e12]:
+        - paragraph [ref=e13]: Get in Touch
+        - heading "Contact Us" [level=1] [ref=e14]
+        - paragraph [ref=e15]: We'd love to hear from you. Reach out and we'll respond as soon as possible.
+      - generic [ref=e18]:
+        - generic [ref=e19]:
+          - paragraph [ref=e20]: Contact Details
+          - heading "People & Potential Consultancy" [level=2] [ref=e21]
+          - paragraph [ref=e22]: We help schools and education organisations identify areas for growth and implement systems for continuous improvement.
+          - generic [ref=e23]:
+            - generic [ref=e24]:
+              - img [ref=e26]
+              - paragraph [ref=e29]: info@peopleandpotential.org
+            - generic [ref=e30]:
+              - img [ref=e32]
+              - paragraph [ref=e35]: +256 793 231969
+            - generic [ref=e36]:
+              - img [ref=e38]
+              - paragraph [ref=e41]: +256 787 921975
+            - generic [ref=e42]:
+              - img [ref=e44]
+              - paragraph [ref=e47]: 18 Millennium House, Nsambya Road
+            - generic [ref=e48]:
+              - img [ref=e50]
+              - paragraph [ref=e53]: PO. Box 27348, Kampala
+          - generic [ref=e54]:
+            - paragraph [ref=e55]: Follow Us
+            - link [ref=e57] [cursor=pointer]:
+              - /url: https://www.linkedin.com/in/audrey-dralega-frsa-00b37448/
+              - img [ref=e59]
+        - generic [ref=e63]:
+          - group [ref=e64]:
+            - generic [ref=e65]: Name*
+            - generic [ref=e66]:
+              - generic:
+                - img
+              - textbox "Name" [ref=e67]:
+                - /placeholder: Your Name
+          - group [ref=e68]:
+            - generic [ref=e69]: Email*
+            - generic [ref=e70]:
+              - generic:
+                - img
+              - textbox "Email" [ref=e71]:
+                - /placeholder: Your Email
+          - group [ref=e72]:
+            - generic [ref=e73]: Message*
+            - textbox "Message" [ref=e74]:
+              - /placeholder: Your Message
+          - button "Send Message" [ref=e75] [cursor=pointer]
+      - generic [ref=e77]:
+        - heading "Don't Leave it to Chance Take your School to the Next Level!" [level=2] [ref=e78]:
+          - generic [ref=e79]: Don't Leave it to Chance
+          - generic [ref=e80]: Take your School to the Next Level!
+        - link "Talk to us Today" [ref=e82] [cursor=pointer]:
+          - /url: /info/contact-enquiry
+    - generic [ref=e84]:
+      - generic [ref=e85]:
+        - generic [ref=e86]:
+          - link "People and Potential Consultancy" [ref=e88] [cursor=pointer]:
+            - /url: /
+            - img "People and Potential Consultancy" [ref=e89]
+          - generic [ref=e90]:
+            - link [ref=e91] [cursor=pointer]:
+              - /url: https://www.linkedin.com/in/audrey-dralega-frsa-00b37448/
+              - img [ref=e92]
+            - link "Built by DWO" [ref=e94] [cursor=pointer]:
+              - /url: https://www.dralegawebops.com/
+        - generic [ref=e95]:
+          - paragraph [ref=e96]: Contact
+          - paragraph [ref=e97]: info@peopleandpotential.org
+          - paragraph [ref=e98]: +256 793 231969
+          - paragraph [ref=e99]: +256 787 921975
+          - paragraph [ref=e100]: PO. Box 27348, Kampala
+          - paragraph [ref=e101]: 18 Millennium House Nsambya Road
+        - generic [ref=e102]:
+          - paragraph [ref=e103]: About Us
+          - link "Home" [ref=e104] [cursor=pointer]:
+            - /url: /
+            - paragraph [ref=e105]: Home
+          - link "Who We Are" [ref=e106] [cursor=pointer]:
+            - /url: /who-we-are
+            - paragraph [ref=e107]: Who We Are
+          - link "Why Choose Us" [ref=e108] [cursor=pointer]:
+            - /url: /why-choose-us
+            - paragraph [ref=e109]: Why Choose Us
+          - link "Consultant Profiles" [ref=e110] [cursor=pointer]:
+            - /url: /consultant-profile
+            - paragraph [ref=e111]: Consultant Profiles
+        - generic [ref=e112]:
+          - paragraph [ref=e113]: Services
+          - link "School Start Up" [ref=e114] [cursor=pointer]:
+            - /url: /school-startup
+            - paragraph [ref=e115]: School Start Up
+          - link "School Development" [ref=e116] [cursor=pointer]:
+            - /url: /school-development
+            - paragraph [ref=e117]: School Development
+          - paragraph [ref=e119]: Courses
+          - link "Course List" [ref=e120] [cursor=pointer]:
+            - /url: /course-list
+            - paragraph [ref=e121]: Course List
+          - link "Course Booking" [ref=e122] [cursor=pointer]:
+            - /url: /education/courses/course-booking-form
+            - paragraph [ref=e123]: Course Booking
+          - paragraph [ref=e125]: Contact
+          - link "Contact Form" [ref=e126] [cursor=pointer]:
+            - /url: /info/contact-enquiry
+            - paragraph [ref=e127]: Contact Form
+      - separator [ref=e128]
+      - paragraph [ref=e129]: © 2024 People and Potential Consultancy. All rights reserved.
+  - alert [ref=e130]
+  - generic:
+    - region "Notifications-top"
+    - region "Notifications-top-left"
+    - region "Notifications-top-right"
+    - region "Notifications-bottom-left"
+    - region "Notifications-bottom"
+    - region "Notifications-bottom-right"

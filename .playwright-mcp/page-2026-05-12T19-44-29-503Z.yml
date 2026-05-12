@@ -1,0 +1,135 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e3]:
+    - generic [ref=e4]:
+      - generic [ref=e6]:
+        - button "Toggle Navigation" [ref=e7] [cursor=pointer]:
+          - img [ref=e8]
+        - link "People and Potential Consultancy" [ref=e10] [cursor=pointer]:
+          - /url: /
+          - img "People and Potential Consultancy" [ref=e11]
+      - generic [ref=e14]:
+        - generic [ref=e15]:
+          - heading "Professional Development" [level=3] [ref=e16]
+          - heading "Courses" [level=1] [ref=e17]:
+            - paragraph [ref=e18]: Courses
+          - heading "We offer robust Professional Development (PD) courses to educators and administrators in a range of areas to help you develop systems and raise achievement." [level=2] [ref=e19]
+        - generic [ref=e20]:
+          - paragraph [ref=e21]: What we Offer
+          - generic [ref=e22]:
+            - generic [ref=e24]:
+              - paragraph [ref=e27]: "Courses can be tailored to your specific needs. If you don’t see the course you need – contact us. We may be able to help. Courses are divided into these main areas:"
+              - img "Course" [ref=e29]
+            - generic [ref=e30]:
+              - paragraph [ref=e31]: "Choose Your Area of Training:"
+              - generic [ref=e33]:
+                - generic [ref=e35]:
+                  - img [ref=e37]
+                  - link "Subject Knowledge" [ref=e41] [cursor=pointer]:
+                    - /url: /education/courses/course-booking-form
+                    - paragraph [ref=e42]: Subject Knowledge
+                - generic [ref=e44]:
+                  - img [ref=e46]
+                  - link "Teaching and Learning Strategies" [ref=e50] [cursor=pointer]:
+                    - /url: /education/courses/course-booking-form
+                    - paragraph [ref=e51]: Teaching and Learning Strategies
+                - generic [ref=e53]:
+                  - img [ref=e55]
+                  - link "School Development" [ref=e59] [cursor=pointer]:
+                    - /url: /education/courses/course-booking-form
+                    - paragraph [ref=e60]: School Development
+                - generic [ref=e62]:
+                  - img [ref=e64]
+                  - link "Child Development" [ref=e68] [cursor=pointer]:
+                    - /url: /education/courses/course-booking-form
+                    - paragraph [ref=e69]: Child Development
+                - generic [ref=e71]:
+                  - img [ref=e73]
+                  - link "Management & Finance" [ref=e77] [cursor=pointer]:
+                    - /url: /education/courses/course-booking-form
+                    - paragraph [ref=e78]: Management & Finance
+                - generic [ref=e80]:
+                  - img [ref=e82]
+                  - link "Early Childhood Education" [ref=e86] [cursor=pointer]:
+                    - /url: /education/courses/course-booking-form
+                    - paragraph [ref=e87]: Early Childhood Education
+                - generic [ref=e89]:
+                  - img [ref=e91]
+                  - link "Governance & Leadership" [ref=e95] [cursor=pointer]:
+                    - /url: /education/courses/course-booking-form
+                    - paragraph [ref=e96]: Governance & Leadership
+                - generic [ref=e98]:
+                  - img [ref=e100]
+                  - link "International Education" [ref=e104] [cursor=pointer]:
+                    - /url: /education/courses/course-booking-form
+                    - paragraph [ref=e105]: International Education
+        - generic [ref=e108]:
+          - heading "Don't Leave it to Chance Take your School to the Next Level!" [level=2] [ref=e109]:
+            - generic [ref=e110]: Don't Leave it to Chance
+            - generic [ref=e111]: Take your School to the Next Level!
+          - link "Talk to us Today" [ref=e113] [cursor=pointer]:
+            - /url: /info/contact-enquiry
+            - text: Talk to us Today
+            - img [ref=e114]
+    - generic [ref=e118]:
+      - generic [ref=e119]:
+        - link "People and Potential Consultancy" [ref=e121] [cursor=pointer]:
+          - /url: /#
+          - img "People and Potential Consultancy" [ref=e122]
+        - generic [ref=e123]:
+          - link "LinkedIn" [ref=e124] [cursor=pointer]:
+            - /url: /#
+            - generic [ref=e125]: LinkedIn
+            - img [ref=e126]
+          - link "Built by DWO" [ref=e128] [cursor=pointer]:
+            - /url: https://www.dralegawebops.com/
+        - paragraph [ref=e130]: © 2024 People and Potential Consultancy. All rights reserved
+      - generic [ref=e131]:
+        - paragraph [ref=e133]: info@peopleandpotential.org
+        - paragraph [ref=e135]: +256 793 231969
+        - paragraph [ref=e137]: +256 787 921975
+        - paragraph [ref=e139]: PO. Box 27348, Kampala
+        - paragraph [ref=e141]: 18 Millennium House Nsambya Road
+      - generic [ref=e142]:
+        - generic [ref=e143]:
+          - paragraph [ref=e145]: Site Map
+          - link "Home" [ref=e146] [cursor=pointer]:
+            - /url: /
+            - paragraph [ref=e147]: Home
+          - paragraph [ref=e149]: About Us
+          - link "Who We Are" [ref=e150] [cursor=pointer]:
+            - /url: /who-we-are
+            - paragraph [ref=e151]: Who We Are
+          - link "Why Choose Us" [ref=e152] [cursor=pointer]:
+            - /url: /why-choose-us
+            - paragraph [ref=e153]: Why Choose Us
+          - link "Consultant Profiles" [ref=e154] [cursor=pointer]:
+            - /url: /consultant-profile
+            - paragraph [ref=e155]: Consultant Profiles
+        - generic [ref=e156]:
+          - paragraph [ref=e158]: Services
+          - link "School Start Up" [ref=e159] [cursor=pointer]:
+            - /url: /school-startup
+            - paragraph [ref=e160]: School Start Up
+          - link "School Development" [ref=e161] [cursor=pointer]:
+            - /url: /school-development
+            - paragraph [ref=e162]: School Development
+          - paragraph [ref=e164]: Courses
+          - link "Course List" [ref=e165] [cursor=pointer]:
+            - /url: /course-list
+            - paragraph [ref=e166]: Course List
+          - link "Course Booking Form" [ref=e167] [cursor=pointer]:
+            - /url: /education/courses/course-booking-form
+            - paragraph [ref=e168]: Course Booking Form
+        - generic [ref=e169]:
+          - paragraph [ref=e171]: Contact
+          - link "Contact Form" [ref=e172] [cursor=pointer]:
+            - /url: /info/contact-enquiry
+            - paragraph [ref=e173]: Contact Form
+  - alert [ref=e174]
+  - generic:
+    - region "Notifications-top"
+    - region "Notifications-top-left"
+    - region "Notifications-top-right"
+    - region "Notifications-bottom-left"
+    - region "Notifications-bottom"
+    - region "Notifications-bottom-right"

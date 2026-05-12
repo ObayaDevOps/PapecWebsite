@@ -1,0 +1,90 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e3]:
+    - generic [ref=e4]:
+      - generic [ref=e6]:
+        - button "Toggle Navigation" [ref=e7] [cursor=pointer]:
+          - img [ref=e8]
+        - link "People and Potential Consultancy" [ref=e10] [cursor=pointer]:
+          - /url: /
+          - img "People and Potential Consultancy" [ref=e11]
+      - generic [ref=e12]:
+        - paragraph [ref=e13]: About Us
+        - heading "Our Consultants" [level=1] [ref=e14]
+        - paragraph [ref=e15]: With a blend of national and international education experience, we offer a balanced understanding of education systems and school development.
+      - generic [ref=e18]:
+        - generic [ref=e19]:
+          - generic [ref=e21]:
+            - heading "Audrey Dralega" [level=2] [ref=e22]
+            - paragraph [ref=e23]: Prior to relocating to Uganda, Audrey served as Course Tutor in the School of Education Centre for Studies in Science & Mathematics Education (CSSME), University of Leeds, UK. There she taught the Primary Mathematics component of the Post Graduate Certificate in Education (PGCE) and her course component was deemed ‘most practical and informative’ in the student end of year evaluations. She has delivered numerous BTEC & Higher National Certificate (HNC) training courses including Early Childhood Learning, Special Needs Education, Curriculum Mathematics and Curriculum Science and designed and delivered training both in her schools in the UK and in the international sector.
+          - separator [ref=e24]
+        - generic [ref=e27]:
+          - heading "Fiona Naggaga Musoke" [level=2] [ref=e28]
+          - paragraph [ref=e29]: Fiona Naggaga Musoke has over a decade of international school teaching experience as well as a keen understanding of the Ugandan National Curriculum. Following her Bachelor's Degree in Law from Makerere University, where she graduated among the top students in her class, Fiona’s interest in Human Rights led to her employment at the Uganda Human Rights Commission. After relocating from Uganda, Fiona obtained a Postgraduate Certificate in Law from the University of London which included a course on the International Rights of the Child. She then made the decision to pursue her true passion which is education. Fiona has a Postgraduate Certificate in Education (International) from the University of Nottingham. She successfully completed a COBIS Programme for Middle Leaders and several TES Safeguarding and Duty of Care courses.
+      - generic [ref=e31]:
+        - heading "Don't Leave it to Chance Take your School to the Next Level!" [level=2] [ref=e32]:
+          - generic [ref=e33]: Don't Leave it to Chance
+          - generic [ref=e34]: Take your School to the Next Level!
+        - link "Talk to us Today" [ref=e36] [cursor=pointer]:
+          - /url: /info/contact-enquiry
+    - generic [ref=e38]:
+      - generic [ref=e39]:
+        - generic [ref=e40]:
+          - link "People and Potential Consultancy" [ref=e42] [cursor=pointer]:
+            - /url: /
+            - img "People and Potential Consultancy" [ref=e43]
+          - generic [ref=e44]:
+            - link [ref=e45] [cursor=pointer]:
+              - /url: https://www.linkedin.com/in/audrey-dralega-frsa-00b37448/
+              - img [ref=e46]
+            - link "Built by DWO" [ref=e48] [cursor=pointer]:
+              - /url: https://www.dralegawebops.com/
+        - generic [ref=e49]:
+          - paragraph [ref=e50]: Contact
+          - paragraph [ref=e51]: info@peopleandpotential.org
+          - paragraph [ref=e52]: +256 793 231969
+          - paragraph [ref=e53]: +256 787 921975
+          - paragraph [ref=e54]: PO. Box 27348, Kampala
+          - paragraph [ref=e55]: 18 Millennium House Nsambya Road
+        - generic [ref=e56]:
+          - paragraph [ref=e57]: About Us
+          - link "Home" [ref=e58] [cursor=pointer]:
+            - /url: /
+            - paragraph [ref=e59]: Home
+          - link "Who We Are" [ref=e60] [cursor=pointer]:
+            - /url: /who-we-are
+            - paragraph [ref=e61]: Who We Are
+          - link "Why Choose Us" [ref=e62] [cursor=pointer]:
+            - /url: /why-choose-us
+            - paragraph [ref=e63]: Why Choose Us
+          - link "Consultant Profiles" [ref=e64] [cursor=pointer]:
+            - /url: /consultant-profile
+            - paragraph [ref=e65]: Consultant Profiles
+        - generic [ref=e66]:
+          - paragraph [ref=e67]: Services
+          - link "School Start Up" [ref=e68] [cursor=pointer]:
+            - /url: /school-startup
+            - paragraph [ref=e69]: School Start Up
+          - link "School Development" [ref=e70] [cursor=pointer]:
+            - /url: /school-development
+            - paragraph [ref=e71]: School Development
+          - paragraph [ref=e73]: Courses
+          - link "Course List" [ref=e74] [cursor=pointer]:
+            - /url: /course-list
+            - paragraph [ref=e75]: Course List
+          - link "Course Booking" [ref=e76] [cursor=pointer]:
+            - /url: /education/courses/course-booking-form
+            - paragraph [ref=e77]: Course Booking
+          - paragraph [ref=e79]: Contact
+          - link "Contact Form" [ref=e80] [cursor=pointer]:
+            - /url: /info/contact-enquiry
+            - paragraph [ref=e81]: Contact Form
+      - separator [ref=e82]
+      - paragraph [ref=e83]: © 2024 People and Potential Consultancy. All rights reserved.
+  - alert [ref=e84]
+  - generic:
+    - region "Notifications-top"
+    - region "Notifications-top-left"
+    - region "Notifications-top-right"
+    - region "Notifications-bottom-left"
+    - region "Notifications-bottom"
+    - region "Notifications-bottom-right"

@@ -1,0 +1,130 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e3]:
+    - generic [ref=e4]:
+      - generic [ref=e6]:
+        - button "Toggle Navigation" [ref=e7] [cursor=pointer]:
+          - img [ref=e8]
+        - link "People and Potential Consultancy" [ref=e10] [cursor=pointer]:
+          - /url: /
+          - img "People and Potential Consultancy" [ref=e11]
+      - generic [ref=e14]:
+        - generic [ref=e15]:
+          - heading "Services" [level=3] [ref=e16]
+          - heading "School Start-Up" [level=1] [ref=e17]:
+            - paragraph [ref=e18]: School Start-Up
+          - heading "Starting a new school is a mammoth undertaking but a wonderfully creative and important one." [level=2] [ref=e19]
+        - generic [ref=e21]:
+          - img "School Start-Up Image" [ref=e23]
+          - generic [ref=e26]:
+            - paragraph [ref=e27]: The families who will entrust their child’s education to you are reliant on the school being clear about purpose, able to set and maintain high standards and provide a safe and stimulating learning environment in which to learn.
+            - paragraph [ref=e28]: We are able to offer you the 360 degree support that moves the start up team from an idea to the successful launch of the school.
+        - generic [ref=e29]:
+          - paragraph [ref=e30]: "Services are tailor-made according to the stage and may include, but are not limited to the following:"
+          - generic [ref=e34]:
+            - generic [ref=e36]:
+              - img [ref=e38]
+              - paragraph [ref=e42]: Formulation and alignment of the vision, mission and school motto; clarity is the most important selling point a new school can have. We will enable you to formulate your message clearly and concisely, to raise interest and ensure you attract the families who will benefit the most from what you offer.
+            - generic [ref=e44]:
+              - img [ref=e46]
+              - paragraph [ref=e50]: Locating and/or design of school premises; working with your architects, we advise on aspects of school layout and design which support and promote the type of learning and communication you aim to achieve.
+            - generic [ref=e52]:
+              - img [ref=e54]
+              - paragraph [ref=e58]: Marketing, website, prospectus, use of social media and other school publications
+            - generic [ref=e60]:
+              - img [ref=e62]
+              - paragraph [ref=e66]: Advice on legal and statutory requirements, including health, safety and emergency procedures & guidance.
+            - generic [ref=e68]:
+              - img [ref=e70]
+              - paragraph [ref=e74]: Creation and alignment of school policies and procedures
+            - generic [ref=e76]:
+              - img [ref=e78]
+              - paragraph [ref=e82]: Financial planning and resourcing to fit your budget
+            - generic [ref=e84]:
+              - img [ref=e86]
+              - paragraph [ref=e90]: Organizational set up and job descriptions, including defining the type of leadership you require.
+            - generic [ref=e92]:
+              - img [ref=e94]
+              - paragraph [ref=e98]: Curriculum design and assessment processes
+            - generic [ref=e100]:
+              - img [ref=e102]
+              - paragraph [ref=e106]: Staff induction, leadership mentoring and training
+            - generic [ref=e108]:
+              - img [ref=e110]
+              - paragraph [ref=e114]: Planning launch events and school calendar
+            - generic [ref=e116]:
+              - img [ref=e118]
+              - paragraph [ref=e122]: On-going professional support firmly grounded in the reality of forming and building a school culture and systems
+            - generic [ref=e124]:
+              - img [ref=e126]
+              - paragraph [ref=e130]: For the owners of newly acquired schools we offer support with re-branding; renewing the vision and mission and overhaul of buildings, curriculum and teaching approaches.
+        - generic [ref=e133]:
+          - heading "Don't Leave it to Chance Take your School to the Next Level!" [level=2] [ref=e134]:
+            - generic [ref=e135]: Don't Leave it to Chance
+            - generic [ref=e136]: Take your School to the Next Level!
+          - link "Talk to us Today" [ref=e138] [cursor=pointer]:
+            - /url: /info/contact-enquiry
+            - text: Talk to us Today
+            - img [ref=e139]
+    - generic [ref=e143]:
+      - generic [ref=e144]:
+        - link "People and Potential Consultancy" [ref=e146] [cursor=pointer]:
+          - /url: /#
+          - img "People and Potential Consultancy" [ref=e147]
+        - generic [ref=e148]:
+          - link "LinkedIn" [ref=e149] [cursor=pointer]:
+            - /url: /#
+            - generic [ref=e150]: LinkedIn
+            - img [ref=e151]
+          - link "Built by DWO" [ref=e153] [cursor=pointer]:
+            - /url: https://www.dralegawebops.com/
+        - paragraph [ref=e155]: © 2024 People and Potential Consultancy. All rights reserved
+      - generic [ref=e156]:
+        - paragraph [ref=e158]: info@peopleandpotential.org
+        - paragraph [ref=e160]: +256 793 231969
+        - paragraph [ref=e162]: +256 787 921975
+        - paragraph [ref=e164]: PO. Box 27348, Kampala
+        - paragraph [ref=e166]: 18 Millennium House Nsambya Road
+      - generic [ref=e167]:
+        - generic [ref=e168]:
+          - paragraph [ref=e170]: Site Map
+          - link "Home" [ref=e171] [cursor=pointer]:
+            - /url: /
+            - paragraph [ref=e172]: Home
+          - paragraph [ref=e174]: About Us
+          - link "Who We Are" [ref=e175] [cursor=pointer]:
+            - /url: /who-we-are
+            - paragraph [ref=e176]: Who We Are
+          - link "Why Choose Us" [ref=e177] [cursor=pointer]:
+            - /url: /why-choose-us
+            - paragraph [ref=e178]: Why Choose Us
+          - link "Consultant Profiles" [ref=e179] [cursor=pointer]:
+            - /url: /consultant-profile
+            - paragraph [ref=e180]: Consultant Profiles
+        - generic [ref=e181]:
+          - paragraph [ref=e183]: Services
+          - link "School Start Up" [ref=e184] [cursor=pointer]:
+            - /url: /school-startup
+            - paragraph [ref=e185]: School Start Up
+          - link "School Development" [ref=e186] [cursor=pointer]:
+            - /url: /school-development
+            - paragraph [ref=e187]: School Development
+          - paragraph [ref=e189]: Courses
+          - link "Course List" [ref=e190] [cursor=pointer]:
+            - /url: /course-list
+            - paragraph [ref=e191]: Course List
+          - link "Course Booking Form" [ref=e192] [cursor=pointer]:
+            - /url: /education/courses/course-booking-form
+            - paragraph [ref=e193]: Course Booking Form
+        - generic [ref=e194]:
+          - paragraph [ref=e196]: Contact
+          - link "Contact Form" [ref=e197] [cursor=pointer]:
+            - /url: /info/contact-enquiry
+            - paragraph [ref=e198]: Contact Form
+  - alert [ref=e199]
+  - generic:
+    - region "Notifications-top"
+    - region "Notifications-top-left"
+    - region "Notifications-top-right"
+    - region "Notifications-bottom-left"
+    - region "Notifications-bottom"
+    - region "Notifications-bottom-right"

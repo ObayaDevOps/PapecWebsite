@@ -1,0 +1,93 @@
+[      45ms] [LOG] [Fast Refresh] rebuilding @ webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/pages/hot-reloader-client.js:221
+[    6658ms] [INFO] %cDownload the React DevTools for a better development experience: https://reactjs.org/link/react-devtools font-weight:bold @ webpack-internal:///./node_modules/react-dom/cjs/react-dom.development.js:29889
+[    6817ms] [LOG] [HMR] connected @ webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/pages/websocket.js:45
+[    7832ms] [ERROR] Warning: React does not recognize the `%s` prop on a DOM element. If you intentionally want it to appear in the DOM as a custom attribute, spell it as lowercase `%s` instead. If you accidentally passed it from a parent component, remove it from the DOM element.%s fetchPriority fetchpriority 
+    at img
+    at eval (webpack-internal:///./node_modules/next/dist/client/image-component.js:134:11)
+    at eval (webpack-internal:///./node_modules/next/dist/client/image-component.js:244:47)
+    at a
+    at eval (webpack-internal:///./node_modules/@emotion/react/dist/emotion-element-7a1343fa.browser.development.esm.js:70:66)
+    at ChakraComponent2 (webpack-internal:///./node_modules/@chakra-ui/react/dist/esm/system/system.mjs:51:15)
+    at div
+    at eval (webpack-internal:///./node_modules/@emotion/react/dist/emotion-element-7a1343fa.browser.development.esm.js:70:66)
+    at ChakraComponent2 (webpack-internal:///./node_modules/@chakra-ui/react/dist/esm/system/system.mjs:51:15)
+    at Flex2 (webpack-internal:///./node_modules/@chakra-ui/react/dist/esm/flex/flex.mjs:14:11)
+    at div
+    at eval (webpack-internal:///./node_modules/@emotion/react/dist/emotion-element-7a1343fa.browser.development.esm.js:70:66)
+    at ChakraComponent2 (webpack-internal:///./node_modules/@chakra-ui/react/dist/esm/system/system.mjs:51:15)
+    at WithSubnavigation (webpack-internal:///./components/utils/navbar3.js:45:97)
+    at div
+    at eval (webpack-internal:///./node_modules/@emotion/react/dist/emotion-element-7a1343fa.browser.development.esm.js:70:66)
+    at ChakraComponent2 (webpack-internal:///./node_modules/@chakra-ui/react/dist/esm/system/system.mjs:51:15)
+    at WhyChooseUsPageComponent (webpack-internal:///./pages/why-choose-us.js:44:11)
+    at div
+    at eval (webpack-internal:///./node_modules/@emotion/react/dist/emotion-element-7a1343fa.browser.development.esm.js:70:66)
+    at ChakraComponent2 (webpack-internal:///./node_modules/@chakra-ui/react/dist/esm/system/system.mjs:51:15)
+    at EnvironmentProvider (webpack-internal:///./node_modules/@chakra-ui/react/dist/esm/env/env.mjs:33:11)
+    at eval (webpack-internal:///./node_modules/@emotion/react/dist/emotion-element-7a1343fa.browser.development.esm.js:70:66)
+    at ThemeProvider (webpack-internal:///./node_modules/@emotion/react/dist/emotion-element-7a1343fa.browser.development.esm.js:122:50)
+    at ThemeProvider (webpack-internal:///./node_modules/@chakra-ui/react/dist/esm/system/providers.mjs:29:11)
+    at Provider (webpack-internal:///./node_modules/@chakra-ui/react/dist/esm/provider/provider.mjs:21:5)
+    at ChakraProvider (webpack-internal:///./node_modules/@chakra-ui/react/dist/esm/provider/create-provider.mjs:15:5)
+    at MyApp (webpack-internal:///./pages/_app.js:15:11)
+    at PathnameContextProviderAdapter (webpack-internal:///./node_modules/next/dist/shared/lib/router/adapters.js:81:11)
+    at ErrorBoundary (webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/pages/ErrorBoundary.js:41:9)
+    at ReactDevOverlay (webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/pages/ReactDevOverlay.js:33:11)
+    at Container (webpack-internal:///./node_modules/next/dist/client/index.js:81:1)
+    at AppContainer (webpack-internal:///./node_modules/next/dist/client/index.js:189:11)
+    at Root (webpack-internal:///./node_modules/next/dist/client/index.js:413:11) @ webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/internal/helpers/hydration-error-info.js:62
+[    8594ms] [WARNING] Image with src "https://cdn.sanity.io/images/cbn95lt3/production/fed8d918ba701c23433b3ad786f1e3e6f81d1c2e-570x320.jpg" was detected as the Largest Contentful Paint (LCP). Please add the "priority" property if this image is above the fold.
+Read more: https://nextjs.org/docs/api-reference/next/image#priority @ webpack-internal:///./node_modules/next/dist/shared/lib/utils/warn-once.js:15
+[   13398ms] [WARNING] Image with src "https://cdn.sanity.io/images/cbn95lt3/production/12b51d0d38067553c9cd82f5f4a29356fa53b008-570x320.jpg" was detected as the Largest Contentful Paint (LCP). Please add the "priority" property if this image is above the fold.
+Read more: https://nextjs.org/docs/api-reference/next/image#priority @ webpack-internal:///./node_modules/next/dist/shared/lib/utils/warn-once.js:15
+[   82818ms] [LOG] [Fast Refresh] rebuilding @ webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/pages/hot-reloader-client.js:221
+[   85952ms] [LOG] [Fast Refresh] done in 3134ms @ webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/pages/hot-reloader-client.js:190
+[  126284ms] [LOG] [Fast Refresh] rebuilding @ webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/pages/hot-reloader-client.js:221
+[  130066ms] [INFO] %cDownload the React DevTools for a better development experience: https://reactjs.org/link/react-devtools font-weight:bold @ webpack-internal:///./node_modules/react-dom/cjs/react-dom.development.js:29889
+[  130181ms] [LOG] [HMR] connected @ webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/pages/websocket.js:45
+[  131128ms] [ERROR] Warning: React does not recognize the `%s` prop on a DOM element. If you intentionally want it to appear in the DOM as a custom attribute, spell it as lowercase `%s` instead. If you accidentally passed it from a parent component, remove it from the DOM element.%s fetchPriority fetchpriority 
+    at img
+    at eval (webpack-internal:///./node_modules/next/dist/client/image-component.js:134:11)
+    at eval (webpack-internal:///./node_modules/next/dist/client/image-component.js:244:47)
+    at a
+    at eval (webpack-internal:///./node_modules/@emotion/react/dist/emotion-element-7a1343fa.browser.development.esm.js:70:66)
+    at ChakraComponent2 (webpack-internal:///./node_modules/@chakra-ui/react/dist/esm/system/system.mjs:51:15)
+    at div
+    at eval (webpack-internal:///./node_modules/@emotion/react/dist/emotion-element-7a1343fa.browser.development.esm.js:70:66)
+    at ChakraComponent2 (webpack-internal:///./node_modules/@chakra-ui/react/dist/esm/system/system.mjs:51:15)
+    at Flex2 (webpack-internal:///./node_modules/@chakra-ui/react/dist/esm/flex/flex.mjs:14:11)
+    at div
+    at eval (webpack-internal:///./node_modules/@emotion/react/dist/emotion-element-7a1343fa.browser.development.esm.js:70:66)
+    at ChakraComponent2 (webpack-internal:///./node_modules/@chakra-ui/react/dist/esm/system/system.mjs:51:15)
+    at WithSubnavigation (webpack-internal:///./components/utils/navbar3.js:45:97)
+    at div
+    at eval (webpack-internal:///./node_modules/@emotion/react/dist/emotion-element-7a1343fa.browser.development.esm.js:70:66)
+    at ChakraComponent2 (webpack-internal:///./node_modules/@chakra-ui/react/dist/esm/system/system.mjs:51:15)
+    at EducationLanding (webpack-internal:///./pages/index.js:71:11)
+    at div
+    at Home (webpack-internal:///./pages/index.js:56:43)
+    at div
+    at eval (webpack-internal:///./node_modules/@emotion/react/dist/emotion-element-7a1343fa.browser.development.esm.js:70:66)
+    at ChakraComponent2 (webpack-internal:///./node_modules/@chakra-ui/react/dist/esm/system/system.mjs:51:15)
+    at EnvironmentProvider (webpack-internal:///./node_modules/@chakra-ui/react/dist/esm/env/env.mjs:33:11)
+    at eval (webpack-internal:///./node_modules/@emotion/react/dist/emotion-element-7a1343fa.browser.development.esm.js:70:66)
+    at ThemeProvider (webpack-internal:///./node_modules/@emotion/react/dist/emotion-element-7a1343fa.browser.development.esm.js:122:50)
+    at ThemeProvider (webpack-internal:///./node_modules/@chakra-ui/react/dist/esm/system/providers.mjs:29:11)
+    at Provider (webpack-internal:///./node_modules/@chakra-ui/react/dist/esm/provider/provider.mjs:21:5)
+    at ChakraProvider (webpack-internal:///./node_modules/@chakra-ui/react/dist/esm/provider/create-provider.mjs:15:5)
+    at MyApp (webpack-internal:///./pages/_app.js:15:11)
+    at PathnameContextProviderAdapter (webpack-internal:///./node_modules/next/dist/shared/lib/router/adapters.js:81:11)
+    at ErrorBoundary (webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/pages/ErrorBoundary.js:41:9)
+    at ReactDevOverlay (webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/pages/ReactDevOverlay.js:33:11)
+    at Container (webpack-internal:///./node_modules/next/dist/client/index.js:81:1)
+    at AppContainer (webpack-internal:///./node_modules/next/dist/client/index.js:189:11)
+    at Root (webpack-internal:///./node_modules/next/dist/client/index.js:413:11) @ webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/internal/helpers/hydration-error-info.js:62
+[  131819ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://res.cloudinary.com/medoptics-image-cloud/image/upload/v1718637987/images_2_zpvxof.jpg:0
+[  131821ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://res.cloudinary.com/medoptics-image-cloud/image/upload/v1718637806/thTJLxxo_400x400_jgniba.jpg:0
+[  131823ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://res.cloudinary.com/medoptics-image-cloud/image/upload/v1718637806/Taibah-International-School-logo-300x155_kzzuvd.jpg:0
+[  131824ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://res.cloudinary.com/medoptics-image-cloud/image/upload/v1718637805/images_fjxltj.jpg:0
+[  131826ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://res.cloudinary.com/medoptics-image-cloud/image/upload/v1718637864/images_1_jje5hj.jpg:0
+[  149924ms] [LOG] [Fast Refresh] rebuilding @ webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/pages/hot-reloader-client.js:221
+[  151157ms] [LOG] [Fast Refresh] done in 1233ms @ webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/pages/hot-reloader-client.js:190
+[  231946ms] [LOG] [Fast Refresh] rebuilding @ webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/pages/hot-reloader-client.js:221
+[  238058ms] [LOG] [Fast Refresh] done in 6112ms @ webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/pages/hot-reloader-client.js:190

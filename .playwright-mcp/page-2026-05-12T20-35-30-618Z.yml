@@ -1,0 +1,154 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e3]:
+    - generic [ref=e4]:
+      - generic [ref=e6]:
+        - link "People and Potential Consultancy" [ref=e7] [cursor=pointer]:
+          - /url: /
+          - img "People and Potential Consultancy" [ref=e8]
+        - generic [ref=e9]:
+          - generic [ref=e10]:
+            - link "About Us" [ref=e12] [cursor=pointer]:
+              - /url: "#"
+            - link "Services" [ref=e14] [cursor=pointer]:
+              - /url: "#"
+            - link "Courses" [ref=e16] [cursor=pointer]:
+              - /url: /course-list
+            - link "Contact Us" [ref=e18] [cursor=pointer]:
+              - /url: /info/contact-enquiry
+          - link "Book a Course" [ref=e19] [cursor=pointer]:
+            - /url: /education/courses/course-booking-form
+      - generic [ref=e20]:
+        - paragraph [ref=e21]: Courses
+        - heading "Book a Course" [level=1] [ref=e22]
+        - paragraph [ref=e23]: Complete the form below and we'll confirm your booking within 48 hours.
+      - generic [ref=e26]:
+        - generic [ref=e27]:
+          - paragraph [ref=e28]: What Happens Next
+          - heading "Your journey starts here" [level=2] [ref=e29]
+          - paragraph [ref=e30]: Fill in the form and one of our team will be in touch to finalise the details and get you set up for your course.
+          - generic [ref=e31]:
+            - generic [ref=e32]:
+              - img [ref=e34]
+              - paragraph [ref=e36]: We confirm your booking within 48 hours
+            - generic [ref=e37]:
+              - img [ref=e39]
+              - paragraph [ref=e41]: Course materials sent one week before the start date
+            - generic [ref=e42]:
+              - img [ref=e44]
+              - paragraph [ref=e46]: Invoice issued on confirmation — payment due before course begins
+            - generic [ref=e47]:
+              - img [ref=e49]
+              - paragraph [ref=e52]: Certificate of completion issued on the final day
+        - generic [ref=e55]:
+          - group [ref=e56]:
+            - generic [ref=e57]: Course
+            - generic [ref=e58]:
+              - combobox [ref=e59]:
+                - option "Select a course" [selected]
+                - 'option "[English] Reading from Scratch: EN1"'
+                - 'option "[Pedagogy] International Teaching Assistant: PE1"'
+              - generic:
+                - img
+          - group [ref=e60]:
+            - generic [ref=e61]: Full Name*
+            - generic [ref=e62]:
+              - img [ref=e64]
+              - textbox "Your full name" [ref=e66]
+          - generic [ref=e67]:
+            - group [ref=e68]:
+              - generic [ref=e69]: Email*
+              - generic [ref=e70]:
+                - img [ref=e72]
+                - textbox "you@example.com" [ref=e75]
+            - group [ref=e76]:
+              - generic [ref=e77]: Phone*
+              - generic [ref=e78]:
+                - img [ref=e80]
+                - textbox "+256 ..." [ref=e83]
+          - group [ref=e84]:
+            - generic [ref=e85]: Participants Details*
+            - paragraph [ref=e86]: Include phone, email and dietary requirements for each participant.
+            - textbox "e.g. Jane Smith — jane@school.org — vegetarian..." [ref=e87]
+          - group [ref=e88]:
+            - generic [ref=e89]: Message*
+            - textbox "Anything else you'd like us to know" [ref=e90]
+          - group [ref=e91]:
+            - generic [ref=e92]: Preferred Payment Method
+            - generic [ref=e93]:
+              - combobox [ref=e94]:
+                - option "Select payment method" [selected]
+                - option "Bank Deposit (Preferred)"
+                - option "Cheque"
+                - option "Cash Payment"
+                - option "Mobile Money"
+              - generic:
+                - img
+          - button "Submit Booking" [ref=e95] [cursor=pointer]
+      - generic [ref=e97]:
+        - heading "Don't Leave it to Chance Take your School to the Next Level!" [level=2] [ref=e98]:
+          - generic [ref=e99]: Don't Leave it to Chance
+          - generic [ref=e100]: Take your School to the Next Level!
+        - link "Talk to us Today" [ref=e102] [cursor=pointer]:
+          - /url: /info/contact-enquiry
+    - generic [ref=e104]:
+      - generic [ref=e105]:
+        - generic [ref=e106]:
+          - link "People and Potential Consultancy" [ref=e108] [cursor=pointer]:
+            - /url: /
+            - img "People and Potential Consultancy" [ref=e109]
+          - generic [ref=e110]:
+            - link [ref=e111] [cursor=pointer]:
+              - /url: https://www.linkedin.com/in/audrey-dralega-frsa-00b37448/
+              - img [ref=e112]
+            - link "Built by DWO" [ref=e114] [cursor=pointer]:
+              - /url: https://www.dralegawebops.com/
+        - generic [ref=e115]:
+          - paragraph [ref=e116]: Contact
+          - paragraph [ref=e117]: info@peopleandpotential.org
+          - paragraph [ref=e118]: +256 793 231969
+          - paragraph [ref=e119]: +256 787 921975
+          - paragraph [ref=e120]: PO. Box 27348, Kampala
+          - paragraph [ref=e121]: 18 Millennium House Nsambya Road
+        - generic [ref=e122]:
+          - paragraph [ref=e123]: About Us
+          - link "Home" [ref=e124] [cursor=pointer]:
+            - /url: /
+            - paragraph [ref=e125]: Home
+          - link "Who We Are" [ref=e126] [cursor=pointer]:
+            - /url: /who-we-are
+            - paragraph [ref=e127]: Who We Are
+          - link "Why Choose Us" [ref=e128] [cursor=pointer]:
+            - /url: /why-choose-us
+            - paragraph [ref=e129]: Why Choose Us
+          - link "Consultant Profiles" [ref=e130] [cursor=pointer]:
+            - /url: /consultant-profile
+            - paragraph [ref=e131]: Consultant Profiles
+        - generic [ref=e132]:
+          - paragraph [ref=e133]: Services
+          - link "School Start Up" [ref=e134] [cursor=pointer]:
+            - /url: /school-startup
+            - paragraph [ref=e135]: School Start Up
+          - link "School Development" [ref=e136] [cursor=pointer]:
+            - /url: /school-development
+            - paragraph [ref=e137]: School Development
+          - paragraph [ref=e139]: Courses
+          - link "Course List" [ref=e140] [cursor=pointer]:
+            - /url: /course-list
+            - paragraph [ref=e141]: Course List
+          - link "Course Booking" [ref=e142] [cursor=pointer]:
+            - /url: /education/courses/course-booking-form
+            - paragraph [ref=e143]: Course Booking
+          - paragraph [ref=e145]: Contact
+          - link "Contact Form" [ref=e146] [cursor=pointer]:
+            - /url: /info/contact-enquiry
+            - paragraph [ref=e147]: Contact Form
+      - separator [ref=e148]
+      - paragraph [ref=e149]: © 2024 People and Potential Consultancy. All rights reserved.
+  - alert [ref=e150]
+  - generic:
+    - region "Notifications-top"
+    - region "Notifications-top-left"
+    - region "Notifications-top-right"
+    - region "Notifications-bottom-left"
+    - region "Notifications-bottom"
+    - region "Notifications-bottom-right"

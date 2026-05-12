@@ -1,0 +1,142 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e3]:
+    - generic [ref=e4]:
+      - generic [ref=e6]:
+        - link "People and Potential Consultancy" [ref=e7] [cursor=pointer]:
+          - /url: /
+          - img "People and Potential Consultancy" [ref=e8]
+        - generic [ref=e9]:
+          - generic [ref=e10]:
+            - link "About Us" [ref=e12] [cursor=pointer]:
+              - /url: "#"
+            - link "Services" [ref=e14] [cursor=pointer]:
+              - /url: "#"
+            - link "Courses" [ref=e16] [cursor=pointer]:
+              - /url: /course-list
+            - link "Contact Us" [ref=e18] [cursor=pointer]:
+              - /url: /info/contact-enquiry
+          - link "Book a Course" [ref=e19] [cursor=pointer]:
+            - /url: /education/courses/course-booking-form
+      - generic [ref=e20]:
+        - paragraph [ref=e21]: About - Why Choose Us
+        - heading "Why Choose Us?" [level=1] [ref=e22]
+        - paragraph [ref=e23]: We offer robust consultancy support and training which is firmly under-pinned by broad-based experience in the classroom, in leadership and in developing education systems on the wider scale.
+      - generic [ref=e26]:
+        - img "Why Choose Us" [ref=e28]
+        - generic [ref=e29]:
+          - paragraph [ref=e30]: Our Approach
+          - heading "Focused on Your Success" [level=2] [ref=e31]
+          - paragraph [ref=e32]: A common trait of high achieving organisations is the desire to continually review practice and improve provision. Most high achievers can readily identify areas they are still honing and also areas they wish to radically improve.
+      - generic [ref=e35]:
+        - generic [ref=e36]:
+          - paragraph [ref=e37]: How We Work
+          - heading "Systems That Stick" [level=2] [ref=e38]
+          - paragraph [ref=e39]: People & Potential Consultancy recognizes that drive, will work with your school or organisation to pinpoint steps towards achieving these goals and to help you work systematically towards them. We purpose to build systems which enable schools and education leadership to assess progress and achievement, to manage performance and to create learning environments in which every child can thrive.
+        - img "Our Methods" [ref=e41]
+      - generic [ref=e44]:
+        - img "Our Impact" [ref=e46]
+        - generic [ref=e47]:
+          - paragraph [ref=e48]: Our Impact
+          - heading "Raising the Bar" [level=2] [ref=e49]
+          - paragraph [ref=e50]: We offer robust consultancy support and training which is firmly under-pinned by broad-based experience in the classroom, in leadership and in developing education systems on the wider scale. We offer a passion for identifying talent and developing people and enabling educators to transform education provision.
+      - generic [ref=e52]:
+        - paragraph [ref=e53]: Experience Base
+        - heading "Consultancy Experience Base" [level=2] [ref=e54]
+        - paragraph [ref=e55]: "People & Potential consultancy draws on a small pool of well-qualified specialist education consultants to meet the specific requirements of organizations. These consultants hold specialisms in a variety of areas including the following:"
+        - img "Consultancy Experience" [ref=e57]
+        - generic [ref=e58]:
+          - generic [ref=e59]:
+            - img [ref=e61]
+            - paragraph [ref=e64]: Strategic Planning and change management
+          - generic [ref=e65]:
+            - img [ref=e67]
+            - paragraph [ref=e70]: Teacher Education and Leadership Coaching
+          - generic [ref=e71]:
+            - img [ref=e73]
+            - paragraph [ref=e76]: Early Childhood Learning
+          - generic [ref=e77]:
+            - img [ref=e79]
+            - paragraph [ref=e82]: Literacy Education – development of systematic approaches to reading & writing development
+          - generic [ref=e83]:
+            - img [ref=e85]
+            - paragraph [ref=e88]: Special Educational Needs & Inclusion
+          - generic [ref=e89]:
+            - img [ref=e91]
+            - paragraph [ref=e94]: Assessment & Tracking
+          - generic [ref=e95]:
+            - img [ref=e97]
+            - paragraph [ref=e100]: Brain Development & Learning Styles
+          - generic [ref=e101]:
+            - img [ref=e103]
+            - paragraph [ref=e106]: "Curriculum: Uganda Primary Curriculum, UK Curriculum, International Primary Curriculum, Early Years Foundation Stage"
+          - generic [ref=e107]:
+            - img [ref=e109]
+            - paragraph [ref=e112]: Monitoring & Evaluating Progress & Achievement
+      - generic [ref=e114]:
+        - heading "Don't Leave it to Chance Take your School to the Next Level!" [level=2] [ref=e115]:
+          - generic [ref=e116]: Don't Leave it to Chance
+          - generic [ref=e117]: Take your School to the Next Level!
+        - link "Talk to us Today" [ref=e119] [cursor=pointer]:
+          - /url: /info/contact-enquiry
+    - generic [ref=e121]:
+      - generic [ref=e122]:
+        - generic [ref=e123]:
+          - link "People and Potential Consultancy" [ref=e125] [cursor=pointer]:
+            - /url: /
+            - img "People and Potential Consultancy" [ref=e126]
+          - generic [ref=e127]:
+            - link [ref=e128] [cursor=pointer]:
+              - /url: https://www.linkedin.com/in/audrey-dralega-frsa-00b37448/
+              - img [ref=e129]
+            - link "Built by DWO" [ref=e131] [cursor=pointer]:
+              - /url: https://www.dralegawebops.com/
+        - generic [ref=e132]:
+          - paragraph [ref=e133]: Contact
+          - paragraph [ref=e134]: info@peopleandpotential.org
+          - paragraph [ref=e135]: +256 793 231969
+          - paragraph [ref=e136]: +256 787 921975
+          - paragraph [ref=e137]: PO. Box 27348, Kampala
+          - paragraph [ref=e138]: 18 Millennium House Nsambya Road
+        - generic [ref=e139]:
+          - paragraph [ref=e140]: About Us
+          - link "Home" [ref=e141] [cursor=pointer]:
+            - /url: /
+            - paragraph [ref=e142]: Home
+          - link "Who We Are" [ref=e143] [cursor=pointer]:
+            - /url: /who-we-are
+            - paragraph [ref=e144]: Who We Are
+          - link "Why Choose Us" [ref=e145] [cursor=pointer]:
+            - /url: /why-choose-us
+            - paragraph [ref=e146]: Why Choose Us
+          - link "Consultant Profiles" [ref=e147] [cursor=pointer]:
+            - /url: /consultant-profile
+            - paragraph [ref=e148]: Consultant Profiles
+        - generic [ref=e149]:
+          - paragraph [ref=e150]: Services
+          - link "School Start Up" [ref=e151] [cursor=pointer]:
+            - /url: /school-startup
+            - paragraph [ref=e152]: School Start Up
+          - link "School Development" [ref=e153] [cursor=pointer]:
+            - /url: /school-development
+            - paragraph [ref=e154]: School Development
+          - paragraph [ref=e156]: Courses
+          - link "Course List" [ref=e157] [cursor=pointer]:
+            - /url: /course-list
+            - paragraph [ref=e158]: Course List
+          - link "Course Booking" [ref=e159] [cursor=pointer]:
+            - /url: /education/courses/course-booking-form
+            - paragraph [ref=e160]: Course Booking
+          - paragraph [ref=e162]: Contact
+          - link "Contact Form" [ref=e163] [cursor=pointer]:
+            - /url: /info/contact-enquiry
+            - paragraph [ref=e164]: Contact Form
+      - separator [ref=e165]
+      - paragraph [ref=e166]: © 2024 People and Potential Consultancy. All rights reserved.
+  - alert [ref=e167]
+  - generic:
+    - region "Notifications-top"
+    - region "Notifications-top-left"
+    - region "Notifications-top-right"
+    - region "Notifications-bottom-left"
+    - region "Notifications-bottom"
+    - region "Notifications-bottom-right"

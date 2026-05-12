@@ -1,0 +1,152 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e3]:
+    - generic [ref=e4]:
+      - generic [ref=e6]:
+        - button "Toggle Navigation" [ref=e7] [cursor=pointer]:
+          - img [ref=e8]
+        - link "People and Potential Consultancy" [ref=e10] [cursor=pointer]:
+          - /url: /
+          - img "People and Potential Consultancy" [ref=e11]
+      - generic [ref=e12]:
+        - paragraph [ref=e13]: Professional Development
+        - heading "Courses" [level=1] [ref=e14]
+        - paragraph [ref=e15]: We offer robust Professional Development courses to educators and administrators in a range of areas to help you develop systems and raise achievement.
+      - generic [ref=e18]:
+        - generic [ref=e20]:
+          - img "Professional Development Courses" [ref=e21]
+          - paragraph [ref=e23]: "Courses can be tailored to your specific needs. If you don't see the course you need — contact us. We may be able to help. Courses are divided into these main areas:"
+        - generic [ref=e24]:
+          - paragraph [ref=e25]: Choose Your Area of Training
+          - generic [ref=e26]:
+            - generic [ref=e27]:
+              - img [ref=e29]
+              - paragraph [ref=e31]: Subject Knowledge
+              - paragraph [ref=e32]: Deep curriculum expertise across all subject areas
+              - link "Enquire" [ref=e33] [cursor=pointer]:
+                - /url: /education/courses/course-booking-form
+                - text: Enquire
+                - img [ref=e35]
+            - generic [ref=e37]:
+              - img [ref=e39]
+              - paragraph [ref=e41]: Teaching & Learning Strategies
+              - paragraph [ref=e42]: Evidence-based approaches for classroom excellence
+              - link "Enquire" [ref=e43] [cursor=pointer]:
+                - /url: /education/courses/course-booking-form
+                - text: Enquire
+                - img [ref=e45]
+            - generic [ref=e47]:
+              - img [ref=e49]
+              - paragraph [ref=e51]: School Development
+              - paragraph [ref=e52]: Systems and structures for whole-school improvement
+              - link "Enquire" [ref=e53] [cursor=pointer]:
+                - /url: /education/courses/course-booking-form
+                - text: Enquire
+                - img [ref=e55]
+            - generic [ref=e57]:
+              - img [ref=e59]
+              - paragraph [ref=e61]: Child Development
+              - paragraph [ref=e62]: Understanding how children grow and learn
+              - link "Enquire" [ref=e63] [cursor=pointer]:
+                - /url: /education/courses/course-booking-form
+                - text: Enquire
+                - img [ref=e65]
+            - generic [ref=e67]:
+              - img [ref=e69]
+              - paragraph [ref=e71]: Management & Finance
+              - paragraph [ref=e72]: Practical skills for school leadership and resource management
+              - link "Enquire" [ref=e73] [cursor=pointer]:
+                - /url: /education/courses/course-booking-form
+                - text: Enquire
+                - img [ref=e75]
+            - generic [ref=e77]:
+              - img [ref=e79]
+              - paragraph [ref=e81]: Early Childhood Education
+              - paragraph [ref=e82]: Foundations for life-long learning in the early years
+              - link "Enquire" [ref=e83] [cursor=pointer]:
+                - /url: /education/courses/course-booking-form
+                - text: Enquire
+                - img [ref=e85]
+            - generic [ref=e87]:
+              - img [ref=e89]
+              - paragraph [ref=e91]: Governance & Leadership
+              - paragraph [ref=e92]: Empowering leaders to drive strategic change
+              - link "Enquire" [ref=e93] [cursor=pointer]:
+                - /url: /education/courses/course-booking-form
+                - text: Enquire
+                - img [ref=e95]
+            - generic [ref=e97]:
+              - img [ref=e99]
+              - paragraph [ref=e101]: International Education
+              - paragraph [ref=e102]: Global perspectives for a connected world
+              - link "Enquire" [ref=e103] [cursor=pointer]:
+                - /url: /education/courses/course-booking-form
+                - text: Enquire
+                - img [ref=e105]
+      - generic [ref=e108]:
+        - heading "Don't Leave it to Chance Take your School to the Next Level!" [level=2] [ref=e109]:
+          - generic [ref=e110]: Don't Leave it to Chance
+          - generic [ref=e111]: Take your School to the Next Level!
+        - link "Talk to us Today" [ref=e113] [cursor=pointer]:
+          - /url: /info/contact-enquiry
+    - generic [ref=e115]:
+      - generic [ref=e116]:
+        - generic [ref=e117]:
+          - link "People and Potential Consultancy" [ref=e119] [cursor=pointer]:
+            - /url: /
+            - img "People and Potential Consultancy" [ref=e120]
+          - generic [ref=e121]:
+            - link [ref=e122] [cursor=pointer]:
+              - /url: https://www.linkedin.com/in/audrey-dralega-frsa-00b37448/
+              - img [ref=e123]
+            - link "Built by DWO" [ref=e125] [cursor=pointer]:
+              - /url: https://www.dralegawebops.com/
+        - generic [ref=e126]:
+          - paragraph [ref=e127]: Contact
+          - paragraph [ref=e128]: info@peopleandpotential.org
+          - paragraph [ref=e129]: +256 793 231969
+          - paragraph [ref=e130]: +256 787 921975
+          - paragraph [ref=e131]: PO. Box 27348, Kampala
+          - paragraph [ref=e132]: 18 Millennium House Nsambya Road
+        - generic [ref=e133]:
+          - paragraph [ref=e134]: About Us
+          - link "Home" [ref=e135] [cursor=pointer]:
+            - /url: /
+            - paragraph [ref=e136]: Home
+          - link "Who We Are" [ref=e137] [cursor=pointer]:
+            - /url: /who-we-are
+            - paragraph [ref=e138]: Who We Are
+          - link "Why Choose Us" [ref=e139] [cursor=pointer]:
+            - /url: /why-choose-us
+            - paragraph [ref=e140]: Why Choose Us
+          - link "Consultant Profiles" [ref=e141] [cursor=pointer]:
+            - /url: /consultant-profile
+            - paragraph [ref=e142]: Consultant Profiles
+        - generic [ref=e143]:
+          - paragraph [ref=e144]: Services
+          - link "School Start Up" [ref=e145] [cursor=pointer]:
+            - /url: /school-startup
+            - paragraph [ref=e146]: School Start Up
+          - link "School Development" [ref=e147] [cursor=pointer]:
+            - /url: /school-development
+            - paragraph [ref=e148]: School Development
+          - paragraph [ref=e150]: Courses
+          - link "Course List" [ref=e151] [cursor=pointer]:
+            - /url: /course-list
+            - paragraph [ref=e152]: Course List
+          - link "Course Booking" [ref=e153] [cursor=pointer]:
+            - /url: /education/courses/course-booking-form
+            - paragraph [ref=e154]: Course Booking
+          - paragraph [ref=e156]: Contact
+          - link "Contact Form" [ref=e157] [cursor=pointer]:
+            - /url: /info/contact-enquiry
+            - paragraph [ref=e158]: Contact Form
+      - separator [ref=e159]
+      - paragraph [ref=e160]: © 2024 People and Potential Consultancy. All rights reserved.
+  - alert [ref=e161]
+  - generic:
+    - region "Notifications-top"
+    - region "Notifications-top-left"
+    - region "Notifications-top-right"
+    - region "Notifications-bottom-left"
+    - region "Notifications-bottom"
+    - region "Notifications-bottom-right"
