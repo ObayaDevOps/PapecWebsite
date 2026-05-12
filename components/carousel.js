@@ -1,5 +1,6 @@
 import React, { useCallback, useMemo, useState } from "react";
-import { Box, Flex, HStack, Image, Stack, Text } from "@chakra-ui/react";
+import { Box, Flex, HStack, Image, IconButton } from "@chakra-ui/react";
+import { ChevronLeftIcon, ChevronRightIcon } from "@chakra-ui/icons";
 import imageUrlBuilder from "@sanity/image-url";
 import client from "../src/sanity/lib/client.js";
 
@@ -10,25 +11,6 @@ function urlFor(source) {
 
 export default function Carousel({ images }) {
   const SLIDE_CHANGE_THRESHOLD = 100;
-
-  const arrowStyles = {
-    cursor: "pointer",
-    pos: "absolute",
-    top: "50%",
-    w: "auto",
-    mt: "-22px",
-    p: "16px",
-    color: "white",
-    fontWeight: "bold",
-    fontSize: "18px",
-    transition: "0.6s ease",
-    borderRadius: "0 3px 3px 0",
-    userSelect: "none",
-    _hover: {
-      opacity: 0.8,
-      bg: "black",
-    },
-  };
 
   const slides = useMemo(() => {
     if (!Array.isArray(images) || images.length === 0) return [];
@@ -47,6 +29,7 @@ export default function Carousel({ images }) {
   const prevSlide = useCallback(() => {
     setCurrentSlide((s) => (s === 0 ? slidesCount - 1 : s - 1));
   }, [slidesCount]);
+
   const nextSlide = useCallback(() => {
     setCurrentSlide((s) => (s === slidesCount - 1 ? 0 : s + 1));
   }, [slidesCount]);
@@ -60,8 +43,7 @@ export default function Carousel({ images }) {
   const handleMouseMove = useCallback(
     (e) => {
       if (dragging) {
-        const diffX = e.clientX - dragStartX;
-        setDragOffset(diffX);
+        setDragOffset(e.clientX - dragStartX);
         e.preventDefault();
       }
     },
@@ -72,8 +54,7 @@ export default function Carousel({ images }) {
     if (dragging) {
       setDragging(false);
       if (Math.abs(dragOffset) > SLIDE_CHANGE_THRESHOLD) {
-        const slideChange = dragOffset > 0 ? prevSlide : nextSlide;
-        slideChange();
+        dragOffset > 0 ? prevSlide() : nextSlide();
       }
       setDragOffset(0);
     }
@@ -97,13 +78,12 @@ export default function Carousel({ images }) {
     <Flex
       w="full"
       minH={{ md: "80vh" }}
-      _dark={{ bg: "#3e3e3e" }}
       alignItems="center"
       justifyContent="center"
       style={{ cursor: dragging ? "grabbing" : "auto" }}
       onMouseLeave={handleMouseUp}
     >
-      <Flex w="full" overflow="hidden" pos="relative">
+      <Flex w="full" overflow="hidden" pos="relative" borderRadius="xl">
         <Flex
           w="full"
           onMouseUp={handleMouseUp}
@@ -112,52 +92,64 @@ export default function Carousel({ images }) {
           {...carouselStyle}
         >
           {slides.map((slide, sid) => (
-            <Flex key={`slide-${sid}`} boxSize="full" shadow="md" flex="none">
-              <Text color="white" fontSize="xs" p="8px 12px" pos="absolute" top="0">
-                {sid + 1} / {slidesCount}
-              </Text>
+            <Flex key={`slide-${sid}`} boxSize="full" flex="none">
               <Image
                 src={slide.img}
                 alt={slide.caption || "Carousel image"}
                 boxSize="full"
                 backgroundSize="cover"
               />
-              <Stack
-                p="8px 12px"
-                pos="absolute"
-                bottom="24px"
-                textAlign="center"
-                w="full"
-                mb="8"
-                color="white"
-              >
-                <Text fontSize="5xl" fontFamily="bodyFont">
-                  {slide.label}
-                </Text>
-                <Text fontSize="lg">{slide.description}</Text>
-              </Stack>
             </Flex>
           ))}
         </Flex>
-        <Text {...arrowStyles} left="0" onClick={prevSlide}>
-          &#10094;
-        </Text>
-        <Text {...arrowStyles} right="0" onClick={nextSlide}>
-          &#10095;
-        </Text>
-        <HStack justify="center" pos="absolute" bottom="8px" w="full">
+
+        {/* Prev arrow */}
+        <IconButton
+          aria-label="Previous slide"
+          icon={<ChevronLeftIcon w={6} h={6} />}
+          onClick={prevSlide}
+          pos="absolute"
+          left="12px"
+          top="50%"
+          transform="translateY(-50%)"
+          borderRadius="full"
+          bg="whiteAlpha.700"
+          color="brand.primary"
+          backdropFilter="blur(4px)"
+          _hover={{ bg: "whiteAlpha.900" }}
+          size="md"
+        />
+
+        {/* Next arrow */}
+        <IconButton
+          aria-label="Next slide"
+          icon={<ChevronRightIcon w={6} h={6} />}
+          onClick={nextSlide}
+          pos="absolute"
+          right="12px"
+          top="50%"
+          transform="translateY(-50%)"
+          borderRadius="full"
+          bg="whiteAlpha.700"
+          color="brand.primary"
+          backdropFilter="blur(4px)"
+          _hover={{ bg: "whiteAlpha.900" }}
+          size="md"
+        />
+
+        {/* Dot indicators */}
+        <HStack justify="center" pos="absolute" bottom="12px" w="full" spacing={2}>
           {Array.from({ length: slidesCount }).map((_, slide) => (
             <Box
               key={`dots-${slide}`}
               cursor="pointer"
-              boxSize={["7px", null, "15px"]}
-              m="0 2px"
-              bg={currentSlide === slide ? "blackAlpha.800" : "blackAlpha.500"}
+              boxSize="10px"
+              bg={currentSlide === slide ? "brand.accent" : "whiteAlpha.600"}
               rounded="50%"
-              display="inline-block"
-              transition="background-color 0.6s ease"
-              _hover={{ bg: "blackAlpha.800" }}
+              transition="background-color 0.4s ease"
               onClick={() => setCurrentSlide(slide)}
+              border="1px solid"
+              borderColor={currentSlide === slide ? "brand.accent" : "whiteAlpha.400"}
             />
           ))}
         </HStack>

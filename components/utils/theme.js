@@ -1,9 +1,9 @@
 import { extendTheme } from '@chakra-ui/react';
-import { Jost, Courier_Prime, Inter } from 'next/font/google';
+import { Inter, DM_Sans, Roboto } from 'next/font/google';
 
-const headingFont = Courier_Prime({ subsets: ['latin'], weight: ['400'] });
-const navBarFont = Jost({ subsets: ['latin'], weight: ['400'] });
-const bodyFont = Inter({ subsets: ['latin'], weight: ['400'] });
+const uiFont = DM_Sans({ subsets: ['latin'], weight: ['400', '500', '600', '700'] });
+const bodyFont = Roboto({ subsets: ['latin'], weight: ['400', '500'] });
+const subtitleSerif = DM_Sans({ subsets: ['latin'], weight: ['600'] });
 
 const theme = extendTheme({
   config: {
@@ -11,15 +11,29 @@ const theme = extendTheme({
     useSystemColorMode: false,
   },
   fonts: {
-    headingFont: headingFont.style.fontFamily,
+    headingFont: uiFont.style.fontFamily,
     bodyFont: bodyFont.style.fontFamily,
-    navBarFont: navBarFont.style.fontFamily,
+    uiFont: uiFont.style.fontFamily,
+    subtitleFont: subtitleSerif.style.fontFamily,
+  },
+  colors: {
+    brand: {
+      primary: '#5B3FA6',
+      primaryDark: '#3D2A75',
+      accent: '#E8A838',
+      accentDark: '#C78A1A',
+      bg: '#F7F6FF',
+      surface: '#FFFFFF',
+      textDark: '#1A1733',
+      textMid: '#4A4565',
+      border: '#E2DFF7',
+    },
   },
   semanticTokens: {
     gradients: {
       'brand.pageBg': 'linear(to-br, #e5e5f7, whiteAlpha.100)',
-      'brand.heading': 'linear(to-r, blackAlpha.800, purple.500)',
-      'brand.cta': 'linear(to-r, purple.900, purple.300)',
+      'brand.heading': 'linear(to-r, #1A1733, #5B3FA6)',
+      'brand.cta': 'linear(to-r, #3D2A75, #5B3FA6)',
     },
   },
 });

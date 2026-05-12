@@ -1,0 +1,714 @@
+[    2690ms] [INFO] %cDownload the React DevTools for a better development experience: https://reactjs.org/link/react-devtools font-weight:bold @ webpack-internal:///./node_modules/react-dom/cjs/react-dom.development.js:29889
+[    2867ms] [LOG] [HMR] connected @ webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/pages/websocket.js:45
+[    4259ms] [ERROR] Warning: React does not recognize the `%s` prop on a DOM element. If you intentionally want it to appear in the DOM as a custom attribute, spell it as lowercase `%s` instead. If you accidentally passed it from a parent component, remove it from the DOM element.%s fetchPriority fetchpriority 
+    at img
+    at eval (webpack-internal:///./node_modules/next/dist/client/image-component.js:134:11)
+    at eval (webpack-internal:///./node_modules/next/dist/client/image-component.js:244:47)
+    at a
+    at eval (webpack-internal:///./node_modules/@emotion/react/dist/emotion-element-7a1343fa.browser.development.esm.js:70:66)
+    at ChakraComponent2 (webpack-internal:///./node_modules/@chakra-ui/react/dist/esm/system/system.mjs:51:15)
+    at div
+    at eval (webpack-internal:///./node_modules/@emotion/react/dist/emotion-element-7a1343fa.browser.development.esm.js:70:66)
+    at ChakraComponent2 (webpack-internal:///./node_modules/@chakra-ui/react/dist/esm/system/system.mjs:51:15)
+    at Flex2 (webpack-internal:///./node_modules/@chakra-ui/react/dist/esm/flex/flex.mjs:14:11)
+    at div
+    at eval (webpack-internal:///./node_modules/@emotion/react/dist/emotion-element-7a1343fa.browser.development.esm.js:70:66)
+    at ChakraComponent2 (webpack-internal:///./node_modules/@chakra-ui/react/dist/esm/system/system.mjs:51:15)
+    at WithSubnavigation (webpack-internal:///./components/utils/navbar3.js:45:97)
+    at div
+    at eval (webpack-internal:///./node_modules/@emotion/react/dist/emotion-element-7a1343fa.browser.development.esm.js:70:66)
+    at ChakraComponent2 (webpack-internal:///./node_modules/@chakra-ui/react/dist/esm/system/system.mjs:51:15)
+    at EducationLanding (webpack-internal:///./pages/index.js:79:11)
+    at div
+    at Home (webpack-internal:///./pages/index.js:64:43)
+    at div
+    at eval (webpack-internal:///./node_modules/@emotion/react/dist/emotion-element-7a1343fa.browser.development.esm.js:70:66)
+    at ChakraComponent2 (webpack-internal:///./node_modules/@chakra-ui/react/dist/esm/system/system.mjs:51:15)
+    at EnvironmentProvider (webpack-internal:///./node_modules/@chakra-ui/react/dist/esm/env/env.mjs:33:11)
+    at eval (webpack-internal:///./node_modules/@emotion/react/dist/emotion-element-7a1343fa.browser.development.esm.js:70:66)
+    at ThemeProvider (webpack-internal:///./node_modules/@emotion/react/dist/emotion-element-7a1343fa.browser.development.esm.js:122:50)
+    at ThemeProvider (webpack-internal:///./node_modules/@chakra-ui/react/dist/esm/system/providers.mjs:29:11)
+    at Provider (webpack-internal:///./node_modules/@chakra-ui/react/dist/esm/provider/provider.mjs:21:5)
+    at ChakraProvider (webpack-internal:///./node_modules/@chakra-ui/react/dist/esm/provider/create-provider.mjs:15:5)
+    at MyApp (webpack-internal:///./pages/_app.js:15:11)
+    at PathnameContextProviderAdapter (webpack-internal:///./node_modules/next/dist/shared/lib/router/adapters.js:81:11)
+    at ErrorBoundary (webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/pages/ErrorBoundary.js:41:9)
+    at ReactDevOverlay (webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/pages/ReactDevOverlay.js:33:11)
+    at Container (webpack-internal:///./node_modules/next/dist/client/index.js:81:1)
+    at AppContainer (webpack-internal:///./node_modules/next/dist/client/index.js:189:11)
+    at Root (webpack-internal:///./node_modules/next/dist/client/index.js:413:11) @ webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/internal/helpers/hydration-error-info.js:62
+[    5185ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://res.cloudinary.com/medoptics-image-cloud/image/upload/v1718637864/images_1_jje5hj.jpg:0
+[    5186ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://res.cloudinary.com/medoptics-image-cloud/image/upload/v1718637806/thTJLxxo_400x400_jgniba.jpg:0
+[    5188ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://res.cloudinary.com/medoptics-image-cloud/image/upload/v1718637806/Taibah-International-School-logo-300x155_kzzuvd.jpg:0
+[    5189ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://res.cloudinary.com/medoptics-image-cloud/image/upload/v1718637805/images_fjxltj.jpg:0
+[    5190ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://res.cloudinary.com/medoptics-image-cloud/image/upload/v1718637987/images_2_zpvxof.jpg:0
+[    5427ms] [WARNING] Image with src "https://res.cloudinary.com/medoptics-image-cloud/image/upload/v1718006910/Untitled_design_6_tv0jdx.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio. @ webpack-internal:///./node_modules/next/dist/shared/lib/utils/warn-once.js:15
+[  124231ms] [LOG] [Fast Refresh] rebuilding @ webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/pages/hot-reloader-client.js:221
+[  128384ms] [LOG] [Fast Refresh] done in 4152ms @ webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/pages/hot-reloader-client.js:190
+[  136000ms] [LOG] [Fast Refresh] rebuilding @ webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/pages/hot-reloader-client.js:221
+[  138107ms] [LOG] [Fast Refresh] done in 2108ms @ webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/pages/hot-reloader-client.js:190
+[  173738ms] [LOG] [Fast Refresh] rebuilding @ webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/pages/hot-reloader-client.js:221
+[  175785ms] [LOG] [Fast Refresh] done in 2047ms @ webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/pages/hot-reloader-client.js:190
+[  182379ms] [LOG] [Fast Refresh] rebuilding @ webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/pages/hot-reloader-client.js:221
+[  183048ms] [ERROR] ./pages/index.js
+Error: 
+  x Expected corresponding JSX closing tag for <FadeUp>
+     ,-[/home/obi/dev/PapecWebsite/pages/index.js:489:1]
+ 489 |             </Box>
+ 490 |           ))}
+ 491 |         </SimpleGrid>
+ 492 |       </SimpleGrid>
+     :       ^^^^^^^^^^^^^
+ 493 |     </Box>
+ 494 |   </Box>
+ 495 | );
+     `----
+
+Caused by:
+    Syntax Error @ webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/internal/helpers/hydration-error-info.js:62
+[  183405ms] [ERROR] ./pages/index.js
+Error: 
+  x Expected corresponding JSX closing tag for <FadeUp>
+     ,-[/home/obi/dev/PapecWebsite/pages/index.js:489:1]
+ 489 |             </Box>
+ 490 |           ))}
+ 491 |         </SimpleGrid>
+ 492 |       </SimpleGrid>
+     :       ^^^^^^^^^^^^^
+ 493 |     </Box>
+ 494 |   </Box>
+ 495 | );
+     `----
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./pages/index.js @ webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/internal/helpers/hydration-error-info.js:62
+[  188001ms] [ERROR] ./pages/index.js
+Error: 
+  x Expected corresponding JSX closing tag for <FadeUp>
+     ,-[/home/obi/dev/PapecWebsite/pages/index.js:489:1]
+ 489 |             </Box>
+ 490 |           ))}
+ 491 |         </SimpleGrid>
+ 492 |       </SimpleGrid>
+     :       ^^^^^^^^^^^^^
+ 493 |     </Box>
+ 494 |   </Box>
+ 495 | );
+     `----
+
+Caused by:
+    Syntax Error @ webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/internal/helpers/hydration-error-info.js:62
+[  188723ms] [ERROR] ./pages/index.js
+Error: 
+  x Expected corresponding JSX closing tag for <StaggerContainer>
+     ,-[/home/obi/dev/PapecWebsite/pages/index.js:491:1]
+ 491 |             </Box>
+ 492 |           ))}
+ 493 |         </SimpleGrid>
+ 494 |       </SimpleGrid>
+     :       ^^^^^^^^^^^^^
+ 495 |     </Box>
+ 496 |   </Box>
+ 497 | );
+     `----
+
+Caused by:
+    Syntax Error @ webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/internal/helpers/hydration-error-info.js:62
+[  189086ms] [ERROR] ./pages/index.js
+Error: 
+  x Expected corresponding JSX closing tag for <StaggerContainer>
+     ,-[/home/obi/dev/PapecWebsite/pages/index.js:491:1]
+ 491 |             </Box>
+ 492 |           ))}
+ 493 |         </SimpleGrid>
+ 494 |       </SimpleGrid>
+     :       ^^^^^^^^^^^^^
+ 495 |     </Box>
+ 496 |   </Box>
+ 497 | );
+     `----
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./pages/index.js @ webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/internal/helpers/hydration-error-info.js:62
+[  195577ms] [ERROR] ./pages/index.js
+Error: 
+  x Expected corresponding JSX closing tag for <StaggerContainer>
+     ,-[/home/obi/dev/PapecWebsite/pages/index.js:491:1]
+ 491 |             </Box>
+ 492 |           ))}
+ 493 |         </SimpleGrid>
+ 494 |       </SimpleGrid>
+     :       ^^^^^^^^^^^^^
+ 495 |     </Box>
+ 496 |   </Box>
+ 497 | );
+     `----
+
+Caused by:
+    Syntax Error @ webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/internal/helpers/hydration-error-info.js:62
+[  195939ms] [ERROR] ./pages/index.js
+Error: 
+  x Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+     ,-[/home/obi/dev/PapecWebsite/pages/index.js:489:1]
+ 489 |                 {stat.label}
+ 490 |               </Text>
+ 491 |             </Box>
+ 492 |           ))}
+     :             ^
+ 493 |         </SimpleGrid>
+ 494 |       </SimpleGrid>
+ 495 |     </Box>
+     `----
+
+  x Expression expected
+     ,-[/home/obi/dev/PapecWebsite/pages/index.js:491:1]
+ 491 |             </Box>
+ 492 |           ))}
+ 493 |         </SimpleGrid>
+ 494 |       </SimpleGrid>
+     :       ^
+ 495 |     </Box>
+ 496 |   </Box>
+ 497 | );
+     `----
+
+  x Unterminated regexp literal
+     ,-[/home/obi/dev/PapecWebsite/pages/index.js:491:1]
+ 491 |             </Box>
+ 492 |           ))}
+ 493 |         </SimpleGrid>
+ 494 |       </SimpleGrid>
+     :        ^^^^^^^^^^^^
+ 495 |     </Box>
+ 496 |   </Box>
+ 497 | );
+     `----
+
+Caused by:
+    Syntax Error @ webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/internal/helpers/hydration-error-info.js:62
+[  196536ms] [ERROR] ./pages/index.js
+Error: 
+  x Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+     ,-[/home/obi/dev/PapecWebsite/pages/index.js:489:1]
+ 489 |                 {stat.label}
+ 490 |               </Text>
+ 491 |             </Box>
+ 492 |           ))}
+     :             ^
+ 493 |         </SimpleGrid>
+ 494 |       </SimpleGrid>
+ 495 |     </Box>
+     `----
+
+  x Expression expected
+     ,-[/home/obi/dev/PapecWebsite/pages/index.js:491:1]
+ 491 |             </Box>
+ 492 |           ))}
+ 493 |         </SimpleGrid>
+ 494 |       </SimpleGrid>
+     :       ^
+ 495 |     </Box>
+ 496 |   </Box>
+ 497 | );
+     `----
+
+  x Unterminated regexp literal
+     ,-[/home/obi/dev/PapecWebsite/pages/index.js:491:1]
+ 491 |             </Box>
+ 492 |           ))}
+ 493 |         </SimpleGrid>
+ 494 |       </SimpleGrid>
+     :        ^^^^^^^^^^^^
+ 495 |     </Box>
+ 496 |   </Box>
+ 497 | );
+     `----
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./pages/index.js @ webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/internal/helpers/hydration-error-info.js:62
+[  201948ms] [ERROR] ./pages/index.js
+Error: 
+  x Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+     ,-[/home/obi/dev/PapecWebsite/pages/index.js:489:1]
+ 489 |                 {stat.label}
+ 490 |               </Text>
+ 491 |             </Box>
+ 492 |           ))}
+     :             ^
+ 493 |         </SimpleGrid>
+ 494 |       </SimpleGrid>
+ 495 |     </Box>
+     `----
+
+  x Expression expected
+     ,-[/home/obi/dev/PapecWebsite/pages/index.js:491:1]
+ 491 |             </Box>
+ 492 |           ))}
+ 493 |         </SimpleGrid>
+ 494 |       </SimpleGrid>
+     :       ^
+ 495 |     </Box>
+ 496 |   </Box>
+ 497 | );
+     `----
+
+  x Unterminated regexp literal
+     ,-[/home/obi/dev/PapecWebsite/pages/index.js:491:1]
+ 491 |             </Box>
+ 492 |           ))}
+ 493 |         </SimpleGrid>
+ 494 |       </SimpleGrid>
+     :        ^^^^^^^^^^^^
+ 495 |     </Box>
+ 496 |   </Box>
+ 497 | );
+     `----
+
+Caused by:
+    Syntax Error @ webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/internal/helpers/hydration-error-info.js:62
+[  204243ms] [LOG] [Fast Refresh] done in 21864ms @ webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/pages/hot-reloader-client.js:190
+[  209449ms] [LOG] [Fast Refresh] rebuilding @ webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/pages/hot-reloader-client.js:221
+[  213329ms] [LOG] [Fast Refresh] done in 3867ms @ webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/pages/hot-reloader-client.js:190
+[  214643ms] [LOG] [Fast Refresh] rebuilding @ webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/pages/hot-reloader-client.js:221
+[  216230ms] [ERROR] ./pages/past-work/client-testimonials.js
+Error: 
+  x Expected corresponding JSX closing tag for <FadeUp>
+     ,-[/home/obi/dev/PapecWebsite/pages/past-work/client-testimonials.js:169:1]
+ 169 |             <TestimonialCard key={index} {...t} />
+ 170 |           ))}
+ 171 |         </SimpleGrid>
+ 172 |       </Container>
+     :       ^^^^^^^^^^^^
+ 173 |     </Box>
+ 174 |   );
+ 175 | }
+     `----
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./pages/past-work/client-testimonials.js @ webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/internal/helpers/hydration-error-info.js:62
+[  217084ms] [ERROR] ./pages/past-work/client-testimonials.js
+Error: 
+  x Expected corresponding JSX closing tag for <FadeUp>
+     ,-[/home/obi/dev/PapecWebsite/pages/past-work/client-testimonials.js:169:1]
+ 169 |             <TestimonialCard key={index} {...t} />
+ 170 |           ))}
+ 171 |         </SimpleGrid>
+ 172 |       </Container>
+     :       ^^^^^^^^^^^^
+ 173 |     </Box>
+ 174 |   );
+ 175 | }
+     `----
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./pages/past-work/client-testimonials.js
+./pages/index.js @ webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/internal/helpers/hydration-error-info.js:62
+[  222103ms] [ERROR] ./pages/past-work/client-testimonials.js
+Error: 
+  x Expected corresponding JSX closing tag for <FadeUp>
+     ,-[/home/obi/dev/PapecWebsite/pages/past-work/client-testimonials.js:169:1]
+ 169 |             <TestimonialCard key={index} {...t} />
+ 170 |           ))}
+ 171 |         </SimpleGrid>
+ 172 |       </Container>
+     :       ^^^^^^^^^^^^
+ 173 |     </Box>
+ 174 |   );
+ 175 | }
+     `----
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./pages/past-work/client-testimonials.js @ webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/internal/helpers/hydration-error-info.js:62
+[  223261ms] [ERROR] ./pages/past-work/client-testimonials.js
+Error: 
+  x Expected corresponding JSX closing tag for <StaggerContainer>
+     ,-[/home/obi/dev/PapecWebsite/pages/past-work/client-testimonials.js:170:1]
+ 170 |             <StaggerItem key={index}><TestimonialCard {...t} /></StaggerItem>
+ 171 |           ))}
+ 172 |         </SimpleGrid>
+ 173 |       </Container>
+     :       ^^^^^^^^^^^^
+ 174 |     </Box>
+ 175 |   );
+ 176 | }
+     `----
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./pages/past-work/client-testimonials.js @ webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/internal/helpers/hydration-error-info.js:62
+[  223986ms] [ERROR] ./pages/past-work/client-testimonials.js
+Error: 
+  x Expected corresponding JSX closing tag for <StaggerContainer>
+     ,-[/home/obi/dev/PapecWebsite/pages/past-work/client-testimonials.js:170:1]
+ 170 |             <StaggerItem key={index}><TestimonialCard {...t} /></StaggerItem>
+ 171 |           ))}
+ 172 |         </SimpleGrid>
+ 173 |       </Container>
+     :       ^^^^^^^^^^^^
+ 174 |     </Box>
+ 175 |   );
+ 176 | }
+     `----
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./pages/past-work/client-testimonials.js
+./pages/index.js @ webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/internal/helpers/hydration-error-info.js:62
+[  230318ms] [ERROR] ./pages/past-work/client-testimonials.js
+Error: 
+  x Expected corresponding JSX closing tag for <StaggerContainer>
+     ,-[/home/obi/dev/PapecWebsite/pages/past-work/client-testimonials.js:170:1]
+ 170 |             <StaggerItem key={index}><TestimonialCard {...t} /></StaggerItem>
+ 171 |           ))}
+ 172 |         </SimpleGrid>
+ 173 |       </Container>
+     :       ^^^^^^^^^^^^
+ 174 |     </Box>
+ 175 |   );
+ 176 | }
+     `----
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./pages/past-work/client-testimonials.js @ webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/internal/helpers/hydration-error-info.js:62
+[  232201ms] [LOG] [Fast Refresh] done in 17558ms @ webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/pages/hot-reloader-client.js:190
+[  232404ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://res.cloudinary.com/medoptics-image-cloud/image/upload/v1718637864/images_1_jje5hj.jpg:0
+[  232450ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://res.cloudinary.com/medoptics-image-cloud/image/upload/v1718637806/Taibah-International-School-logo-300x155_kzzuvd.jpg:0
+[  232452ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://res.cloudinary.com/medoptics-image-cloud/image/upload/v1718637806/thTJLxxo_400x400_jgniba.jpg:0
+[  232453ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://res.cloudinary.com/medoptics-image-cloud/image/upload/v1718637987/images_2_zpvxof.jpg:0
+[  232455ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://res.cloudinary.com/medoptics-image-cloud/image/upload/v1718637805/images_fjxltj.jpg:0
+[  244216ms] [LOG] [Fast Refresh] rebuilding @ webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/pages/hot-reloader-client.js:221
+[  247677ms] [LOG] [Fast Refresh] rebuilding @ webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/pages/hot-reloader-client.js:221
+[  255776ms] [LOG] [Fast Refresh] rebuilding @ webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/pages/hot-reloader-client.js:221
+[  256383ms] [LOG] [Fast Refresh] done in 607ms @ webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/pages/hot-reloader-client.js:190
+[  260623ms] [ERROR] ./components/callToActionBanner.js
+Error: 
+  x Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+    ,-[/home/obi/dev/PapecWebsite/components/callToActionBanner.js:61:1]
+ 61 |       </Flex>
+ 62 |     </Box>
+ 63 |   );
+ 64 | }
+    : ^
+    `----
+
+  x Unexpected eof
+    ,-[/home/obi/dev/PapecWebsite/components/callToActionBanner.js:62:1]
+ 62 |     </Box>
+ 63 |   );
+ 64 | }
+    `----
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./components/callToActionBanner.js
+./pages/index.js @ webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/internal/helpers/hydration-error-info.js:62
+[  263488ms] [LOG] [Fast Refresh] done in 7712ms @ webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/pages/hot-reloader-client.js:190
+[  265561ms] [LOG] [Fast Refresh] rebuilding @ webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/pages/hot-reloader-client.js:221
+[  269055ms] [LOG] [Fast Refresh] rebuilding @ webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/pages/hot-reloader-client.js:221
+[  273327ms] [LOG] [Fast Refresh] rebuilding @ webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/pages/hot-reloader-client.js:221
+[  274544ms] [ERROR] ./pages/who-we-are.js
+Error: 
+  x Expected corresponding JSX closing tag for <SlideInRight>
+     ,-[/home/obi/dev/PapecWebsite/pages/who-we-are.js:100:1]
+ 100 |               </Box>
+ 101 |             </Stack>
+ 102 |           </Box>
+ 103 |         </SimpleGrid>
+     :         ^^^^^^^^^^^^^
+ 104 |       </Box>
+ 105 |     </Box>
+ 106 |   )
+     `----
+
+Caused by:
+    Syntax Error @ webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/internal/helpers/hydration-error-info.js:62
+[  275206ms] [ERROR] ./pages/who-we-are.js
+Error: 
+  x Expected corresponding JSX closing tag for <SlideInRight>
+     ,-[/home/obi/dev/PapecWebsite/pages/who-we-are.js:100:1]
+ 100 |               </Box>
+ 101 |             </Stack>
+ 102 |           </Box>
+ 103 |         </SimpleGrid>
+     :         ^^^^^^^^^^^^^
+ 104 |       </Box>
+ 105 |     </Box>
+ 106 |   )
+     `----
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./pages/who-we-are.js @ webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/internal/helpers/hydration-error-info.js:62
+[  277550ms] [ERROR] ./pages/who-we-are.js
+Error: 
+  x Expected corresponding JSX closing tag for <SlideInRight>
+     ,-[/home/obi/dev/PapecWebsite/pages/who-we-are.js:100:1]
+ 100 |               </Box>
+ 101 |             </Stack>
+ 102 |           </Box>
+ 103 |         </SimpleGrid>
+     :         ^^^^^^^^^^^^^
+ 104 |       </Box>
+ 105 |     </Box>
+ 106 |   )
+     `----
+
+Caused by:
+    Syntax Error @ webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/internal/helpers/hydration-error-info.js:62
+[  278851ms] [ERROR] ./pages/who-we-are.js
+Error: 
+  x Expected corresponding JSX closing tag for <SlideInRight>
+     ,-[/home/obi/dev/PapecWebsite/pages/who-we-are.js:100:1]
+ 100 |               </Box>
+ 101 |             </Stack>
+ 102 |           </Box>
+ 103 |         </SimpleGrid>
+     :         ^^^^^^^^^^^^^
+ 104 |       </Box>
+ 105 |     </Box>
+ 106 |   )
+     `----
+
+Caused by:
+    Syntax Error @ webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/internal/helpers/hydration-error-info.js:62
+[  285959ms] [LOG] [Fast Refresh] rebuilding @ webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/pages/hot-reloader-client.js:221
+[  287174ms] [ERROR] ./pages/who-we-are.js
+Error: 
+  x Expected corresponding JSX closing tag for <FadeUp>
+     ,-[/home/obi/dev/PapecWebsite/pages/who-we-are.js:129:1]
+ 129 |       <Text fontSize="lg" color="brand.textMid" fontFamily="bodyFont" lineHeight="tall">
+ 130 |         Consultants hold international and national expertise, enabling clients to access advice relevant to their context, which is informed by international best practice and is also within physical reach.
+ 131 |       </Text>
+ 132 |     </Box>
+     :     ^^^^^^
+ 133 |   </Box>
+ 134 | )
+     `----
+
+Caused by:
+    Syntax Error @ webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/internal/helpers/hydration-error-info.js:62
+[  288362ms] [ERROR] ./pages/who-we-are.js
+Error: 
+  x Expected corresponding JSX closing tag for <FadeUp>
+     ,-[/home/obi/dev/PapecWebsite/pages/who-we-are.js:129:1]
+ 129 |       <Text fontSize="lg" color="brand.textMid" fontFamily="bodyFont" lineHeight="tall">
+ 130 |         Consultants hold international and national expertise, enabling clients to access advice relevant to their context, which is informed by international best practice and is also within physical reach.
+ 131 |       </Text>
+ 132 |     </Box>
+     :     ^^^^^^
+ 133 |   </Box>
+ 134 | )
+     `----
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./pages/who-we-are.js @ webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/internal/helpers/hydration-error-info.js:62
+[  293151ms] [ERROR] ./pages/who-we-are.js
+Error: 
+  x Expected corresponding JSX closing tag for <FadeUp>
+     ,-[/home/obi/dev/PapecWebsite/pages/who-we-are.js:129:1]
+ 129 |       <Text fontSize="lg" color="brand.textMid" fontFamily="bodyFont" lineHeight="tall">
+ 130 |         Consultants hold international and national expertise, enabling clients to access advice relevant to their context, which is informed by international best practice and is also within physical reach.
+ 131 |       </Text>
+ 132 |     </Box>
+     :     ^^^^^^
+ 133 |   </Box>
+ 134 | )
+     `----
+
+Caused by:
+    Syntax Error @ webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/internal/helpers/hydration-error-info.js:62
+[  302666ms] [LOG] [Fast Refresh] rebuilding @ webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/pages/hot-reloader-client.js:221
+[  303981ms] [ERROR] ./pages/who-we-are.js
+Error: 
+  x Expected corresponding JSX closing tag for <SlideInLeft>
+     ,-[/home/obi/dev/PapecWebsite/pages/who-we-are.js:172:1]
+ 172 |               style={{ width: '100%', height: 'auto', display: 'block' }}
+ 173 |             />
+ 174 |           </Box>
+ 175 |         </SimpleGrid>
+     :         ^^^^^^^^^^^^^
+ 176 |       </Box>
+ 177 |     </Box>
+ 178 |   )
+     `----
+
+Caused by:
+    Syntax Error @ webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/internal/helpers/hydration-error-info.js:62
+[  304767ms] [ERROR] ./pages/who-we-are.js
+Error: 
+  x Expected corresponding JSX closing tag for <SlideInLeft>
+     ,-[/home/obi/dev/PapecWebsite/pages/who-we-are.js:172:1]
+ 172 |               style={{ width: '100%', height: 'auto', display: 'block' }}
+ 173 |             />
+ 174 |           </Box>
+ 175 |         </SimpleGrid>
+     :         ^^^^^^^^^^^^^
+ 176 |       </Box>
+ 177 |     </Box>
+ 178 |   )
+     `----
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./pages/who-we-are.js @ webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/internal/helpers/hydration-error-info.js:62
+[  312395ms] [ERROR] ./pages/who-we-are.js
+Error: 
+  x Expected corresponding JSX closing tag for <SlideInLeft>
+     ,-[/home/obi/dev/PapecWebsite/pages/who-we-are.js:172:1]
+ 172 |               style={{ width: '100%', height: 'auto', display: 'block' }}
+ 173 |             />
+ 174 |           </Box>
+ 175 |         </SimpleGrid>
+     :         ^^^^^^^^^^^^^
+ 176 |       </Box>
+ 177 |     </Box>
+ 178 |   )
+     `----
+
+Caused by:
+    Syntax Error @ webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/internal/helpers/hydration-error-info.js:62
+[  313359ms] [ERROR] ./pages/who-we-are.js
+Error: 
+  x Expected corresponding JSX closing tag for <SlideInRight>
+     ,-[/home/obi/dev/PapecWebsite/pages/who-we-are.js:174:1]
+ 174 |               style={{ width: '100%', height: 'auto', display: 'block' }}
+ 175 |             />
+ 176 |           </Box>
+ 177 |         </SimpleGrid>
+     :         ^^^^^^^^^^^^^
+ 178 |       </Box>
+ 179 |     </Box>
+ 180 |   )
+     `----
+
+Caused by:
+    Syntax Error @ webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/internal/helpers/hydration-error-info.js:62
+[  313928ms] [ERROR] ./pages/who-we-are.js
+Error: 
+  x Expected corresponding JSX closing tag for <SlideInRight>
+     ,-[/home/obi/dev/PapecWebsite/pages/who-we-are.js:174:1]
+ 174 |               style={{ width: '100%', height: 'auto', display: 'block' }}
+ 175 |             />
+ 176 |           </Box>
+ 177 |         </SimpleGrid>
+     :         ^^^^^^^^^^^^^
+ 178 |       </Box>
+ 179 |     </Box>
+ 180 |   )
+     `----
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./pages/who-we-are.js @ webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/internal/helpers/hydration-error-info.js:62
+[  319190ms] [ERROR] ./pages/who-we-are.js
+Error: 
+  x Expected corresponding JSX closing tag for <SlideInRight>
+     ,-[/home/obi/dev/PapecWebsite/pages/who-we-are.js:174:1]
+ 174 |               style={{ width: '100%', height: 'auto', display: 'block' }}
+ 175 |             />
+ 176 |           </Box>
+ 177 |         </SimpleGrid>
+     :         ^^^^^^^^^^^^^
+ 178 |       </Box>
+ 179 |     </Box>
+ 180 |   )
+     `----
+
+Caused by:
+    Syntax Error @ webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/internal/helpers/hydration-error-info.js:62
+[  331871ms] [ERROR] ./pages/school-startup.js
+Error: 
+  x Expected corresponding JSX closing tag for <SlideInLeft>
+    ,-[/home/obi/dev/PapecWebsite/pages/school-startup.js:54:1]
+ 54 |                 {c.paragraph2}
+ 55 |               </Text>
+ 56 |             </Stack>
+ 57 |           </SimpleGrid>
+    :           ^^^^^^^^^^^^^
+ 58 |         </Box>
+ 59 |       </Box>
+    `----
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./pages/school-startup.js @ webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/internal/helpers/hydration-error-info.js:62
+[  340230ms] [ERROR] ./pages/school-startup.js
+Error: 
+  x Expected corresponding JSX closing tag for <SlideInRight>
+    ,-[/home/obi/dev/PapecWebsite/pages/school-startup.js:54:1]
+ 54 |                 {c.paragraph2}
+ 55 |               </Text>
+ 56 |             </Stack>
+ 57 |           </SimpleGrid>
+    :           ^^^^^^^^^^^^^
+ 58 |         </Box>
+ 59 |       </Box>
+    `----
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./pages/school-startup.js @ webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/internal/helpers/hydration-error-info.js:62
+[  352807ms] [ERROR] ./pages/school-startup.js
+Error: 
+  x Expected corresponding JSX closing tag for <FadeUp>
+    ,-[/home/obi/dev/PapecWebsite/pages/school-startup.js:72:1]
+ 72 |               <ServiceItem key={i} text={service} />
+ 73 |             ))}
+ 74 |           </SimpleGrid>
+ 75 |         </Box>
+    :         ^^^^^^
+ 76 |       </Box>
+ 77 | 
+ 78 |       <CallToActionBanner title={c.callToAction?.title} subtitle={c.callToAction?.subtitle} />
+    `----
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./pages/school-startup.js @ webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/internal/helpers/hydration-error-info.js:62
+[  592000ms] [LOG] [Fast Refresh] rebuilding @ webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/pages/hot-reloader-client.js:221
+[  594699ms] [LOG] [Fast Refresh] done in 2700ms @ webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/pages/hot-reloader-client.js:190
+[  639967ms] [LOG] [Fast Refresh] rebuilding @ webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/pages/hot-reloader-client.js:221
+[  648928ms] [LOG] [Fast Refresh] rebuilding @ webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/pages/hot-reloader-client.js:221
+[  678848ms] [LOG] [Fast Refresh] rebuilding @ webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/pages/hot-reloader-client.js:221

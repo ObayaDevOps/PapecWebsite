@@ -1,298 +1,166 @@
 import {
-    Avatar,
-    Box,
-    chakra,
-    Container,
-    Flex,
-    Icon,
-    SimpleGrid,
-    Heading,
-    Text,
-    Stack,
-    HStack,
-    VStack,
-    Button,
-    Center,
-    useColorModeValue,
-  } from '@chakra-ui/react'
-
-  import { CheckIcon, ChatIcon, ArrowRightIcon } from '@chakra-ui/icons'
-
-
-  import SeoHead from '../components/utils/seoHead';
-  import Image from 'next/image'
-
-  import NavBar from '../components/utils/navbar3'
-  import CallToActionBanner from '../components/callToActionBanner'
-  import PageShell from '../components/utils/pageShell'
-
-  import imageUrlBuilder from '@sanity/image-url'
-import {getImageDimensions} from '@sanity/asset-utils'
+  Box,
+  Flex,
+  Icon,
+  SimpleGrid,
+  Heading,
+  Text,
+  Stack,
+} from '@chakra-ui/react'
+import { CheckIcon } from '@chakra-ui/icons'
+import SeoHead from '../components/utils/seoHead'
+import Image from 'next/image'
+import NavBar from '../components/utils/navbar3'
+import CallToActionBanner from '../components/callToActionBanner'
+import PageHero from '../components/utils/pageHero'
+import { FadeUp, FadeIn, SlideInLeft, SlideInRight, StaggerContainer, StaggerItem } from '../components/utils/scrollReveal'
+import imageUrlBuilder from '@sanity/image-url'
 import client from '../src/sanity/lib/client.js'
 
-// Initialize the image URL builder
 const builder = imageUrlBuilder(client)
-
-function urlFor(source) {
-  return builder.image(source)
-}
-
+function urlFor(source) { return builder.image(source) }
 
 export async function getStaticProps() {
-  const aboutWhyChooseUsPageContent = await client.fetch(`
-    *[_type == "aboutWhyChooseUs"]
-  `);
-
-  return {
-    props: {
-      aboutWhyChooseUsPageContent,
-    },
-    revalidate: 10, // In seconds
-  };
+  const aboutWhyChooseUsPageContent = await client.fetch(`*[_type == "aboutWhyChooseUs"]`);
+  return { props: { aboutWhyChooseUsPageContent }, revalidate: 10 };
 }
 
+const SectionLabel = ({ children }) => (
+  <Text color="brand.accent" fontWeight="700" fontSize="xs" textTransform="uppercase"
+    letterSpacing="widest" fontFamily="subtitleFont" mb={3}>{children}</Text>
+)
 
-  export default function WhyChooseUsPageComponent({ aboutWhyChooseUsPageContent }) {
-    const content = aboutWhyChooseUsPageContent[0];
-
-    return (
-      <Box>
-        <SeoHead title={content.title} />
-
-        <NavBar />
-
-        <PageShell>
-            <Flex
-              textAlign={'center'}
-              pt={10}
-              justifyContent={'center'}
-              direction={'column'}
-              width={'full'}
-              overflow={'hidden'}>
-              <Box width={{ base: 'full', sm: 'lg', lg: 'xl' }} margin={'auto'}>
-                <chakra.h3
-                  fontWeight={'bold'}
-                  fontSize={20}
-                  textTransform={'uppercase'}
-                  color={'purple.400'}
-                  fontFamily='bodyFont'
-                >
-                  {content.title}
-                </chakra.h3>
-                <Heading
-                  as={'h1'}
-                  mb={{base: 2, md: 10}}
-                  fontSize={{ base: "5xl",md: "6xl", lg:"7xl",}}
-                  minHeight={'1vh'}
-                  fontWeight="bold"
-                  lineHeight="none"
-                  letterSpacing={{base: "normal",md: "tight" }}
-                  color="purple.900"
-                  textAlign='center'
-                  fontFamily={'bodyFont'}>
-                  <Text
-                    display={{base: "block"}}
-                    w="full"
-                    bgClip="text"
-                    bgGradient='linear(to-r, blackAlpha.800, purple.500)'
-                    fontWeight="extrabold"
-                    transition="all .65s ease" _hover={{ transform: 'scale(1.005)', filter: "brightness(120%)", }}
-                    py={6}
-                  >
-                    {content.heading}
-                  </Text>
-                </Heading>
-                <chakra.h2
-                  margin={'auto'}
-                  width={'100%'}
-                  fontWeight={'medium'}
-                  fontSize={'lg'}
-                  color={useColorModeValue('gray.500', 'gray.400')}
-                  mt={{base:-2,md: -8, lg:-8}}
-                  fontFamily={'bodyFont'}
-                >
-                  {content.introduction}
-                </chakra.h2>
-              </Box>
-
-              <TopContent content={content} />
-
-              <ConsultExperienceContent content={content} />
-
-              <CallToActionBanner title={content.callToAction?.title} subtitle={content.callToAction?.subtitle} />
-
-            </Flex>
-        </PageShell>
-      </Box>
-    )
-  }
-
-const TopContent = ({ content }) => {
+export default function WhyChooseUsPageComponent({ aboutWhyChooseUsPageContent }) {
+  const content = aboutWhyChooseUsPageContent[0];
   return (
-    <Box
-      borderWidth='1px'
-      borderRadius='xl'
-      borderColor='purple.500'
-      shadow='xl'
-      padding={8}
-      mx={{md: 10,lg:20}}
-      background="whiteAlpha.700"
-      my={{base: 16,md:20, lg: 20}}
-    >
-      <Box>
-        <SimpleGrid columns={{base: 1, md:1, lg: 2}}>
-          <Box overflow='hidden' m={{base: 2, md: 6}} borderRadius={'10px'}>
-            <Image
-              src={urlFor(content.image1).url()}
-              width={570}
-              height={320}
-              alt="Image 1"
-            />
-          </Box>
+    <Box>
+      <SeoHead title={content.title} />
+      <NavBar />
+      <PageHero category={content.title} title={content.heading} subtitle={content.introduction} />
 
-          <Box mt={6} mb={{lg:32}}>
-            <Box>
-              <Text
-                textAlign='left'
-                fontSize={{ base: "lg",md: "xl",}}
-                fontFamily='bodyFont'
-                textColor='purple.800'
-              >
-                {content.paragraph1}
-              </Text>
-            </Box>  
-          </Box>
-
-          <Box mt={6} mb={{lg:20}}>
-            <Box>
-              <Text
-                textAlign='left'
-                fontSize={{ base: "lg",md: "xl",}}
-                fontFamily='bodyFont'
-                textColor='purple.800'
-              >
-                {content.paragraph2}
-              </Text>
-            </Box>  
-          </Box>
-
-          <Box overflow='hidden' m={{base: 2, md: 6}} borderRadius={'10px'}>
-            <Image
-              src={urlFor(content.image2).url()}
-              width={570}
-              height={320}
-              alt="Image 2"
-            />
-          </Box>
-
-          <Box overflow='hidden' m={{base: 2, md: 6}} borderRadius={'10px'}>
-            <Image
-              src={urlFor(content.image3).url()}
-              width={570}
-              height={320}
-              alt="Image 3"
-            />
-          </Box>
-
-          <Box mt={6} mb={{lg:20}}>
-            <Box>
-              <Text
-                textAlign='left'
-                fontSize={{ base: "lg",md: "xl",}}
-                fontFamily='bodyFont'
-                textColor='purple.800'
-              >
-                {content.paragraph3}
-              </Text>
-            </Box>    
-          </Box>
-        </SimpleGrid>
-      </Box>
-    </Box>        
-  )
-}
-
-const ConsultExperienceContent = ({ content }) => {
-  return (
-    <Box
-      borderWidth='1px'
-      borderRadius='xl'
-      borderColor='purple.500'
-      shadow='xl'
-      padding={8}
-      mx={{md: 10,lg:20}}
-      background="whiteAlpha.700"
-      my={{base: 16,md:20, lg: 20}}
-    >
-      <Text
-        bgClip="text"
-        bgGradient='linear(to-r, blackAlpha.800, purple.500)'
-        fontWeight="extrabold"
-        textAlign='left'
-        fontSize={{ base: "2xl",md: "5xl",}}
-        p={{base: 4, lg:4}}
-        fontFamily='bodyFont'
+      {/* Alternating image/text rows */}
+      <ImageTextRow
+        imageSrc={urlFor(content.image1).url()}
+        imageAlt="Why Choose Us"
+        imageLeft
+        bg="white"
       >
-        {content.consultancyHeading}
-      </Text>
-
-      <Box>
-        <Text
-          textAlign='left'
-          fontSize={{ base: "lg",md: "xl",}}
-          fontFamily='bodyFont'
-          textColor='purple.800'
-          p={{base: 4, lg:4}}
-        >
-          {content.consultancyExperienceBase}
+        <SectionLabel>Our Approach</SectionLabel>
+        <Heading as="h2" fontSize={{ base: '2xl', md: '3xl' }} fontFamily="headingFont"
+          bgGradient="linear(to-r, brand.textDark, brand.primary)" bgClip="text" fontWeight="700" mb={5}>
+          Focused on Your Success
+        </Heading>
+        <Text fontSize={{ base: 'md', md: 'lg' }} fontFamily="bodyFont" color="brand.textMid" lineHeight="tall">
+          {content.paragraph1}
         </Text>
-      </Box>
+      </ImageTextRow>
 
-      <Box>
-        <SimpleGrid columns={{base: 1, md:1, lg: 1}}>
-          <Box overflow='hidden' m={{base: 2, md: 6}} borderRadius={'10px'}>
+      <ImageTextRow
+        imageSrc={urlFor(content.image2).url()}
+        imageAlt="Our Methods"
+        bg="brand.bg"
+      >
+        <SectionLabel>How We Work</SectionLabel>
+        <Heading as="h2" fontSize={{ base: '2xl', md: '3xl' }} fontFamily="headingFont"
+          bgGradient="linear(to-r, brand.textDark, brand.primary)" bgClip="text" fontWeight="700" mb={5}>
+          Systems That Stick
+        </Heading>
+        <Text fontSize={{ base: 'md', md: 'lg' }} fontFamily="bodyFont" color="brand.textMid" lineHeight="tall">
+          {content.paragraph2}
+        </Text>
+      </ImageTextRow>
+
+      <ImageTextRow
+        imageSrc={urlFor(content.image3).url()}
+        imageAlt="Our Impact"
+        imageLeft
+        bg="white"
+      >
+        <SectionLabel>Our Impact</SectionLabel>
+        <Heading as="h2" fontSize={{ base: '2xl', md: '3xl' }} fontFamily="headingFont"
+          bgGradient="linear(to-r, brand.textDark, brand.primary)" bgClip="text" fontWeight="700" mb={5}>
+          Raising the Bar
+        </Heading>
+        <Text fontSize={{ base: 'md', md: 'lg' }} fontFamily="bodyFont" color="brand.textMid" lineHeight="tall">
+          {content.paragraph3}
+        </Text>
+      </ImageTextRow>
+
+      {/* Consultancy experience — full-width open section */}
+      <Box bg="brand.bg" py={{ base: 16, md: 24 }}>
+        <Box maxW="7xl" mx="auto" px={{ base: 6, md: 10, lg: 16 }}>
+          <FadeUp>
+          <SectionLabel>Experience Base</SectionLabel>
+          <Heading as="h2" fontSize={{ base: '3xl', md: '4xl' }} fontFamily="headingFont"
+            bgGradient="linear(to-r, brand.textDark, brand.primary)" bgClip="text" fontWeight="700" mb={4}>
+            {content.consultancyHeading}
+          </Heading>
+          <Text fontSize={{ base: 'md', md: 'lg' }} fontFamily="bodyFont" color="brand.textMid"
+            lineHeight="tall" mb={10} maxW="3xl">
+            {content.consultancyExperienceBase}
+          </Text>
+          </FadeUp>
+
+          <FadeIn><Box mb={10} overflow="hidden" borderRadius="2xl">
             <Image
               src={urlFor(content.image4).url()}
-              width={570*2}
-              height={320*2}
+              width={1140} height={640}
               alt="Consultancy Experience"
+              style={{ width: '100%', height: 'auto', display: 'block' }}
             />
-          </Box>
+          </Box></FadeIn>
 
-          <Box mt={2} mb={{lg:20}}>
-            <SimpleGrid columns={1} spacing={6}>
-              {content.specialisms.map((specialism, index) => (
-                <SolutionsListItem key={index} text={specialism} />
-              ))}
-            </SimpleGrid>
-          </Box>
-        </SimpleGrid>
-      </Box>
-    </Box>
-  )
-}
-
-const SolutionsListItem = (props) => {
-  return (
-    <Box
-      maxW='5xl' borderWidth='1px' borderRadius='lg' overflow='hidden'
-      padding={3}
-      paddingRight={{base:8,md:12}}
-      // bgColor="gray.100"
-      background="whiteAlpha.800"
-      // border='30px'
-      // shadow={'md'}
-    >
-      <HStack  align={'flex-start'} >
-        
-        <Box color={'green.400'} px={2} >
-          <Icon as={CheckIcon} />
+          <StaggerContainer>
+          <SimpleGrid columns={{ base: 1, md: 2 }} spacing={4}>
+            {content.specialisms.map((specialism, index) => (
+              <StaggerItem key={index}><SpecialismItem text={specialism} /></StaggerItem>
+            ))}
+          </SimpleGrid>
+          </StaggerContainer>
         </Box>
-        <VStack align={'start'}>
-          <Text color={'black'}  textColor='purple.900' textAlign='left' fontWeight={200} fontSize={'xl'} fontFamily='bodyFont' >{props.text}</Text>
-        </VStack>
-      </HStack>
+      </Box>
+
+      <CallToActionBanner title={content.callToAction?.title} subtitle={content.callToAction?.subtitle} />
     </Box>
   )
 }
 
+const ImageTextRow = ({ imageSrc, imageAlt, imageLeft, bg, children }) => (
+  <Box bg={bg} py={{ base: 16, md: 24 }}>
+    <Box maxW="7xl" mx="auto" px={{ base: 6, md: 10, lg: 16 }}>
+      <SimpleGrid
+        columns={{ base: 1, lg: 2 }}
+        gap={{ base: 10, lg: 20 }}
+        alignItems="center"
+        direction={imageLeft ? 'row' : 'row-reverse'}
+      >
+        {imageLeft ? (
+          <>
+            <SlideInLeft><Box overflow="hidden" borderRadius="2xl">
+              <Image src={imageSrc} width={570} height={380} alt={imageAlt}
+                style={{ width: '100%', height: 'auto', display: 'block' }} />
+            </Box></SlideInLeft>
+            <SlideInRight><Box>{children}</Box></SlideInRight>
+          </>
+        ) : (
+          <>
+            <SlideInLeft><Box>{children}</Box></SlideInLeft>
+            <SlideInRight><Box overflow="hidden" borderRadius="2xl">
+              <Image src={imageSrc} width={570} height={380} alt={imageAlt}
+                style={{ width: '100%', height: 'auto', display: 'block' }} />
+            </Box></SlideInRight>
+          </>
+        )}
+      </SimpleGrid>
+    </Box>
+  </Box>
+)
+
+const SpecialismItem = ({ text }) => (
+  <Flex align="flex-start" gap={3} py={2}>
+    <Box mt="5px" flexShrink={0}>
+      <Icon as={CheckIcon} w={4} h={4} color="brand.primary" />
+    </Box>
+    <Text fontFamily="bodyFont" color="brand.textMid" fontSize="md" lineHeight="tall">{text}</Text>
+  </Flex>
+)

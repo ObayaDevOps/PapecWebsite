@@ -1,234 +1,91 @@
-import {
-  Avatar,
-  Box,
-  chakra,
-  Container,
-  Flex,
-  Icon,
-  SimpleGrid,
-  Heading,
-  Text,
-  Stack,
-  HStack,
-  VStack,
-  Button,
-  Center,
-  useColorModeValue,
-} from '@chakra-ui/react'
-
-import { CheckIcon, ChatIcon, ArrowRightIcon } from '@chakra-ui/icons'
-
+import { Box, Flex, Icon, SimpleGrid, Text, Heading, Stack } from '@chakra-ui/react'
+import { FadeUp, SlideInLeft, SlideInRight } from '../components/utils/scrollReveal'
+import { CheckIcon } from '@chakra-ui/icons'
 import Image from 'next/image'
-
 import NavBar from '../components/utils/navbar3'
 import SeoHead from '../components/utils/seoHead'
 import CallToActionBanner from '../components/callToActionBanner'
-import PageShell from '../components/utils/pageShell'
-
+import PageHero from '../components/utils/pageHero'
 import imageUrlBuilder from '@sanity/image-url'
-import {getImageDimensions} from '@sanity/asset-utils'
+import { getImageDimensions } from '@sanity/asset-utils'
 import client from '../src/sanity/lib/client.js'
 
-// Initialize the image URL builder
 const builder = imageUrlBuilder(client)
-
-function urlFor(source) {
-  return builder.image(source)
-}
+function urlFor(source) { return builder.image(source) }
 
 export async function getStaticProps() {
-  const servicesSchoolStartUpPageContent = await client.fetch(`
-    *[_type == "servicesSchoolStartUp"][0]
-  `);
-
-  return {
-    props: {
-      servicesSchoolStartUpPageContent,
-    },
-    revalidate: 10, // In seconds
-  };
+  const servicesSchoolStartUpPageContent = await client.fetch(`*[_type == "servicesSchoolStartUp"][0]`);
+  return { props: { servicesSchoolStartUpPageContent }, revalidate: 10 };
 }
 
-export default function SchoolStartUpPageComponent({ servicesSchoolStartUpPageContent }) {
+const SectionLabel = ({ children }) => (
+  <Text color="brand.accent" fontWeight="700" fontSize="xs" textTransform="uppercase"
+    letterSpacing="widest" fontFamily="subtitleFont" mb={3}>{children}</Text>
+)
+
+export default function SchoolStartUpPageComponent({ servicesSchoolStartUpPageContent: c }) {
+  const { width, height } = getImageDimensions(c.image1)
+
   return (
     <Box>
-      <SeoHead title={servicesSchoolStartUpPageContent.title} />
-
+      <SeoHead title={c.title} />
       <NavBar />
+      <PageHero category="Services" title={c.heading} subtitle={c.introduction} />
 
-      <PageShell>
-          <Flex
-            textAlign={'center'}
-            pt={10}
-            justifyContent={'center'}
-            direction={'column'}
-            width={'full'}
-            overflow={'hidden'}>
-            <Box width={{ base: 'full', sm: 'lg', lg: 'xl' }} margin={'auto'}>
-              <chakra.h3
-                fontWeight={'bold'}
-                fontSize={20}
-                textTransform={'uppercase'}
-                color={'purple.400'}
-                fontFamily='bodyFont'
-              >
-                Services
-              </chakra.h3>
-              <Heading
-                as={'h1'}
-                mb={{base: 2, md: 10}}
-                fontSize={{ base: "5xl",md: "6xl", lg:"7xl",}}
-                minHeight={'1vh'}
-                fontWeight="bold"
-                lineHeight="none"
-                letterSpacing={{base: "normal",md: "tight" }}
-                color="purple.900"
-                textAlign='center'
-                fontFamily={'bodyFont'}>
-                <Text
-                  display={{base: "block"}}
-                  w="full"
-                  bgClip="text"
-                  bgGradient='linear(to-r, blackAlpha.800, purple.500)'
-                  fontWeight="extrabold"
-                  transition="all .65s ease" _hover={{ transform: 'scale(1.005)', filter: "brightness(120%)", }}
-                  py={6}>
-                  {servicesSchoolStartUpPageContent.heading}
-                </Text>
-              </Heading>
-              <chakra.h2
-                margin={'auto'}
-                width={'100%'}
-                fontWeight={'medium'}
-                fontSize={'lg'}
-                color={useColorModeValue('gray.500', 'gray.400')}
-                mt={{base:-2,md: -8, lg:-8}}
-                fontFamily={'bodyFont'}
-              >
-                {servicesSchoolStartUpPageContent.introduction}
-              </chakra.h2>
-            </Box>
-
-            <VisionPurposeContent content={servicesSchoolStartUpPageContent} />
-
-            <MultiSolutionsContent content={servicesSchoolStartUpPageContent} />
-
-            <CallToActionBanner title={servicesSchoolStartUpPageContent.callToAction?.title} subtitle={servicesSchoolStartUpPageContent.callToAction?.subtitle} />
-
-          </Flex>
-      </PageShell>
-    </Box>
-  )
-}
-
-const VisionPurposeContent = ({ content }) => {
-  const { width, height } = getImageDimensions(content.image1)
-  
-  return (
-    <Box
-      borderWidth='1px'
-      borderRadius='xl'
-      borderColor='purple.500'
-      shadow='xl'
-      padding={8}
-      mx={{md: 10,lg:20}}
-      background="whiteAlpha.700"
-      my={{base: 16,md:20, lg: 20}}
-    >
-      <SimpleGrid columns={{base: 1, md:1, lg: 2}}  >
-        <Box overflow='hidden' m={{base: 2, md: 6}} borderRadius={'10px'}>
-          <Image
-            src={urlFor(content.image1).url()}
-            width={width}
-            height={height}
-            alt="School Start-Up Image"
-          />
-        </Box>
-
-        <Box  mt={2} mb={{lg:20}} >
-          <SimpleGrid columns={1} spacing={10}>
-            <Box>
-              <Text
-                textAlign='left'
-                fontSize={{ base: "sm",md: "lg",}}
-                fontFamily='bodyFont'
-                mt={2}
-              >
-                {content.paragraph1}
+      {/* Full-width image — no box */}
+      <Box bg="white" py={{ base: 12, md: 20 }}>
+        <Box maxW="7xl" mx="auto" px={{ base: 6, md: 10, lg: 16 }}>
+          <SimpleGrid columns={{ base: 1, lg: 2 }} gap={{ base: 10, lg: 16 }} alignItems="center">
+            <SlideInLeft><Box overflow="hidden" borderRadius="2xl">
+              <Image
+                src={urlFor(c.image1).url()}
+                width={width} height={height}
+                alt="School Start-Up"
+                sizes="(max-width: 768px) 100vw, 50vw"
+                style={{ width: '100%', height: 'auto', display: 'block' }}
+              />
+            </Box></SlideInLeft>
+            <SlideInRight><Stack spacing={5}>
+              <SectionLabel>Starting Out</SectionLabel>
+              <Text fontSize={{ base: 'md', md: 'lg' }} fontFamily="bodyFont" color="brand.textMid" lineHeight="tall">
+                {c.paragraph1}
               </Text>
-            
-              <Text
-                textAlign='left'
-                fontSize={{ base: "sm",md: "lg",}}
-                fontFamily='bodyFont'
-                mt={2}
-              >
-                {content.paragraph2}
+              <Text fontSize={{ base: 'md', md: 'lg' }} fontFamily="bodyFont" color="brand.textMid" lineHeight="tall">
+                {c.paragraph2}
               </Text>
-            </Box>  
+            </Stack></SlideInRight>
           </SimpleGrid>
         </Box>
-      </SimpleGrid>
-    </Box>        
-  )
-}
-
-const MultiSolutionsContent = ({ content }) => {
-  return (
-    <Box
-      borderWidth='1px'
-      borderRadius='xl'
-      borderColor='purple.500'
-      shadow='xl'
-      padding={8}
-      mx={{md: 10,lg:20}}
-      background="whiteAlpha.700"
-      my={{base: 16,md:20, lg: 20}}
-    >
-      <Text
-        bgClip="text"
-        bgGradient='linear(to-r, blackAlpha.800, purple.500)'
-        fontWeight="extrabold"
-        textAlign='left'
-        fontSize={{ base: "xl",md: "3xl",}}
-        p={{base: 4, lg:4}}
-        fontFamily='bodyFont'
-      >
-        {content.heading2}
-      </Text>
-
-      <Box>
-        <SimpleGrid columns={{base: 1, md:1, lg: 1}}>
-          <Box mt={2} mb={{lg:20}}>
-            <SimpleGrid columns={1} spacing={6}>
-              {content.services.map((service, index) => (
-                <SolutionsListItem key={index} text={service} />
-              ))}
-            </SimpleGrid>
-          </Box>
-        </SimpleGrid>
       </Box>
-    </Box>
-  )
-}
 
-const SolutionsListItem = (props) => {
-  return (
-    <Box
-      maxW='5xl' borderWidth='1px' borderRadius='lg' overflow='hidden'
-      padding={3}
-      paddingRight={{base:8,md:12}}
-      background="whiteAlpha.800"
-    >
-      <HStack align={'flex-start'}>
-        <Box color={'green.400'} px={2}>
-          <Icon as={CheckIcon} />
+      {/* Services list — open section, no box */}
+      <Box bg="brand.bg" py={{ base: 16, md: 24 }}>
+        <Box maxW="7xl" mx="auto" px={{ base: 6, md: 10, lg: 16 }}>
+          <FadeUp>
+          <SectionLabel>Our Services</SectionLabel>
+          <Heading as="h2" fontSize={{ base: '2xl', md: '3xl' }} fontFamily="headingFont"
+            bgGradient="linear(to-r, brand.textDark, brand.primary)" bgClip="text" fontWeight="700" mb={10}>
+            {c.heading2}
+          </Heading>
+          </FadeUp>
+          <SimpleGrid columns={{ base: 1, md: 2 }} spacing={3}>
+            {c.services.map((service, i) => (
+              <ServiceItem key={i} text={service} />
+            ))}
+          </SimpleGrid>
         </Box>
-        <VStack align={'start'}>
-          <Text color={'black'} textAlign='left' fontWeight={200} fontSize={'xl'} fontFamily='bodyFont'>{props.text}</Text>
-        </VStack>
-      </HStack>
+      </Box>
+
+      <CallToActionBanner title={c.callToAction?.title} subtitle={c.callToAction?.subtitle} />
     </Box>
   )
 }
 
+const ServiceItem = ({ text }) => (
+  <Flex align="flex-start" gap={3} py={2}>
+    <Box mt="5px" flexShrink={0}>
+      <Icon as={CheckIcon} w={4} h={4} color="brand.primary" />
+    </Box>
+    <Text fontFamily="bodyFont" color="brand.textMid" fontSize="md" lineHeight="tall">{text}</Text>
+  </Flex>
+)

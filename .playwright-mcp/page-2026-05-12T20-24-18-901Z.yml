@@ -1,0 +1,148 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e3]:
+    - generic [ref=e4]:
+      - generic [ref=e6]:
+        - link "People and Potential Consultancy" [ref=e7] [cursor=pointer]:
+          - /url: /
+          - img "People and Potential Consultancy" [ref=e8]
+        - generic [ref=e9]:
+          - generic [ref=e10]:
+            - link "About Us" [ref=e12] [cursor=pointer]:
+              - /url: "#"
+            - link "Services" [ref=e14] [cursor=pointer]:
+              - /url: "#"
+            - link "Courses" [ref=e16] [cursor=pointer]:
+              - /url: /course-list
+            - link "Contact Us" [ref=e18] [cursor=pointer]:
+              - /url: /info/contact-enquiry
+          - link "Book a Course" [ref=e19] [cursor=pointer]:
+            - /url: /education/courses/course-booking-form
+      - generic [ref=e20]:
+        - paragraph [ref=e21]: Services
+        - heading "School Development" [level=1] [ref=e22]
+        - paragraph [ref=e23]: Systematic school development planning underpins effective practice and is essential to ensuring high standards and ongoing school improvement.
+      - generic [ref=e26]:
+        - img "School Development" [ref=e28]
+        - generic [ref=e29]:
+          - paragraph [ref=e30]: Where to Begin
+          - paragraph [ref=e31]: The starting point for this process is to gain thorough understanding of previous and current practice. The review process is always tailored to the specific needs of the school.
+      - generic [ref=e33]:
+        - paragraph [ref=e34]: School Review
+        - heading "We offer a full school review process which may include:" [level=2] [ref=e35]
+        - img "Review Process" [ref=e37]
+        - generic [ref=e38]:
+          - generic [ref=e39]:
+            - img [ref=e41]
+            - paragraph [ref=e44]: Review of current systems and practice
+          - generic [ref=e45]:
+            - img [ref=e47]
+            - paragraph [ref=e50]: Review of classroom practice and performance
+          - generic [ref=e51]:
+            - img [ref=e53]
+            - paragraph [ref=e56]: Assessment processes, use of tracking data and systems for monitoring processes
+          - generic [ref=e57]:
+            - img [ref=e59]
+            - paragraph [ref=e62]: Audit of parental, staff and children’s expectations and perceptions
+          - generic [ref=e63]:
+            - img [ref=e65]
+            - paragraph [ref=e68]: Lesson observation and evaluation of teaching standards
+          - generic [ref=e69]:
+            - img [ref=e71]
+            - paragraph [ref=e74]: Resources and financial planning for best value
+      - generic [ref=e76]:
+        - paragraph [ref=e77]: Next Steps
+        - heading "The next step is the identification of priorities for development and well-targeted advice and support to ensure effective outcomes. This may include:" [level=2] [ref=e78]
+        - img "Development Priorities" [ref=e80]
+        - generic [ref=e81]:
+          - generic [ref=e82]:
+            - img [ref=e84]
+            - paragraph [ref=e87]: Guidance for the Leadership Team on prioritising and planning Strategies for effective learning & teaching
+          - generic [ref=e88]:
+            - img [ref=e90]
+            - paragraph [ref=e93]: Developing a thorough understanding of curriculum requirements and the rationale behind teaching strategies
+          - generic [ref=e94]:
+            - img [ref=e96]
+            - paragraph [ref=e99]: Guidance on financial planning and the development of resources
+          - generic [ref=e100]:
+            - img [ref=e102]
+            - paragraph [ref=e105]: Development of systems for assessing learning & tracking achievement
+          - generic [ref=e106]:
+            - img [ref=e108]
+            - paragraph [ref=e111]: Teacher development, mentoring and training
+          - generic [ref=e112]:
+            - img [ref=e114]
+            - paragraph [ref=e117]: Organisational structure and management
+          - generic [ref=e118]:
+            - img [ref=e120]
+            - paragraph [ref=e123]: Guidance on compliance to international or national standards
+          - generic [ref=e124]:
+            - img [ref=e126]
+            - paragraph [ref=e129]: Curriculum overview and development
+      - generic [ref=e131]:
+        - heading "Don't Leave it to Chance Take your School to the Next Level!" [level=2] [ref=e132]:
+          - generic [ref=e133]: Don't Leave it to Chance
+          - generic [ref=e134]: Take your School to the Next Level!
+        - link "Talk to us Today" [ref=e136] [cursor=pointer]:
+          - /url: /info/contact-enquiry
+    - generic [ref=e138]:
+      - generic [ref=e139]:
+        - generic [ref=e140]:
+          - link "People and Potential Consultancy" [ref=e142] [cursor=pointer]:
+            - /url: /
+            - img "People and Potential Consultancy" [ref=e143]
+          - generic [ref=e144]:
+            - link [ref=e145] [cursor=pointer]:
+              - /url: https://www.linkedin.com/in/audrey-dralega-frsa-00b37448/
+              - img [ref=e146]
+            - link "Built by DWO" [ref=e148] [cursor=pointer]:
+              - /url: https://www.dralegawebops.com/
+        - generic [ref=e149]:
+          - paragraph [ref=e150]: Contact
+          - paragraph [ref=e151]: info@peopleandpotential.org
+          - paragraph [ref=e152]: +256 793 231969
+          - paragraph [ref=e153]: +256 787 921975
+          - paragraph [ref=e154]: PO. Box 27348, Kampala
+          - paragraph [ref=e155]: 18 Millennium House Nsambya Road
+        - generic [ref=e156]:
+          - paragraph [ref=e157]: About Us
+          - link "Home" [ref=e158] [cursor=pointer]:
+            - /url: /
+            - paragraph [ref=e159]: Home
+          - link "Who We Are" [ref=e160] [cursor=pointer]:
+            - /url: /who-we-are
+            - paragraph [ref=e161]: Who We Are
+          - link "Why Choose Us" [ref=e162] [cursor=pointer]:
+            - /url: /why-choose-us
+            - paragraph [ref=e163]: Why Choose Us
+          - link "Consultant Profiles" [ref=e164] [cursor=pointer]:
+            - /url: /consultant-profile
+            - paragraph [ref=e165]: Consultant Profiles
+        - generic [ref=e166]:
+          - paragraph [ref=e167]: Services
+          - link "School Start Up" [ref=e168] [cursor=pointer]:
+            - /url: /school-startup
+            - paragraph [ref=e169]: School Start Up
+          - link "School Development" [ref=e170] [cursor=pointer]:
+            - /url: /school-development
+            - paragraph [ref=e171]: School Development
+          - paragraph [ref=e173]: Courses
+          - link "Course List" [ref=e174] [cursor=pointer]:
+            - /url: /course-list
+            - paragraph [ref=e175]: Course List
+          - link "Course Booking" [ref=e176] [cursor=pointer]:
+            - /url: /education/courses/course-booking-form
+            - paragraph [ref=e177]: Course Booking
+          - paragraph [ref=e179]: Contact
+          - link "Contact Form" [ref=e180] [cursor=pointer]:
+            - /url: /info/contact-enquiry
+            - paragraph [ref=e181]: Contact Form
+      - separator [ref=e182]
+      - paragraph [ref=e183]: © 2024 People and Potential Consultancy. All rights reserved.
+  - alert [ref=e184]
+  - generic:
+    - region "Notifications-top"
+    - region "Notifications-top-left"
+    - region "Notifications-top-right"
+    - region "Notifications-bottom-left"
+    - region "Notifications-bottom"
+    - region "Notifications-bottom-right"

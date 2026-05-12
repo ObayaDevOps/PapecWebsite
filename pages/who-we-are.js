@@ -1,364 +1,203 @@
 import {
-  Box, chakra, Container, Text, Flex, VStack, Button, Heading, SimpleGrid, Stack, Icon, useColorModeValue
+  Box, Text, Flex, Heading, SimpleGrid, Stack, Icon, useColorModeValue
 } from '@chakra-ui/react'
+import { FadeUp, SlideInLeft, SlideInRight } from '../components/utils/scrollReveal'
 import NavBar from '../components/utils/navbar3'
 import Image from 'next/image'
 import imageUrlBuilder from '@sanity/image-url'
-import {getImageDimensions} from '@sanity/asset-utils'
+import { getImageDimensions } from '@sanity/asset-utils'
 import client from '../src/sanity/lib/client.js'
 import SeoHead from '../components/utils/seoHead'
 import CallToActionBanner from '../components/callToActionBanner'
-import SectionCard from '../components/utils/sectionCard'
-import PageShell from '../components/utils/pageShell'
+import PageHero from '../components/utils/pageHero'
 
-// Initialize the image URL builder
 const builder = imageUrlBuilder(client)
-
-function urlFor(source) {
-  return builder.image(source)
-}
+function urlFor(source) { return builder.image(source) }
 
 export default function WhoWeArePageComponent({ aboutUsWhoWeArePageContent }) {
-  const content = aboutUsWhoWeArePageContent[0]; // Assuming there's only one item in the array
-
+  const content = aboutUsWhoWeArePageContent[0];
   return (
     <Box>
       <SeoHead title={content.title} />
-
       <NavBar />
-
-      <PageShell>
-          <Flex
-            textAlign={'center'}
-            pt={10}
-            justifyContent={'center'}
-            direction={'column'}
-            width={'full'}
-            overflow={'hidden'}>
-            <Box width={{ base: 'full', sm: 'lg', lg: 'xl' }} margin={'auto'}>
-              <chakra.h3
-                fontWeight={'bold'}
-                fontSize={20}
-                textTransform={'uppercase'}
-                color={'purple.400'}
-                fontFamily='bodyFont'
-              >
-                About Us
-              </chakra.h3>
-              <Heading
-                as={'h1'}
-                mb={{base: 2, md: 10}}
-                fontSize={{ base: "5xl",md: "6xl", lg:"7xl",}}
-                minHeight={'1vh'}
-                fontWeight="bold"
-                lineHeight="none"
-                letterSpacing={{base: "normal",md: "tight" }}
-                color="purple.900"
-                textAlign='center'
-                fontFamily={'bodyFont'}>
-                <Text
-                  display={{base: "block",
-                              // lg: "inline",
-                          }}
-                  w="full"
-                  bgClip="text"
-                  bgGradient='linear(to-r, blackAlpha.800, purple.500)'
-                  fontWeight="extrabold"
-                  transition="all .65s ease" _hover={{ transform: 'scale(1.005)', filter: "brightness(120%)", }}
-                  py={6}>
-                  Who We Are
-                </Text>
-              </Heading>
-              <chakra.h2
-                margin={'auto'}
-                width={'100%'}
-                fontWeight={'medium'}
-                fontSize={'lg'}
-                color={useColorModeValue('gray.500', 'gray.400')}
-                mt={{base:-2,md: -8, lg:-8}}
-                fontFamily={'bodyFont'}
-              >
-                People and Potential Consultancy was established in 2015 to equip leaders and organizations with the systems and practical tools needed to embed change and take their organization to the next level of performance.            </chakra.h2>
-            </Box>
-
-            <VisionPurposeContent content={content} />
-
-            <FocusSection content={content} />
-
-            <MultiSolutionsContent content={content} />
-
-            <CallToActionBanner />
-
-          </Flex>
-      </PageShell>
+      <PageHero
+        category="About Us"
+        title="Who We Are"
+        subtitle="People and Potential Consultancy was established in 2015 to equip leaders and organisations with the systems and practical tools needed to embed change and take their organisation to the next level of performance."
+      />
+      <VisionPurposeContent content={content} />
+      <FocusSection />
+      <MultiSolutionsContent content={content} />
+      <CallToActionBanner />
     </Box>
   )
 }
+
+const SectionLabel = ({ children }) => (
+  <Text
+    color="brand.accent"
+    fontWeight="700"
+    fontSize="xs"
+    textTransform="uppercase"
+    letterSpacing="widest"
+    fontFamily="subtitleFont"
+    mb={3}
+  >
+    {children}
+  </Text>
+)
 
 const VisionPurposeContent = ({ content }) => {
   const imageUrl = urlFor(content.visionAndPurposeImage).url()
   const { width, height } = getImageDimensions(content.visionAndPurposeImage)
 
   return (
-    <SectionCard>
-      <Text
-        bgClip="text"
-        bgGradient='linear(to-r, blackAlpha.800, purple.500)'
-        fontWeight="extrabold"
-        textAlign='left'
-        fontSize={{ base: "2xl", md: "5xl" }}
-        p={{base: 4, lg:4}}
-        fontFamily='bodyFont'
-      >
-        Vision and Purpose
-      </Text>
-
-      <Box>
-        <SimpleGrid columns={{base: 1, md:1, lg: 2}}>
-          <Box overflow='hidden' m={{base: 2, md: 6}} borderRadius={'10px'}>
+    <Box bg="white" py={{ base: 16, md: 24 }}>
+      <Box maxW="7xl" mx="auto" px={{ base: 6, md: 10, lg: 16 }}>
+        <SimpleGrid columns={{ base: 1, lg: 2 }} gap={{ base: 12, lg: 20 }} alignItems="center">
+          <SlideInLeft>
+          <Box overflow="hidden" borderRadius="2xl">
             <Image
               src={imageUrl}
               width={width}
               height={height}
               alt="Vision and Purpose"
               sizes="(max-width: 768px) 100vw, 50vw"
-              style={{ width: '100%', height: 'auto' }}
+              style={{ width: '100%', height: 'auto', display: 'block' }}
             />
           </Box>
-
-          <Box mt={2} mb={{lg:20}}>
-            <SimpleGrid columns={1} spacing={10}>
+          </SlideInLeft>
+          <SlideInRight>
+          <Box>
+            <SectionLabel>Vision &amp; Purpose</SectionLabel>
+            <Heading
+              as="h2"
+              fontSize={{ base: '3xl', md: '4xl' }}
+              fontFamily="headingFont"
+              bgGradient="linear(to-r, brand.textDark, brand.primary)"
+              bgClip="text"
+              fontWeight="700"
+              mb={8}
+            >
+              Our Mission &amp; Vision
+            </Heading>
+            <Stack spacing={6}>
               <Box>
-                <Text
-                  bgClip="text"
-                  bgGradient='linear(to-r, blackAlpha.800, purple.500)'
-                  fontWeight="extrabold"
-                  textAlign='left'
-                  fontSize={{ base: "xl",md: "3xl",}}
-                  fontFamily='bodyFont'
-                >
+                <Text fontWeight="700" fontSize="lg" color="brand.primary" fontFamily="uiFont" mb={1}>
                   Mission
                 </Text>
-                <Text
-                  textAlign='left'
-                  fontSize={{ base: "sm",md: "lg",}}
-                  fontFamily='bodyFont'
-                >
+                <Text fontSize="md" color="brand.textMid" fontFamily="bodyFont" lineHeight="tall">
                   Providing high calibre, inspirational expertise to schools and education organisations, equipping educators to take their organisation to the next level of performance – improving learning for every child.
                 </Text>
-              </Box>  
-
+              </Box>
               <Box>
-                <Text
-                  bgClip="text"
-                  bgGradient='linear(to-r, blackAlpha.800, purple.500)'
-                  fontWeight="extrabold"
-                  textAlign='left'
-                  fontSize={{ base: "xl",md: "3xl",}}
-                  // p={{base: 4, lg:4}}
-                  fontFamily='bodyFont'
-                >
+                <Text fontWeight="700" fontSize="lg" color="brand.primary" fontFamily="uiFont" mb={1}>
                   Vision
                 </Text>
-                <Text
-                  textAlign='left'
-                  fontSize={{ base: "sm",md: "lg",}}
-                  // p={{base: 4, lg:4}}
-                  fontFamily='bodyFont'
-                >
+                <Text fontSize="md" color="brand.textMid" fontFamily="bodyFont" lineHeight="tall">
                   Transformed thinking, raised standards, creative systems.
                 </Text>
               </Box>
-            </SimpleGrid>
+            </Stack>
           </Box>
+          </SlideInRight>
         </SimpleGrid>
       </Box>
-    </SectionCard>
+    </Box>
   )
 }
+
+const FocusSection = () => (
+  <Box bg="brand.bg" py={{ base: 16, md: 24 }}>
+    <Box maxW="5xl" mx="auto" px={{ base: 6, md: 10 }} textAlign="center">
+      <FadeUp>
+      <SectionLabel>What Drives Us</SectionLabel>
+      <Heading
+        as="h2"
+        fontSize={{ base: '3xl', md: '4xl' }}
+        fontFamily="headingFont"
+        bgGradient="linear(to-r, brand.textDark, brand.primary)"
+        bgClip="text"
+        fontWeight="700"
+        mb={6}
+      >
+        Our Focus
+      </Heading>
+      <Text fontSize="lg" color="brand.textMid" fontFamily="bodyFont" lineHeight="tall" mb={4}>
+        People and Potential focuses on creating and strengthening effective systems; developing leadership and training.
+      </Text>
+      <Text fontSize="lg" color="brand.textMid" fontFamily="bodyFont" lineHeight="tall">
+        Consultants hold international and national expertise, enabling clients to access advice relevant to their context, which is informed by international best practice and is also within physical reach.
+      </Text>
+      </FadeUp>
+    </Box>
+  </Box>
+)
 
 const MultiSolutionsContent = ({ content }) => {
   const imageUrl = urlFor(content.multidisciplinaryImage).url()
   const { width, height } = getImageDimensions(content.multidisciplinaryImage)
 
   return (
-    <SectionCard>
-      <Text
-        bgClip="text"
-        bgGradient='linear(to-r, blackAlpha.800, purple.500)'
-        fontWeight="extrabold"
-        textAlign='left'
-        fontSize={{ base: "2xl", md: "5xl" }}
-        p={{base: 4, lg:4}}
-        fontFamily='bodyFont'
-      >
-        Multidisciplinary Solutions
-      </Text>
-
-      <Box>
-        <SimpleGrid columns={{base: 1, md:1, lg: 2}}>
-          <Box overflow='hidden' m={{base: 2, md: 6}} borderRadius={'10px'}>
+    <Box bg="white" py={{ base: 16, md: 24 }}>
+      <Box maxW="7xl" mx="auto" px={{ base: 6, md: 10, lg: 16 }}>
+        <SimpleGrid columns={{ base: 1, lg: 2 }} gap={{ base: 12, lg: 20 }} alignItems="center">
+          <SlideInLeft>
+          <Box>
+            <SectionLabel>What We Provide</SectionLabel>
+            <Heading
+              as="h2"
+              fontSize={{ base: '3xl', md: '4xl' }}
+              fontFamily="headingFont"
+              bgGradient="linear(to-r, brand.textDark, brand.primary)"
+              bgClip="text"
+              fontWeight="700"
+              mb={8}
+            >
+              Multidisciplinary Solutions
+            </Heading>
+            <Stack spacing={3}>
+              {content.solutions.map((solution, index) => (
+                <SolutionItem key={index} text={solution} />
+              ))}
+            </Stack>
+          </Box>
+          </SlideInLeft>
+          <SlideInRight>
+          <Box overflow="hidden" borderRadius="2xl">
             <Image
               src={imageUrl}
               width={width}
               height={height}
               alt="Multidisciplinary Solutions"
               sizes="(max-width: 768px) 100vw, 50vw"
-              style={{ width: '100%', height: 'auto' }}
+              style={{ width: '100%', height: 'auto', display: 'block' }}
             />
           </Box>
-
-          <Box mt={2} mb={{lg:20}}>
-            <SimpleGrid columns={1} spacing={6}>
-              {content.solutions.map((solution, index) => (
-                <SolutionsListItem key={index} text={solution} />
-              ))}
-            </SimpleGrid>
-          </Box>
+          </SlideInRight>
         </SimpleGrid>
       </Box>
-    </SectionCard>
+    </Box>
   )
 }
 
-const FocusSection = ({ content }) => {
-  return (
-    <Flex
-      // bg="#edf3f8"
-      // _dark={{
-      //   bg: "#3e3e3e",
-      my={{base: 20, md: 2}}
-  
-      p={{base: 6, md: 20}}
-      maxW="8xl"
-      justifyContent="center"
-      alignItems="center"
-    >
-      <Box
-        py={12}
-        bg="white"
-        _dark={{
-          bg: "gray.800",
-        }}
-        rounded="xl"
-      // }}
-      border={'1px'}
-      borderColor={'purple.500'}
-      borderRadius='6px'
-  
-      >
-        <Box
-          maxW="7xl"
-          mx="auto"
-          px={{
-            base: 4,
-            lg: 8,
-          }}
-        >
-          <Box
-            textAlign={{
-              lg: "center",
-            }}
-          >
-            {/* <chakra.h2
-              _light={{
-                color: "purple.600",
-              }}
-              fontWeight="semibold"
-              textTransform="uppercase"
-              letterSpacing="wide"
-              fontFamily='bodyFont'
-  
-            >
-              Why Choose Us ?
-            </chakra.h2> */}
-            <chakra.p
-              mt={2}
-              fontSize={{
-                base: "3xl",
-                sm: "4xl",
-              }}
-              lineHeight="8"
-              fontWeight="extrabold"
-              letterSpacing="tight"
-              _light={{
-                color: "purple.900",
-              }}
-              fontFamily='bodyFont'
-  
-            >
-              Our Focus
-            </chakra.p>
-            <chakra.p
-              mt={4}
-              maxW="2xl"
-              fontSize="xl"
-              mx={{
-                lg: "auto",
-              }}
-              color="gray.700"
-              _dark={{
-                color: "gray.400",
-              }}
-              fontFamily='bodyFont'
-  
-            >
-                People and Potential focuses on creating and strengthening effective systems; developing leadership and training.
-            </chakra.p>
-            <chakra.p
-              mt={4}
-              maxW="2xl"
-              fontSize="xl"
-              mx={{
-                lg: "auto",
-              }}
-              color="gray.700"
-              _dark={{
-                color: "gray.400",
-              }}
-              fontFamily='bodyFont'
-  
-            >
-                Consultants hold international and national expertise, enabling clients to access advice relevant to their context, which is informed by international best practice and is also within physical reach.
-            </chakra.p>
-          </Box>
-          </Box>
-          </Box>
-    </Flex>
-  
-  )
-}
-
-const SolutionsListItem = ({ text }) => {
-  return (
-    <Flex align="center">
-      <Icon
-        boxSize={4}
-        mr={2}
-        color="purple.500"
-        viewBox="0 0 20 20"
-        fill="currentColor"
-      >
-        <path
-          fillRule="evenodd"
-          d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-          clipRule="evenodd"
-        />
-      </Icon>
-      <Text fontFamily='bodyFont'>{text}</Text>
-    </Flex>
-  )
-}
+const SolutionItem = ({ text }) => (
+  <Flex align="flex-start" gap={3}>
+    <Box
+      mt="5px"
+      w="6px"
+      h="6px"
+      borderRadius="full"
+      bg="brand.accent"
+      flexShrink={0}
+    />
+    <Text fontFamily="bodyFont" color="brand.textMid" fontSize="md" lineHeight="tall">
+      {text}
+    </Text>
+  </Flex>
+)
 
 export async function getStaticProps() {
-  const aboutUsWhoWeArePageContent = await client.fetch(`
-    *[_type == "aboutUsWhoWeAre"]
-  `);
-
-  return {
-    props: {
-      aboutUsWhoWeArePageContent,
-    },
-    revalidate: 10, // In seconds
-  };
+  const aboutUsWhoWeArePageContent = await client.fetch(`*[_type == "aboutUsWhoWeAre"]`);
+  return { props: { aboutUsWhoWeArePageContent }, revalidate: 10 };
 }

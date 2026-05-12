@@ -1,79 +1,68 @@
-import { chakra, Box, Flex, Stack, Button, Icon, useColorModeValue } from "@chakra-ui/react";
+import { chakra, Box, Flex, Stack, Button, useColorModeValue } from "@chakra-ui/react";
 import NextLink from "next/link";
+import { FadeUp } from './utils/scrollReveal';
+
+const GRAIN = "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='200' height='200' filter='url(%23n)' opacity='0.05'/%3E%3C/svg%3E\")";
 
 export default function CallToActionBanner({
   title = "Don't Leave it to Chance",
   subtitle = "Take your School to the Next Level!",
 } = {}) {
-  const textColor = useColorModeValue('purple.700', 'white');
-  const headingColor = useColorModeValue('purple.900', 'gray.100');
-
   return (
-    <Flex p={50} w="full" alignItems="center" justifyContent="center">
-      <Box>
-        <Box
-          w={{ md: "3xl", lg: "5xl" }}
-          mx="auto"
-          py={{ base: 12, lg: 16 }}
-          px={{ base: 4, lg: 8 }}
-          display={{ lg: "flex" }}
-          alignItems={{ lg: "center" }}
-          justifyContent={{ lg: "space-between" }}
+    <Box
+      w="full"
+      bg="brand.primary"
+      backgroundImage={GRAIN}
+      backgroundSize="200px"
+    >
+      <FadeUp>
+      <Flex
+        px={{ base: 6, md: 16, lg: 24 }}
+        py={{ base: 14, lg: 20 }}
+        w="full"
+        maxW="7xl"
+        mx="auto"
+        alignItems={{ base: "flex-start", lg: "center" }}
+        justifyContent={{ base: "flex-start", lg: "space-between" }}
+        direction={{ base: "column", lg: "row" }}
+        gap={{ base: 8, lg: 4 }}
+      >
+        <chakra.h2
+          fontSize={{ base: "2xl", sm: "4xl" }}
+          fontWeight="bold"
+          letterSpacing="tight"
+          lineHeight="shorter"
+          fontFamily="headingFont"
+          textAlign="left"
         >
-          <chakra.h2
-            fontSize={{ base: "3xl", sm: "4xl" }}
-            fontWeight="extrabold"
-            letterSpacing="tight"
-            lineHeight="shorter"
-            color={headingColor}
-            fontFamily="bodyFont"
-            textAlign="left"
+          <chakra.span display="block" color="white">
+            {title}
+          </chakra.span>
+          <chakra.span display="block" color="brand.accent">
+            {subtitle}
+          </chakra.span>
+        </chakra.h2>
+
+        <Stack direction={{ base: "column", sm: "row" }} flexShrink={0}>
+          <Button
+            as={NextLink}
+            href="/info/contact-enquiry"
+            bg="brand.accent"
+            color="brand.textDark"
+            fontWeight="700"
+            fontFamily="uiFont"
+            size={{ base: "md", sm: "lg" }}
+            px={{ base: 5, sm: 8 }}
+            borderRadius="6px"
+            _hover={{ bg: "brand.accentDark", transform: "translateY(-2px)" }}
+            transition="all 0.2s ease"
+            shadow="lg"
           >
-            <chakra.span display="block">{title}</chakra.span>
-            <chakra.span
-              display="block"
-              bgClip="text"
-              bgGradient="linear(to-r, purple.900, purple.300)"
-              pr={10}
-            >
-              {subtitle}
-            </chakra.span>
-          </chakra.h2>
-          <Stack
-            direction={{ base: "column" }}
-            mt={{ base: 8, lg: 0 }}
-            flexShrink={{ lg: 0 }}
-          >
-            <Button
-              as={NextLink}
-              href="/info/contact-enquiry"
-              colorScheme="whiteAlpha"
-              display="inline-flex"
-              alignItems="center"
-              justifyContent="center"
-              shadow="lg"
-              border="1px"
-              rounded="6px"
-              borderColor="purple"
-              textColor={textColor}
-              w={{ base: "full", sm: "auto" }}
-              mb={{ base: 2, sm: 0 }}
-              size="lg"
-              cursor="pointer"
-              fontFamily="bodyFont"
-            >
-              Talk to us Today
-              <Icon boxSize={4} ml={1} viewBox="0 0 20 20" fill="currentColor">
-                <path
-                  fillRule="evenodd"
-                  d="M6.672 1.911a1 1 0 10-1.932.518l.259.966a1 1 0 001.932-.518l-.26-.966zM2.429 4.74a1 1 0 10-.517 1.932l.966.259a1 1 0 00.517-1.932l-.966-.26zm8.814-.569a1 1 0 00-1.415-1.414l-.707.707a1 1 0 101.415 1.415l.707-.708zm-7.071 7.072l.707-.707A1 1 0 003.465 9.12l-.708.707a1 1 0 001.415 1.415zm3.2-5.171a1 1 0 00-1.3 1.3l4 10a1 1 0 001.823.075l1.38-2.759 3.018 3.02a1 1 0 001.414-1.415l-3.019-3.02 2.76-1.379a1 1 0 00-.076-1.822l-10-4z"
-                  clipRule="evenodd"
-                />
-              </Icon>
-            </Button>
-          </Stack>
-        </Box>
-      </Box>
-    </Flex>
+            Talk to us Today
+          </Button>
+        </Stack>
+      </Flex>
+      </FadeUp>
+    </Box>
   );
 }

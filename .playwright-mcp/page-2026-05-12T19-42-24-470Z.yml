@@ -1,0 +1,124 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e3]:
+    - generic [ref=e4]:
+      - generic [ref=e6]:
+        - button "Toggle Navigation" [ref=e7] [cursor=pointer]:
+          - img [ref=e8]
+        - link "People and Potential Consultancy" [ref=e10] [cursor=pointer]:
+          - /url: /
+          - img "People and Potential Consultancy" [ref=e11]
+      - generic [ref=e14]:
+        - generic [ref=e15]:
+          - heading "About Us" [level=3] [ref=e16]
+          - heading "Who We Are" [level=1] [ref=e17]:
+            - paragraph [ref=e18]: Who We Are
+          - heading "People and Potential Consultancy was established in 2015 to equip leaders and organizations with the systems and practical tools needed to embed change and take their organization to the next level of performance." [level=2] [ref=e19]
+        - generic [ref=e20]:
+          - paragraph [ref=e21]: Vision and Purpose
+          - generic [ref=e23]:
+            - img "Vision and Purpose" [ref=e25]
+            - generic [ref=e27]:
+              - generic [ref=e28]:
+                - paragraph [ref=e29]: Mission
+                - paragraph [ref=e30]: Providing high calibre, inspirational expertise to schools and education organisations, equipping educators to take their organisation to the next level of performance – improving learning for every child.
+              - generic [ref=e31]:
+                - paragraph [ref=e32]: Vision
+                - paragraph [ref=e33]: Transformed thinking, raised standards, creative systems.
+        - generic [ref=e37]:
+          - paragraph [ref=e38]: Our Focus
+          - paragraph [ref=e39]: People and Potential focuses on creating and strengthening effective systems; developing leadership and training.
+          - paragraph [ref=e40]: Consultants hold international and national expertise, enabling clients to access advice relevant to their context, which is informed by international best practice and is also within physical reach.
+        - generic [ref=e41]:
+          - paragraph [ref=e42]: Multidisciplinary Solutions
+          - generic [ref=e44]:
+            - img "Multidisciplinary Solutions" [ref=e46]
+            - generic [ref=e48]:
+              - generic [ref=e49]:
+                - img [ref=e50]
+                - paragraph [ref=e52]: Leadership Development & Governance
+              - generic [ref=e53]:
+                - img [ref=e54]
+                - paragraph [ref=e56]: Process Audits and Strategic Planning
+              - generic [ref=e57]:
+                - img [ref=e58]
+                - paragraph [ref=e60]: Professional Development Training
+              - generic [ref=e61]:
+                - img [ref=e62]
+                - paragraph [ref=e64]: Financial Planning and Resourcing
+              - generic [ref=e65]:
+                - img [ref=e66]
+                - paragraph [ref=e68]: Client-Focused Development
+              - generic [ref=e69]:
+                - img [ref=e70]
+                - paragraph [ref=e72]: Communication and Team Development
+        - generic [ref=e75]:
+          - heading "Don't Leave it to Chance Take your School to the Next Level!" [level=2] [ref=e76]:
+            - generic [ref=e77]: Don't Leave it to Chance
+            - generic [ref=e78]: Take your School to the Next Level!
+          - link "Talk to us Today" [ref=e80] [cursor=pointer]:
+            - /url: /info/contact-enquiry
+            - text: Talk to us Today
+            - img [ref=e81]
+    - generic [ref=e85]:
+      - generic [ref=e86]:
+        - link "People and Potential Consultancy" [ref=e88] [cursor=pointer]:
+          - /url: /#
+          - img "People and Potential Consultancy" [ref=e89]
+        - generic [ref=e90]:
+          - link "LinkedIn" [ref=e91] [cursor=pointer]:
+            - /url: /#
+            - generic [ref=e92]: LinkedIn
+            - img [ref=e93]
+          - link "Built by DWO" [ref=e95] [cursor=pointer]:
+            - /url: https://www.dralegawebops.com/
+        - paragraph [ref=e97]: © 2024 People and Potential Consultancy. All rights reserved
+      - generic [ref=e98]:
+        - paragraph [ref=e100]: info@peopleandpotential.org
+        - paragraph [ref=e102]: +256 793 231969
+        - paragraph [ref=e104]: +256 787 921975
+        - paragraph [ref=e106]: PO. Box 27348, Kampala
+        - paragraph [ref=e108]: 18 Millennium House Nsambya Road
+      - generic [ref=e109]:
+        - generic [ref=e110]:
+          - paragraph [ref=e112]: Site Map
+          - link "Home" [ref=e113] [cursor=pointer]:
+            - /url: /
+            - paragraph [ref=e114]: Home
+          - paragraph [ref=e116]: About Us
+          - link "Who We Are" [ref=e117] [cursor=pointer]:
+            - /url: /who-we-are
+            - paragraph [ref=e118]: Who We Are
+          - link "Why Choose Us" [ref=e119] [cursor=pointer]:
+            - /url: /why-choose-us
+            - paragraph [ref=e120]: Why Choose Us
+          - link "Consultant Profiles" [ref=e121] [cursor=pointer]:
+            - /url: /consultant-profile
+            - paragraph [ref=e122]: Consultant Profiles
+        - generic [ref=e123]:
+          - paragraph [ref=e125]: Services
+          - link "School Start Up" [ref=e126] [cursor=pointer]:
+            - /url: /school-startup
+            - paragraph [ref=e127]: School Start Up
+          - link "School Development" [ref=e128] [cursor=pointer]:
+            - /url: /school-development
+            - paragraph [ref=e129]: School Development
+          - paragraph [ref=e131]: Courses
+          - link "Course List" [ref=e132] [cursor=pointer]:
+            - /url: /course-list
+            - paragraph [ref=e133]: Course List
+          - link "Course Booking Form" [ref=e134] [cursor=pointer]:
+            - /url: /education/courses/course-booking-form
+            - paragraph [ref=e135]: Course Booking Form
+        - generic [ref=e136]:
+          - paragraph [ref=e138]: Contact
+          - link "Contact Form" [ref=e139] [cursor=pointer]:
+            - /url: /info/contact-enquiry
+            - paragraph [ref=e140]: Contact Form
+  - alert [ref=e141]
+  - generic:
+    - region "Notifications-top"
+    - region "Notifications-top-left"
+    - region "Notifications-top-right"
+    - region "Notifications-bottom-left"
+    - region "Notifications-bottom"
+    - region "Notifications-bottom-right"
