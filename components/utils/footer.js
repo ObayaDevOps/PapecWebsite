@@ -13,11 +13,12 @@ import {
 import { FaLinkedinIn } from 'react-icons/fa';
 import NextLink from 'next/link';
 import Image from 'next/image';
+import footerLogo from '../../public/images/icon/Untitled_design_6_tv0jdx.webp';
 
 const Logo = () => (
   <NextLink href="/">
     <Image
-      src="https://res.cloudinary.com/medoptics-image-cloud/image/upload/v1718006910/Untitled_design_6_tv0jdx.png"
+      src={footerLogo}
       width={434 / 2.2}
       height={181 / 2.2}
       alt="People and Potential Consultancy"

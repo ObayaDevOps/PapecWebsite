@@ -15,6 +15,7 @@ import {
 } from '@chakra-ui/react';
 import NextLink from 'next/link';
 import Image from 'next/image';
+import heroLogo from '../public/images/icon/Untitled_design_6_tv0jdx.webp';
 import { ChevronLeftIcon, ChevronRightIcon } from '@chakra-ui/icons';
 import client from '../src/sanity/lib/client.js';
 import imageUrlBuilder from '@sanity/image-url';
@@ -158,7 +159,7 @@ function HeroSection({ content }) {
           <SlideInLeftLoad delay={0}>
             <Box mb={6}>
               <Image
-                src="https://res.cloudinary.com/medoptics-image-cloud/image/upload/v1718006910/Untitled_design_6_tv0jdx.png"
+                src={heroLogo}
                 width={200}
                 height={83}
                 alt="People and Potential Consultancy"
